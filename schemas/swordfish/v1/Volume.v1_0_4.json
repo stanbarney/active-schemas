@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.v1_0_4.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.v1_0_4.json",
     "$ref": "#/definitions/Volume",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -136,7 +136,7 @@
             },
             "properties": {
                 "AssociatedFeaturesRegistry": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/FeaturesRegistry.json#/definitions/FeaturesRegistry",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/FeaturesRegistry.json#/definitions/FeaturesRegistry",
                     "description": "A reference to the task associated with the operation if any.",
                     "readonly": true
                 },
@@ -238,7 +238,7 @@
                 "EncryptionTypes": {
                     "description": "The types of encryption used by this Volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/EncryptionTypes"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/EncryptionTypes"
                     },
                     "longDescription": "This property shall contain the types of encryption used by this Volume.",
                     "readonly": false,
@@ -296,7 +296,7 @@
                 "VolumeType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/VolumeType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/VolumeType"
                         },
                         {
                             "type": "null"

@@ -241,7 +241,7 @@
                     "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Volumes": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",
                     "description": "The set of volumes that the storage controllers produce.",
                     "longDescription": "This property shall contain a link to a resource collection of type `VolumeCollection`.",
                     "readonly": true

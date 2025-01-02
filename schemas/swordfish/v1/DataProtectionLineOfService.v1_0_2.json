@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/DataProtectionLineOfService.v1_0_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataProtectionLineOfService.v1_0_2.json",
     "$ref": "#/definitions/DataProtectionLineOfService",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -33,7 +33,7 @@
             "longDescription": "This action shall create an on-demand replica that conforms to the bound DataProtectionLineOfService.",
             "parameters": {
                 "ReplicaLineOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataProtectionLineOfService.json#/definitions/DataProtectionLineOfService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataProtectionLineOfService.json#/definitions/DataProtectionLineOfService",
                     "description": "The data protection line of service this action is bound to.",
                     "longDescription": "The value shall reference the data protection line of service this operation is bound to.",
                     "requiredParameter": true
@@ -150,7 +150,7 @@
                 "RecoveryGeographicObjective": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataProtectionLoSCapabilities.json#/definitions/FailureDomainScope"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataProtectionLoSCapabilities.json#/definitions/FailureDomainScope"
                         },
                         {
                             "type": "null"
@@ -172,7 +172,7 @@
                 "RecoveryTimeObjective": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataProtectionLoSCapabilities.json#/definitions/RecoveryAccessScope"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataProtectionLoSCapabilities.json#/definitions/RecoveryAccessScope"
                         },
                         {
                             "type": "null"
@@ -189,7 +189,7 @@
                     "longDescription": "This value shall be used if the data access location of the replica is required to be at a specific location.   Note 1: The location value may be granular.  Note 2: A value may be required for some regulatory compliance."
                 },
                 "ReplicaClassOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
                     "description": "The replica's class of service.",
                     "longDescription": "The value shall reference the class of service that defines the required service levels of the replica.",
                     "readonly": false
@@ -197,7 +197,7 @@
                 "ReplicaType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageReplicaInfo.json#/definitions/ReplicaType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageReplicaInfo.json#/definitions/ReplicaType"
                         },
                         {
                             "type": "null"

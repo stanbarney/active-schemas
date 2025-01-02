@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfService.v1_1_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfService.v1_1_2.json",
     "$ref": "#/definitions/ClassOfService",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -81,7 +81,7 @@
                 "DataProtectionLinesOfService": {
                     "description": "A collection of DataProtection line of service elements.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataProtectionLineOfService.json#/definitions/DataProtectionLineOfService"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataProtectionLineOfService.json#/definitions/DataProtectionLineOfService"
                     },
                     "longDescription": "The value shall be a set of data protection service options.  Within a class of service, one data protection service option shall be present for each replication session.",
                     "readonly": false,
@@ -94,7 +94,7 @@
                 "DataSecurityLinesOfService": {
                     "description": "A collection of DataSecurity line of service elements.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataSecurityLineOfService.json#/definitions/DataSecurityLineOfService"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataSecurityLineOfService.json#/definitions/DataSecurityLineOfService"
                     },
                     "longDescription": "The value shall be a set of data security service options.",
                     "readonly": false,
@@ -107,7 +107,7 @@
                 "DataStorageLinesOfService": {
                     "description": "A collection of DataStorage line of service elements.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLineOfService.json#/definitions/DataStorageLineOfService"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLineOfService.json#/definitions/DataStorageLineOfService"
                     },
                     "longDescription": "The value shall be a set of data protection service options.",
                     "readonly": false,
@@ -131,7 +131,7 @@
                 "IOConnectivityLinesOfService": {
                     "description": "A collection of IOConnectivity line of service elements.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOConnectivityLineOfService.json#/definitions/IOConnectivityLineOfService"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOConnectivityLineOfService.json#/definitions/IOConnectivityLineOfService"
                     },
                     "longDescription": "The value shall be a set of IO connectivity service options.  Within a class of service, at most one IO connectivity service option may be present for a value of AccessProtocol.",
                     "readonly": false,
@@ -144,7 +144,7 @@
                 "IOPerformanceLinesOfService": {
                     "description": "A collection of IOPerformance line of service elements.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLineOfService.json#/definitions/IOPerformanceLineOfService"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLineOfService.json#/definitions/IOPerformanceLineOfService"
                     },
                     "longDescription": "The value shall be a set of IO performance service options.",
                     "readonly": false,

@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageGroup.v1_4_0.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageGroup.v1_4_0.json",
     "$ref": "#/definitions/StorageGroup",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -295,7 +295,7 @@
                     "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ClassOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
                     "description": "The ClassOfService that all storage in this StorageGroup conforms to.",
                     "longDescription": "The ClassOfService that all storage in this StorageGroup conforms to.",
                     "readonly": false
@@ -478,7 +478,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageGroup.json#/definitions/MappedVolume"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageGroup.json#/definitions/MappedVolume"
                             },
                             {
                                 "type": "null"
@@ -509,7 +509,7 @@
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "ReplicaInfo": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageReplicaInfo.json#/definitions/ReplicaInfo",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageReplicaInfo.json#/definitions/ReplicaInfo",
                     "deprecated": "Deprecated in favor of using the ConsistencyGroup for Consistency set management.",
                     "description": "Describes this storage group in its role as a target for replication.",
                     "longDescription": "This property shall describe the replication relationship between this storage group and a corresponding source storage group."
@@ -549,7 +549,7 @@
                     "deprecated": "These references are replaced by the MappedVolumes array in StorageGroup.",
                     "description": "Volumes in this storage group.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/Volume"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/Volume"
                     },
                     "longDescription": "An array of references to volumes managed by this storage group.",
                     "readonly": false,

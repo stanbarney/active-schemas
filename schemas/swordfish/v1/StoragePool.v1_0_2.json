@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/StoragePool.v1_0_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StoragePool.v1_0_2.json",
     "$ref": "#/definitions/StoragePool",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -45,7 +45,7 @@
             "longDescription": "This action shall be used to add a drive, or set of drives, to an underlying capacity source for the storage pool.",
             "parameters": {
                 "CapacitySource": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.json#/definitions/CapacitySource",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.json#/definitions/CapacitySource",
                     "description": "The capacity source to be extended.",
                     "longDescription": "This parameter shall contain the target capacity source for the drive(s). This property does not need to be specified if the storage pool only contains one capacity source, or if the implementation is capable of automatically selecting the appropriate capacity source."
                 },
@@ -106,7 +106,7 @@
             },
             "properties": {
                 "DefaultClassOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
                     "deprecated": "Default ClassOfService moved from Links to NavigationProperty.",
                     "description": "The default class of service for entities allocated from this storage pool.",
                     "longDescription": "If present, this property shall reference the default class of service for entities allocated from this storage pool.  If the ClassesOfService collection is not empty, then the value of this property shall be one of its entries. If not present, the default class of service of the containing StorageService entity shall be used.",
@@ -311,13 +311,13 @@
                     "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "AllocatedPools": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StoragePoolCollection.json#/definitions/StoragePoolCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StoragePoolCollection.json#/definitions/StoragePoolCollection",
                     "description": "A reference to the collection of storage pools allocated from this storage pool.",
                     "longDescription": "The value of this property shall contain a reference to the collection of storage pools allocated from this storage pool.",
                     "readonly": true
                 },
                 "AllocatedVolumes": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",
                     "description": "A reference to the collection of volumes allocated from this storage pool.",
                     "longDescription": "The value of this property shall contain a reference to the collection of volumes allocated from this storage pool.",
                     "readonly": true
@@ -335,7 +335,7 @@
                     "units": "By"
                 },
                 "Capacity": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_0_0.json#/definitions/Capacity",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_0_0.json#/definitions/Capacity",
                     "description": "Capacity utilization.",
                     "longDescription": "The value of this property shall provide an information about the actual utilization of the capacity within this storage pool."
                 },
@@ -343,7 +343,7 @@
                     "autoExpand": true,
                     "description": "An array of space allocations to this store.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.json#/definitions/CapacitySource"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.json#/definitions/CapacitySource"
                     },
                     "longDescription": "Fully or partially consumed storage from a source resource. Each entry shall provide capacity allocation data from a named source resource.",
                     "readonly": false,
@@ -353,7 +353,7 @@
                     "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ClassesOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfServiceCollection.json#/definitions/ClassOfServiceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfServiceCollection.json#/definitions/ClassOfServiceCollection",
                     "description": "The ClassesOfService supported by this storage pool.",
                     "longDescription": "This property shall contain references to all classes of service supported by this storage pool. Capacity allocated from this storage pool shall conform to one of the referenced classes of service.",
                     "readonly": false

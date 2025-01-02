@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.v1_1_5.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.v1_1_5.json",
     "$ref": "#/definitions/Volume",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -80,7 +80,7 @@
             },
             "properties": {
                 "ClassOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
                     "description": "The ClassOfService that this storage volume conforms to.",
                     "longDescription": "This property shall contain a reference to the ClassOfService that this storage volume conforms to.",
                     "readonly": true,
@@ -143,7 +143,7 @@
             },
             "properties": {
                 "AssociatedFeaturesRegistry": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/FeaturesRegistry.json#/definitions/FeaturesRegistry",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/FeaturesRegistry.json#/definitions/FeaturesRegistry",
                     "description": "A reference to the task associated with the operation if any.",
                     "readonly": true
                 },
@@ -202,7 +202,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.json#/definitions/StorageAccessCapability"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.json#/definitions/StorageAccessCapability"
                             },
                             {
                                 "type": "null"
@@ -220,7 +220,7 @@
                     "longDescription": "The Actions property shall contain the available actions for this resource."
                 },
                 "AllocatedPools": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StoragePoolCollection.json#/definitions/StoragePoolCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StoragePoolCollection.json#/definitions/StoragePoolCollection",
                     "description": "An array of references to StoragePools allocated from this Volume.",
                     "longDescription": "The value of this property shall contain references to all storage pools allocated from this volume.",
                     "readonly": true,
@@ -237,7 +237,7 @@
                     "units": "By"
                 },
                 "Capacity": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_0_0.json#/definitions/Capacity",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_0_0.json#/definitions/Capacity",
                     "description": "Capacity utilization.",
                     "longDescription": "Information about the utilization of capacity allocated to this storage volume.",
                     "versionAdded": "v1_1_0"
@@ -256,7 +256,7 @@
                     "autoExpand": true,
                     "description": "An array of space allocations to this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.json#/definitions/CapacitySource"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.json#/definitions/CapacitySource"
                     },
                     "longDescription": "Fully or partially consumed storage from a source resource. Each entry provides capacity allocation information from a named source resource.",
                     "readonly": false,
@@ -289,7 +289,7 @@
                 "EncryptionTypes": {
                     "description": "The types of encryption used by this Volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/EncryptionTypes"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/EncryptionTypes"
                     },
                     "longDescription": "This property shall contain the types of encryption used by this Volume.",
                     "readonly": false,
@@ -385,7 +385,7 @@
                     "units": "By"
                 },
                 "ReplicaInfo": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageReplicaInfo.v1_4_0.json#/definitions/ReplicaInfo",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageReplicaInfo.v1_4_0.json#/definitions/ReplicaInfo",
                     "description": "Describes this storage volume in its role as a target replica.",
                     "longDescription": "This property shall describe the replica relationship between this storage volume and a corresponding source volume.",
                     "versionAdded": "v1_1_0"
@@ -396,7 +396,7 @@
                     "longDescription": "The property shall contain the status of the Volume."
                 },
                 "StorageGroups": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageGroupCollection.json#/definitions/StorageGroupCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageGroupCollection.json#/definitions/StorageGroupCollection",
                     "description": "An array of references to Storage Groups that includes this volume.",
                     "longDescription": "The value of this property shall contain references to all storage groups that include this volume.",
                     "readonly": true,
@@ -405,7 +405,7 @@
                 "VolumeType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/VolumeType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/VolumeType"
                         },
                         {
                             "type": "null"

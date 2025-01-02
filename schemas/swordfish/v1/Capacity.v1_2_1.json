@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_2_1.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_2_1.json",
     "$ref": "#/definitions/CapacitySource",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -207,7 +207,7 @@
                     "longDescription": "The value shall be the amount of space that has been provided from the ProvidingDrives, ProvidingVolumes, ProvidingMemory or ProvidingPools."
                 },
                 "ProvidedClassOfService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/ClassOfService.json#/definitions/ClassOfService",
                     "description": "The ClassOfService provided from the ProvidingDrives, ProvidingVolumes, ProvidingMemoryChunks, ProvidingMemory or ProvidingPools.",
                     "longDescription": "The value shall reference the provided ClassOfService from the ProvidingDrives, ProvidingVolumes, ProvidingMemoryChunks, ProvidingMemory or ProvidingPools."
                 },
@@ -229,12 +229,12 @@
                     "versionAdded": "v1_1_0"
                 },
                 "ProvidingPools": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StoragePoolCollection.json#/definitions/StoragePoolCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StoragePoolCollection.json#/definitions/StoragePoolCollection",
                     "description": "The pool or pools that provide this space.",
                     "longDescription": "If present, the value shall be a reference to a contributing storage pool or storage pools."
                 },
                 "ProvidingVolumes": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",
                     "description": "The volume or volumes that provide this space.",
                     "longDescription": "If present, the value shall be a reference to a contributing volume or volumes."
                 }

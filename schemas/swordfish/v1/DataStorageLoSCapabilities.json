@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.json",
     "$ref": "#/definitions/DataStorageLoSCapabilities",
     "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -10,13 +10,13 @@
                     "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_0_2.json#/definitions/DataStorageLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_0_2.json#/definitions/DataStorageLoSCapabilities"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_1_3.json#/definitions/DataStorageLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_1_3.json#/definitions/DataStorageLoSCapabilities"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_2_2.json#/definitions/DataStorageLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_2_2.json#/definitions/DataStorageLoSCapabilities"
                 }
             ],
             "deletable": false,

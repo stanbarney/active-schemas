@@ -677,7 +677,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "StorageServices": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/HostedStorageServices.json#/definitions/HostedStorageServices",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/HostedStorageServices.json#/definitions/HostedStorageServices",
                     "description": "The link to a collection of storage services that this computer system supports.",
                     "longDescription": "This property shall contain a link to a resource collection of type `HostedStorageServices`.",
                     "readonly": true,

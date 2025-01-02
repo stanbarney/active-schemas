@@ -656,7 +656,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Volume": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/Volume",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/Volume",
                     "description": "The specified volume.",
                     "longDescription": "This property shall contain a link to a resource of type `Volume`.  The endpoints referenced by the `InitiatorEndpoints` or `InitiatorEndpointGroups` properties shall be given access to this volume as described by this object.  If `TargetEndpoints` or `TargetEndpointGroups` is present, the referenced initiator endpoints shall be required to access the referenced volume through one of the referenced target endpoints.",
                     "readonly": false

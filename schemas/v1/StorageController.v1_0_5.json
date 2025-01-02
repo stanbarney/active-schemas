@@ -52,7 +52,7 @@
                     "readonly": true
                 },
                 "Volume": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/Volume",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/Volume",
                     "description": "The specified volume.",
                     "longDescription": "This property shall contain a link to a resource of type `Volume`.",
                     "readonly": true
@@ -161,7 +161,7 @@
                 "AttachedVolumes": {
                     "description": "An array of links to volumes that are attached to this controller instance.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/Volume"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/Volume"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Volume` that are attached to this instance of storage controller.",
                     "readonly": true,
@@ -777,7 +777,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/RAIDType"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/RAIDType"
                             },
                             {
                                 "type": "null"

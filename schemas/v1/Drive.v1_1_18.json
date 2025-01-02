@@ -456,7 +456,7 @@
                 "Volumes": {
                     "description": "An array of links to the volumes that this drive either wholly or only partially contains.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Volume.json#/definitions/Volume"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.json#/definitions/Volume"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Volume` with which this drive is associated.  This property shall include all volume resources of which this drive is a member and all volumes for which this drive acts as a spare if the hot spare type is `Dedicated`.",
                     "readonly": true,
