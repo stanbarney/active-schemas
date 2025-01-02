@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.json",
     "$ref": "#/definitions/EndpointGroup",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "AccessState": {
@@ -33,19 +33,19 @@
         "EndpointGroup": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.v1_0_7.json#/definitions/EndpointGroup"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.v1_0_7.json#/definitions/EndpointGroup"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.v1_1_8.json#/definitions/EndpointGroup"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.v1_1_8.json#/definitions/EndpointGroup"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.v1_2_6.json#/definitions/EndpointGroup"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.v1_2_6.json#/definitions/EndpointGroup"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.v1_3_4.json#/definitions/EndpointGroup"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.v1_3_4.json#/definitions/EndpointGroup"
                 }
             ],
             "deletable": true,

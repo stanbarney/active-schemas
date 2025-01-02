@@ -1,67 +1,67 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/LogEntry.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.json",
     "$ref": "#/definitions/LogEntry",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "LogEntry": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_0_18.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_0_18.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_1_20.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_1_20.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_2_16.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_2_16.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_3_15.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_3_15.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_4_14.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_4_14.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_5_10.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_5_10.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_6_9.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_6_9.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_7_7.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_7_7.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_8_6.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_8_6.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_9_7.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_9_7.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_10_7.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_10_7.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_11_6.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_11_6.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_12_6.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_12_6.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_13_6.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_13_6.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_14_5.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_14_5.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_15_4.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_15_4.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_16_2.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_16_2.json#/definitions/LogEntry"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_17_0.json#/definitions/LogEntry"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_17_0.json#/definitions/LogEntry"
                 }
             ],
             "deletable": true,

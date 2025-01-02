@@ -1,28 +1,28 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.json",
     "$ref": "#/definitions/ResourceBlock",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "ResourceBlock": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_0_9.json#/definitions/ResourceBlock"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_0_9.json#/definitions/ResourceBlock"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_1_9.json#/definitions/ResourceBlock"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_1_9.json#/definitions/ResourceBlock"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_2_8.json#/definitions/ResourceBlock"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_2_8.json#/definitions/ResourceBlock"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_3_7.json#/definitions/ResourceBlock"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_3_7.json#/definitions/ResourceBlock"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_4_3.json#/definitions/ResourceBlock"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_4_3.json#/definitions/ResourceBlock"
                 }
             ],
             "deletable": true,
@@ -38,10 +38,10 @@
         "ResourceBlockLimits": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_3_7.json#/definitions/ResourceBlockLimits"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_3_7.json#/definitions/ResourceBlockLimits"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.v1_4_3.json#/definitions/ResourceBlockLimits"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.v1_4_3.json#/definitions/ResourceBlockLimits"
                 }
             ]
         }

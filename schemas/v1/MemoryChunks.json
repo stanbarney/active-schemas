@@ -1,34 +1,34 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.json",
     "$ref": "#/definitions/MemoryChunks",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "MemoryChunks": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_0_9.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_0_9.json#/definitions/MemoryChunks"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_1_7.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_1_7.json#/definitions/MemoryChunks"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_2_8.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_2_8.json#/definitions/MemoryChunks"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_3_5.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_3_5.json#/definitions/MemoryChunks"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_4_4.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_4_4.json#/definitions/MemoryChunks"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_5_2.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_5_2.json#/definitions/MemoryChunks"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.v1_6_2.json#/definitions/MemoryChunks"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.v1_6_2.json#/definitions/MemoryChunks"
                 }
             ],
             "deletable": true,

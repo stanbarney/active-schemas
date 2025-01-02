@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/ServiceRoot.v1_17_0.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ServiceRoot.v1_17_0.json",
     "$ref": "#/definitions/ServiceRoot",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "DeepOperations": {
@@ -126,19 +126,19 @@
             },
             "properties": {
                 "ManagerProvidingService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Manager.json#/definitions/Manager",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manager.json#/definitions/Manager",
                     "description": "The link to the manager that is providing this Redfish service.",
                     "longDescription": "This property shall contain a link to a resource of type `Manager` that represents the manager providing this Redfish service.",
                     "readonly": true,
                     "versionAdded": "v1_15_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "Sessions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SessionCollection.json#/definitions/SessionCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SessionCollection.json#/definitions/SessionCollection",
                     "description": "The link to a collection of sessions.",
                     "longDescription": "This property shall contain a link to a resource collection of type `SessionCollection`.",
                     "readonly": true
@@ -259,59 +259,59 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "AccountService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/AccountService.json#/definitions/AccountService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/AccountService.json#/definitions/AccountService",
                     "description": "The link to the account service.",
                     "longDescription": "This property shall contain a link to a resource of type `AccountService`.",
                     "readonly": true
                 },
                 "AggregationService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/AggregationService.json#/definitions/AggregationService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/AggregationService.json#/definitions/AggregationService",
                     "description": "The link to the aggregation service.",
                     "longDescription": "This property shall contain a link to a resource of type `AggregationService`.",
                     "readonly": true,
                     "versionAdded": "v1_8_0"
                 },
                 "Cables": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CableCollection.json#/definitions/CableCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CableCollection.json#/definitions/CableCollection",
                     "description": "The link to a collection of cables.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CableCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_11_0"
                 },
                 "CertificateService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateService.json#/definitions/CertificateService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateService.json#/definitions/CertificateService",
                     "description": "The link to the certificate service.",
                     "longDescription": "This property shall contain a link to a resource of type `CertificateService`.",
                     "readonly": true,
                     "versionAdded": "v1_5_0"
                 },
                 "Chassis": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ChassisCollection.json#/definitions/ChassisCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ChassisCollection.json#/definitions/ChassisCollection",
                     "description": "The link to a collection of chassis.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ChassisCollection`.",
                     "readonly": true
                 },
                 "ComponentIntegrity": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComponentIntegrityCollection.json#/definitions/ComponentIntegrityCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComponentIntegrityCollection.json#/definitions/ComponentIntegrityCollection",
                     "description": "The link to a collection of component integrity information.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ComponentIntegrityCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_13_0"
                 },
                 "CompositionService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CompositionService.json#/definitions/CompositionService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CompositionService.json#/definitions/CompositionService",
                     "description": "The link to the composition service.",
                     "longDescription": "This property shall contain a link to a resource of type `CompositionService`.",
                     "readonly": true,
@@ -320,7 +320,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -329,51 +329,51 @@
                     "readonly": true
                 },
                 "EventService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EventService.json#/definitions/EventService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EventService.json#/definitions/EventService",
                     "description": "The link to the event service.",
                     "longDescription": "This property shall contain a link to a resource of type `EventService`.",
                     "readonly": true
                 },
                 "Fabrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/FabricCollection.json#/definitions/FabricCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/FabricCollection.json#/definitions/FabricCollection",
                     "description": "The link to a collection of fabrics.",
                     "longDescription": "This property shall contain a link to a resource collection of type `FabricCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_1_0"
                 },
                 "Facilities": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/FacilityCollection.json#/definitions/FacilityCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/FacilityCollection.json#/definitions/FacilityCollection",
                     "description": "The link to a collection of facilities.",
                     "longDescription": "This property shall contain a link to a resource collection of type `FacilityCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_6_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "JobService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/JobService.json#/definitions/JobService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/JobService.json#/definitions/JobService",
                     "description": "The link to the job service.",
                     "longDescription": "This property shall contain a link to a resource of type `JobService`.",
                     "readonly": true,
                     "versionAdded": "v1_4_0"
                 },
                 "JsonSchemas": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/JsonSchemaFileCollection.json#/definitions/JsonSchemaFileCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/JsonSchemaFileCollection.json#/definitions/JsonSchemaFileCollection",
                     "description": "The link to a collection of JSON Schema files.",
                     "longDescription": "This property shall contain a link to a resource collection of type `JsonSchemaFileCollection`.",
                     "readonly": true
                 },
                 "KeyService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/KeyService.json#/definitions/KeyService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/KeyService.json#/definitions/KeyService",
                     "description": "The link to the key service.",
                     "longDescription": "This property shall contain a link to a resource of type `KeyService`.",
                     "readonly": true,
                     "versionAdded": "v1_11_0"
                 },
                 "LicenseService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LicenseService.json#/definitions/LicenseService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LicenseService.json#/definitions/LicenseService",
                     "description": "The link to the license service.",
                     "longDescription": "This property shall contain a link to a resource of type `LicenseService`.",
                     "readonly": true,
@@ -385,29 +385,29 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Managers": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ManagerCollection.json#/definitions/ManagerCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ManagerCollection.json#/definitions/ManagerCollection",
                     "description": "The link to a collection of managers.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ManagerCollection`.",
                     "readonly": true
                 },
                 "NVMeDomains": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/NVMeDomainCollection.json#/definitions/NVMeDomainCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/NVMeDomainCollection.json#/definitions/NVMeDomainCollection",
                     "description": "The link to a collection of NVMe domains.",
                     "longDescription": "This property shall contain a link to a resource collection of type `NVMeDomainCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_10_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "PowerEquipment": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PowerEquipment.json#/definitions/PowerEquipment",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PowerEquipment.json#/definitions/PowerEquipment",
                     "description": "The link to a set of power equipment.",
                     "longDescription": "This property shall contain a link to a resource of type `PowerEquipment`.",
                     "readonly": true,
@@ -437,27 +437,27 @@
                     "type": "string"
                 },
                 "RegisteredClients": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/RegisteredClientCollection.json#/definitions/RegisteredClientCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/RegisteredClientCollection.json#/definitions/RegisteredClientCollection",
                     "description": "The link to a collection of registered clients.",
                     "longDescription": "This property shall contain a link to a resource collection of type `RegisteredClientCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_13_0"
                 },
                 "Registries": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MessageRegistryFileCollection.json#/definitions/MessageRegistryFileCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MessageRegistryFileCollection.json#/definitions/MessageRegistryFileCollection",
                     "description": "The link to a collection of registries.",
                     "longDescription": "This property shall contain a link to a resource collection of type `MessageRegistryFileCollection`.",
                     "readonly": true
                 },
                 "ResourceBlocks": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
                     "description": "The link to a collection of resource blocks.  This collection is intended for implementations that do not contain a composition service but that expose resources to an orchestrator that implements a composition service.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ResourceBlockCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_5_0"
                 },
                 "ServiceConditions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ServiceConditions.json#/definitions/ServiceConditions",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ServiceConditions.json#/definitions/ServiceConditions",
                     "description": "The link to the service conditions.",
                     "longDescription": "This property shall contain a link to a resource of type `ServiceConditions`.",
                     "readonly": true,
@@ -471,54 +471,54 @@
                     "versionAdded": "v1_14_0"
                 },
                 "SessionService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SessionService.json#/definitions/SessionService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SessionService.json#/definitions/SessionService",
                     "description": "The link to the sessions service.",
                     "longDescription": "This property shall contain a link to a resource of type `SessionService`.",
                     "readonly": true
                 },
                 "Storage": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/StorageCollection.json#/definitions/StorageCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/StorageCollection.json#/definitions/StorageCollection",
                     "description": "The link to a collection of storage subsystems.",
                     "longDescription": "This property shall contain a link to a resource collection of type `StorageCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_9_0"
                 },
                 "StorageServices": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageServiceCollection.json#/definitions/StorageServiceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageServiceCollection.json#/definitions/StorageServiceCollection",
                     "description": "The link to a collection of storage services.",
                     "longDescription": "This property shall contain a link to a resource collection of type `StorageServiceCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_1_0"
                 },
                 "StorageSystems": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageSystemCollection.json#/definitions/StorageSystemCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageSystemCollection.json#/definitions/StorageSystemCollection",
                     "description": "The link to a collection of storage systems.",
                     "longDescription": "This property shall contain a link to a resource collection of type `StorageSystemCollection`.  This collection shall contain computer systems that act as storage servers.  The `HostingRoles` property of each such computer system shall contain a `StorageServer` entry.",
                     "readonly": true,
                     "versionAdded": "v1_1_0"
                 },
                 "Systems": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystemCollection.json#/definitions/ComputerSystemCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystemCollection.json#/definitions/ComputerSystemCollection",
                     "description": "The link to a collection of systems.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ComputerSystemCollection`.",
                     "readonly": true
                 },
                 "Tasks": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/TaskService.json#/definitions/TaskService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/TaskService.json#/definitions/TaskService",
                     "description": "The link to the task service.",
                     "longDescription": "This property shall contain a link to a resource of type `TaskService`.",
                     "readonly": true,
                     "uriSegment": "TaskService"
                 },
                 "TelemetryService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/TelemetryService.json#/definitions/TelemetryService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/TelemetryService.json#/definitions/TelemetryService",
                     "description": "The link to the telemetry service.",
                     "longDescription": "This property shall contain a link to a resource of type `TelemetryService`.",
                     "readonly": true,
                     "versionAdded": "v1_4_0"
                 },
                 "ThermalEquipment": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ThermalEquipment.json#/definitions/ThermalEquipment",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ThermalEquipment.json#/definitions/ThermalEquipment",
                     "description": "The link to a set of cooling equipment.",
                     "longDescription": "This property shall contain a link to a resource of type `ThermalEquipment`.",
                     "readonly": true,
@@ -535,7 +535,7 @@
                     ]
                 },
                 "UpdateService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/UpdateService.json#/definitions/UpdateService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/UpdateService.json#/definitions/UpdateService",
                     "description": "The link to the update service.",
                     "longDescription": "This property shall contain a link to a resource of type `UpdateService`.",
                     "readonly": true,

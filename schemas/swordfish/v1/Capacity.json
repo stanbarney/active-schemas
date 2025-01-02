@@ -1,19 +1,19 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.json",
     "$ref": "#/definitions/CapacitySource",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
     "definitions": {
         "Capacity": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_0_4.json#/definitions/Capacity"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_0_4.json#/definitions/Capacity"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_1_4.json#/definitions/Capacity"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_1_4.json#/definitions/Capacity"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_2_1.json#/definitions/Capacity"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_2_1.json#/definitions/Capacity"
                 }
             ],
             "description": "This is the schema definition for the Capacity of a device. It represents the properties for capacity for any data store.",
@@ -22,13 +22,13 @@
         "CapacityInfo": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_0_4.json#/definitions/CapacityInfo"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_0_4.json#/definitions/CapacityInfo"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_1_4.json#/definitions/CapacityInfo"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_1_4.json#/definitions/CapacityInfo"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_2_1.json#/definitions/CapacityInfo"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_2_1.json#/definitions/CapacityInfo"
                 }
             ],
             "description": "The capacity of specific data type in a data store.",
@@ -37,16 +37,16 @@
         "CapacitySource": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_0_4.json#/definitions/CapacitySource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_0_4.json#/definitions/CapacitySource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_1_4.json#/definitions/CapacitySource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_1_4.json#/definitions/CapacitySource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/Capacity.v1_2_1.json#/definitions/CapacitySource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Capacity.v1_2_1.json#/definitions/CapacitySource"
                 }
             ],
             "deletable": true,

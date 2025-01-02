@@ -1,19 +1,19 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/VolumeMetrics.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeMetrics.json",
     "$ref": "#/definitions/VolumeMetrics",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
     "definitions": {
         "VolumeMetrics": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/VolumeMetrics.v1_0_1.json#/definitions/VolumeMetrics"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeMetrics.v1_0_1.json#/definitions/VolumeMetrics"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/VolumeMetrics.v1_1_1.json#/definitions/VolumeMetrics"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeMetrics.v1_1_1.json#/definitions/VolumeMetrics"
                 }
             ],
             "deletable": false,

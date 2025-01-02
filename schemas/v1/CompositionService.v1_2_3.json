@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/CompositionService.v1_2_3.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CompositionService.v1_2_3.json",
     "$ref": "#/definitions/CompositionService",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -43,7 +43,7 @@
             "longDescription": "This action shall perform a set of operations specified by a manifest.  Services shall not apply any part of the manifest unless all operations specified by the manifest are successful.",
             "parameters": {
                 "Manifest": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Manifest.json#/definitions/Manifest",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manifest.json#/definitions/Manifest",
                     "description": "The manifest containing the compose operation request.",
                     "longDescription": "This parameter shall contain the manifest containing the compose operation request.  This parameter shall be required if `RequestFormat` contains the value `Manifest`."
                 },
@@ -143,7 +143,7 @@
             },
             "properties": {
                 "Manifest": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Manifest.json#/definitions/Manifest",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manifest.json#/definitions/Manifest",
                     "description": "The manifest containing the compose operation response.",
                     "longDescription": "This property shall contain the manifest containing the compose operation response.  This property shall be required if `RequestFormat` contains the value `Manifest`.",
                     "versionAdded": "v1_2_0"
@@ -196,16 +196,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -213,7 +213,7 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "ActivePool": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
                     "description": "The link to the collection of resource blocks within the active pool.  Resource blocks in the active pool are contributing to at least one composed resource as a result of a composition request.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ResourceBlockCollection`.  The members of this collection shall represent the resource blocks in the active pool.  Services shall filter members of this collection based on the requesting client.",
                     "readonly": true,
@@ -240,7 +240,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "CompositionReservations": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CompositionReservationCollection.json#/definitions/CompositionReservationCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CompositionReservationCollection.json#/definitions/CompositionReservationCollection",
                     "description": "The link to the collection of reservations with the composition reservation collection.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CompositionReservationCollection`.  The members of this collection shall contain links to reserved resource blocks and the related document that caused the reservations.  Services shall filter members of this collection based on the requesting client.",
                     "readonly": true,
@@ -249,7 +249,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -258,22 +258,22 @@
                     "readonly": true
                 },
                 "FreePool": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
                     "description": "The link to the collection of resource blocks within the free pool.  Resource blocks in the free pool are not contributing to any composed resources.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ResourceBlockCollection`.  The members of this collection shall represent the resource blocks in the free pool.  Services shall filter members of this collection based on the requesting client.",
                     "readonly": true,
                     "versionAdded": "v1_2_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -289,13 +289,13 @@
                     "versionAdded": "v1_2_0"
                 },
                 "ResourceBlocks": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlockCollection.json#/definitions/ResourceBlockCollection",
                     "description": "The resource blocks available on the service.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ResourceBlockCollection`.",
                     "readonly": true
                 },
                 "ResourceZones": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ZoneCollection.json#/definitions/ZoneCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ZoneCollection.json#/definitions/ZoneCollection",
                     "description": "The resource zones available on the service.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ZoneCollection`.",
                     "readonly": true
@@ -310,7 +310,7 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 }

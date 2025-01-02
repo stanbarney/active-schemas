@@ -1,6 +1,6 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Resource.json",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Condition": {
@@ -23,7 +23,7 @@
             },
             "properties": {
                 "LogEntry": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.json#/definitions/LogEntry",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.json#/definitions/LogEntry",
                     "description": "The link to the log entry created for this condition.",
                     "longDescription": "This property shall contain a link to a resource of type `LogEntry` that represents the log entry created for this condition.",
                     "readonly": true
@@ -50,7 +50,7 @@
                     "type": "string"
                 },
                 "OriginOfCondition": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef",
                     "description": "A link to the resource or object that originated the condition.",
                     "longDescription": "This property shall contain a link to the resource or object that originated the condition.  This property shall not be present if the condition was caused by this resource.",
                     "readonly": true
@@ -65,7 +65,7 @@
                 "ResolutionSteps": {
                     "description": "The list of recommended steps to resolve the condition.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ResolutionStep.json#/definitions/ResolutionStep"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResolutionStep.json#/definitions/ResolutionStep"
                     },
                     "longDescription": "This property shall contain an array of recommended steps to resolve the condition.  A client can stop executing the resolution steps once the condition is removed from the resource.",
                     "type": "array",
@@ -136,64 +136,64 @@
         "Identifier": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_1_18.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_1_18.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_2_17.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_2_17.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_3_16.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_3_16.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_4_15.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_4_15.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_5_14.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_5_14.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_6_14.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_6_14.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_7_13.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_7_13.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_8_13.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_8_13.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_9_11.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_9_11.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_10_8.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_10_8.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_11_7.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_11_7.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_12_6.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_12_6.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_13_5.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_13_5.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_14_4.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_14_4.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_15_3.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_15_3.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_16_3.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_16_3.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_17_3.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_17_3.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_18_2.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_18_2.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_19_1.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_19_1.json#/definitions/Identifier"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_20_0.json#/definitions/Identifier"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_20_0.json#/definitions/Identifier"
                 }
             ],
             "description": "Any additional identifiers for a resource.",
@@ -220,7 +220,7 @@
         "Item": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
                     "$ref": "#/definitions/ReferenceableMember"
@@ -234,7 +234,7 @@
         "ItemOrCollection": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
                     "$ref": "#/definitions/Item"
@@ -272,64 +272,64 @@
         "Location": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_1_18.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_1_18.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_2_17.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_2_17.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_3_16.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_3_16.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_4_15.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_4_15.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_5_14.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_5_14.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_6_14.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_6_14.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_7_13.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_7_13.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_8_13.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_8_13.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_9_11.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_9_11.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_10_8.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_10_8.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_11_7.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_11_7.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_12_6.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_12_6.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_13_5.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_13_5.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_14_4.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_14_4.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_15_3.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_15_3.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_16_3.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_16_3.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_17_3.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_17_3.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_18_2.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_18_2.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_19_1.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_19_1.json#/definitions/Location"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_20_0.json#/definitions/Location"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_20_0.json#/definitions/Location"
                 }
             ],
             "description": "The location of a resource.",
@@ -408,70 +408,70 @@
         "ReferenceableMember": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_0_16.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_0_16.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_1_18.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_1_18.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_2_17.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_2_17.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_3_16.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_3_16.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_4_15.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_4_15.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_5_14.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_5_14.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_6_14.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_6_14.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_7_13.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_7_13.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_8_13.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_8_13.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_9_11.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_9_11.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_10_8.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_10_8.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_11_7.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_11_7.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_12_6.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_12_6.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_13_5.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_13_5.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_14_4.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_14_4.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_15_3.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_15_3.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_16_3.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_16_3.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_17_3.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_17_3.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_18_2.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_18_2.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_19_1.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_19_1.json#/definitions/ReferenceableMember"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_20_0.json#/definitions/ReferenceableMember"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_20_0.json#/definitions/ReferenceableMember"
                 }
             ]
         },
@@ -529,140 +529,140 @@
         "Resource": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_0_16.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_0_16.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_1_18.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_1_18.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_2_17.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_2_17.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_3_16.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_3_16.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_4_15.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_4_15.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_5_14.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_5_14.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_6_14.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_6_14.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_7_13.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_7_13.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_8_13.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_8_13.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_9_11.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_9_11.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_10_8.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_10_8.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_11_7.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_11_7.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_12_6.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_12_6.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_13_5.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_13_5.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_14_4.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_14_4.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_15_3.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_15_3.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_16_3.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_16_3.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_17_3.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_17_3.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_18_2.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_18_2.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_19_1.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_19_1.json#/definitions/Resource"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_20_0.json#/definitions/Resource"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_20_0.json#/definitions/Resource"
                 }
             ]
         },
         "ResourceCollection": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_0_16.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_0_16.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_1_18.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_1_18.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_2_17.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_2_17.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_3_16.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_3_16.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_4_15.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_4_15.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_5_14.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_5_14.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_6_14.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_6_14.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_7_13.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_7_13.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_8_13.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_8_13.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_9_11.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_9_11.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_10_8.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_10_8.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_11_7.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_11_7.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_12_6.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_12_6.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_13_5.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_13_5.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_14_4.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_14_4.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_15_3.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_15_3.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_16_3.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_16_3.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_17_3.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_17_3.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_18_2.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_18_2.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_19_1.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_19_1.json#/definitions/ResourceCollection"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.v1_20_0.json#/definitions/ResourceCollection"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.v1_20_0.json#/definitions/ResourceCollection"
                 }
             ]
         },

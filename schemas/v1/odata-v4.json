@@ -1,6 +1,6 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/odata-v4.json",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "definitions": {
         "context": {
             "type": "string",

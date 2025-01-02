@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/UpdateService.v1_14_1.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/UpdateService.v1_14_1.json",
     "$ref": "#/definitions/UpdateService",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -80,7 +80,7 @@
             "longDescription": "This action shall generate a new SSH identity key-pair to be used with the `UpdateService` resource.  The service shall store the generated public key in the `Key` resource referenced by the `PublicIdentitySSHKey` property.  If the `UpdateService` resource already has an associated SSH identity key-pair, the service shall delete the key-pair and replace it with the new key-pair.",
             "parameters": {
                 "Curve": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/ECDSACurveType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/ECDSACurveType",
                     "description": "The curve to use with the SSH key if the `KeyType` parameter contains `ECDSA`.",
                     "longDescription": "This parameter shall contain the curve to use with the SSH key.  This parameter shall be required if the `KeyType` parameter contains `ECDSA` and shall be rejected for other values."
                 },
@@ -90,7 +90,7 @@
                     "type": "integer"
                 },
                 "KeyType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/SSHKeyType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/SSHKeyType",
                     "description": "The type of SSH key.",
                     "longDescription": "This parameter shall contain the type of SSH key.",
                     "requiredParameter": true
@@ -456,7 +456,7 @@
                     "versionAdded": "v1_11_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_8_0"
@@ -498,16 +498,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -515,7 +515,7 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "ClientCertificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of client identity certificates provided to the server referenced by the `ImageURI` parameter in `SimpleUpdate`.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that represents the client identity certificates that are provided to the server referenced by the `ImageURI` parameter in `SimpleUpdate` as part of TLS handshaking.",
                     "readonly": true,
@@ -524,7 +524,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -533,7 +533,7 @@
                     "readonly": true
                 },
                 "FirmwareInventory": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventoryCollection.json#/definitions/SoftwareInventoryCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventoryCollection.json#/definitions/SoftwareInventoryCollection",
                     "description": "An inventory of firmware.",
                     "longDescription": "This property shall contain a link to a resource collection of type `SoftwareInventoryCollection`.  The resource collection should contain the set of software components generally referred to as platform firmware or that does not execute within a host operating system.  Software in this collection is generally updated using platform-specific methods or utilities.",
                     "readonly": true
@@ -587,7 +587,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "MaxImageSizeBytes": {
@@ -610,30 +610,30 @@
                     "versionAdded": "v1_6_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "PublicIdentitySSHKey": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/Key",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/Key",
                     "description": "A link to the public key that is used with the `SimpleUpdate` action for the key-based authentication.  The GenerateSSHIdentityKeyPair and RemoveSSHIdentityKeyPair are used to update the key for the `SimpleUpdate` action.",
                     "longDescription": "This property shall contain a link to a resource of type `Key` that represents the public key that is used with the `SimpleUpdate` action for the key-based authentication.  This property shall not be present if a key-pair is not available.",
                     "readonly": true,
                     "versionAdded": "v1_13_0"
                 },
                 "RemoteServerCertificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of server certificates for the server referenced by the `ImageURI` parameter in SimpleUpdate.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that represents the server certificates for the server referenced by the `ImageURI` parameter in `SimpleUpdate`.  If `VerifyRemoteServerCertificate` is `true`, services shall compare the certificates in this collection with the certificate obtained during handshaking with the image server in order to verify the identity of the image server prior to transferring the image.  If the server cannot be verified, the service shall not send the transfer request.  If `VerifyRemoteServerCertificate` is `false`, the service shall not perform certificate verification with certificates in this collection.  Regardless of the contents of this collection, services may perform additional verification based on other factors, such as the configuration of the `SecurityPolicy` resource.",
                     "readonly": true,
                     "versionAdded": "v1_9_0"
                 },
                 "RemoteServerSSHKeys": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/KeyCollection.json#/definitions/KeyCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/KeyCollection.json#/definitions/KeyCollection",
                     "description": "The link to a collection of keys that can be used to authenticate the server referenced by the `ImageURI` parameter in `SimpleUpdate`.",
                     "longDescription": "This property shall contain a link to a resource collection of type `KeyCollection` that represents the server SSH keys for the server referenced by the `ImageURI` Parameter in `SimpleUpdate`.  If `VerifyRemoteServerSSHKey` is `true`, services shall compare the keys in this collection with the key obtained during handshaking with the image server in order to verify the identity of the image server prior to transferring the image.  If the server cannot be verified, the service shall not send the transfer request.  If `VerifyRemoteServerSSHKey` is `false`, the service shall not perform key verification with keys in this collection.",
                     "readonly": true,
@@ -649,13 +649,13 @@
                     ]
                 },
                 "SoftwareInventory": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventoryCollection.json#/definitions/SoftwareInventoryCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventoryCollection.json#/definitions/SoftwareInventoryCollection",
                     "description": "An inventory of software.",
                     "longDescription": "This property shall contain a link to a resource collection of type `SoftwareInventoryCollection`.  The resource collection should contain the set of software components executed in the context of a host operating system.  This can include device drivers, applications, or offload workloads.  Software in this collection is generally updated using operating system-centric methods.",
                     "readonly": true
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },

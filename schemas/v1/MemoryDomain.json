@@ -1,31 +1,31 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.json",
     "$ref": "#/definitions/MemoryDomain",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "MemoryDomain": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.v1_0_6.json#/definitions/MemoryDomain"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.v1_0_6.json#/definitions/MemoryDomain"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.v1_1_5.json#/definitions/MemoryDomain"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.v1_1_5.json#/definitions/MemoryDomain"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.v1_2_4.json#/definitions/MemoryDomain"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.v1_2_4.json#/definitions/MemoryDomain"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.v1_3_1.json#/definitions/MemoryDomain"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.v1_3_1.json#/definitions/MemoryDomain"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.v1_4_1.json#/definitions/MemoryDomain"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.v1_4_1.json#/definitions/MemoryDomain"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomain.v1_5_1.json#/definitions/MemoryDomain"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomain.v1_5_1.json#/definitions/MemoryDomain"
                 }
             ],
             "deletable": false,

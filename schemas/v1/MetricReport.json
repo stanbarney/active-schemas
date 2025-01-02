@@ -1,31 +1,31 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/MetricReport.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.json",
     "$ref": "#/definitions/MetricReport",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "MetricReport": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReport.v1_0_10.json#/definitions/MetricReport"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.v1_0_10.json#/definitions/MetricReport"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReport.v1_1_9.json#/definitions/MetricReport"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.v1_1_9.json#/definitions/MetricReport"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReport.v1_2_7.json#/definitions/MetricReport"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.v1_2_7.json#/definitions/MetricReport"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReport.v1_3_7.json#/definitions/MetricReport"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.v1_3_7.json#/definitions/MetricReport"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReport.v1_4_5.json#/definitions/MetricReport"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.v1_4_5.json#/definitions/MetricReport"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReport.v1_5_2.json#/definitions/MetricReport"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReport.v1_5_2.json#/definitions/MetricReport"
                 }
             ],
             "deletable": true,

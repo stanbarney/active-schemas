@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_23_0.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_23_0.json",
     "$ref": "#/definitions/ComputerSystem",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -57,7 +57,7 @@
                     "type": "string"
                 },
                 "ResourceBlock": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.json#/definitions/ResourceBlock",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.json#/definitions/ResourceBlock",
                     "description": "The resource block to add to the system.",
                     "longDescription": "This parameter shall contain a link to the specified resource block to add to the system.",
                     "requiredParameter": true
@@ -138,7 +138,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/BootSource"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/BootSource"
                             },
                             {
                                 "type": "null"
@@ -186,7 +186,7 @@
                     "versionAdded": "v1_5_0"
                 },
                 "BootOptions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/BootOptionCollection.json#/definitions/BootOptionCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/BootOptionCollection.json#/definitions/BootOptionCollection",
                     "description": "The link to the collection of the UEFI boot options associated with this computer system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `BootOptionCollection`.",
                     "readonly": true,
@@ -249,7 +249,7 @@
                 "BootSourceOverrideTarget": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/BootSource"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/BootSource"
                         },
                         {
                             "type": "null"
@@ -260,7 +260,7 @@
                     "readonly": false
                 },
                 "Certificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of certificates used for booting through HTTPS by this computer system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection`.",
                     "readonly": true,
@@ -395,7 +395,7 @@
                     "versionAdded": "v1_13_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_13_0"
@@ -556,16 +556,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -582,7 +582,7 @@
                     ]
                 },
                 "Bios": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Bios.json#/definitions/Bios",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Bios.json#/definitions/Bios",
                     "description": "The link to the BIOS settings associated with this system.",
                     "longDescription": "This property shall contain a link to a resource of type `Bios` that lists the BIOS settings for this system.",
                     "readonly": true,
@@ -616,7 +616,7 @@
                     "versionAdded": "v1_13_0"
                 },
                 "Certificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of certificates for device identity and attestation.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that contains certificates for device identity and attestation.",
                     "readonly": true,
@@ -638,7 +638,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -647,13 +647,13 @@
                     "readonly": true
                 },
                 "EthernetInterfaces": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EthernetInterfaceCollection.json#/definitions/EthernetInterfaceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EthernetInterfaceCollection.json#/definitions/EthernetInterfaceCollection",
                     "description": "The link to the collection of Ethernet interfaces associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `EthernetInterfaceCollection`.",
                     "readonly": true
                 },
                 "FabricAdapters": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/FabricAdapterCollection.json#/definitions/FabricAdapterCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/FabricAdapterCollection.json#/definitions/FabricAdapterCollection",
                     "description": "The link to the collection of fabric adapters associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `FabricAdapterCollection`.",
                     "readonly": true,
@@ -666,7 +666,7 @@
                     "versionAdded": "v1_13_0"
                 },
                 "GraphicsControllers": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/GraphicsControllerCollection.json#/definitions/GraphicsControllerCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/GraphicsControllerCollection.json#/definitions/GraphicsControllerCollection",
                     "description": "The link to a collection of graphics controllers that can output video for this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `GraphicsControllerCollection` that contains graphics controllers that can output video for this system.",
                     "readonly": true,
@@ -704,7 +704,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "IdlePowerSaver": {
@@ -779,7 +779,7 @@
                     "versionAdded": "v1_13_0"
                 },
                 "LogServices": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogServiceCollection.json#/definitions/LogServiceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogServiceCollection.json#/definitions/LogServiceCollection",
                     "description": "The link to the collection of log services associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `LogServiceCollection`.",
                     "readonly": true
@@ -807,7 +807,7 @@
                     "deprecated": "This property has been deprecated in favor of the `ComponentIntegrity` resource.",
                     "description": "An array of DSP0274-defined measurement blocks.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
                     },
                     "longDescription": "This property shall contain an array of DSP0274-defined measurement blocks.",
                     "type": "array",
@@ -815,14 +815,14 @@
                     "versionDeprecated": "v1_17_0"
                 },
                 "Memory": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryCollection.json#/definitions/MemoryCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryCollection.json#/definitions/MemoryCollection",
                     "description": "The link to the collection of memory associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `MemoryCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_1_0"
                 },
                 "MemoryDomains": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryDomainCollection.json#/definitions/MemoryDomainCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryDomainCollection.json#/definitions/MemoryDomainCollection",
                     "description": "The link to the collection of memory domains associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `MemoryDomainCollection`.",
                     "readonly": true,
@@ -843,23 +843,23 @@
                     ]
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "NetworkInterfaces": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkInterfaceCollection.json#/definitions/NetworkInterfaceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkInterfaceCollection.json#/definitions/NetworkInterfaceCollection",
                     "description": "The link to the collection of Network Interfaces associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `NetworkInterfaceCollection`.",
                     "readonly": true,
                     "versionAdded": "v1_3_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "OperatingSystem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/OperatingSystem.json#/definitions/OperatingSystem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/OperatingSystem.json#/definitions/OperatingSystem",
                     "description": "The link to the operating system information associated with this system.",
                     "longDescription": "This property shall contain a link to a resource of type `OperatingSystem` that contains operating system information for this system.",
                     "readonly": true,
@@ -868,7 +868,7 @@
                 "PCIeDevices": {
                     "description": "The link to a collection of PCIe devices that this computer system uses.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeDevice.json#/definitions/PCIeDevice"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeDevice.json#/definitions/PCIeDevice"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `PCIeDevice`.",
                     "readonly": true,
@@ -876,12 +876,12 @@
                     "versionAdded": "v1_2_0"
                 },
                 "PCIeDevices@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "PCIeFunctions": {
                     "description": "The link to a collection of PCIe functions that this computer system uses.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `PCIeFunction`.",
                     "readonly": true,
@@ -889,7 +889,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "PCIeFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "PartNumber": {
                     "description": "The part number for this system.",
@@ -954,7 +954,7 @@
                 "PowerState": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/PowerState"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/PowerState"
                         },
                         {
                             "type": "null"
@@ -970,7 +970,7 @@
                     "longDescription": "This property shall describe the central processors for this resource.  Processors described by this property shall be limited to the processors that execute system code, and shall not include processors used for offload functionality."
                 },
                 "Processors": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ProcessorCollection.json#/definitions/ProcessorCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ProcessorCollection.json#/definitions/ProcessorCollection",
                     "description": "The link to the collection of processors associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ProcessorCollection`.",
                     "readonly": true
@@ -979,7 +979,7 @@
                     "autoExpand": true,
                     "description": "The link to a collection of redundancy entities.  Each entity specifies a kind and level of redundancy and a collection, or redundancy set, of other computer systems that provide the specified redundancy to this computer system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Redundancy.json#/definitions/Redundancy"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Redundancy.json#/definitions/Redundancy"
                     },
                     "longDescription": "This property shall contain a set of redundancy entities.  Each entity specifies a kind and level of redundancy and a collection, or redundancy set, of other computer systems that provide the specified redundancy to this computer system.",
                     "readonly": true,
@@ -987,7 +987,7 @@
                     "versionAdded": "v1_5_0"
                 },
                 "Redundancy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "SKU": {
                     "description": "The manufacturer SKU for this system.",
@@ -999,7 +999,7 @@
                     ]
                 },
                 "SecureBoot": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SecureBoot.json#/definitions/SecureBoot",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SecureBoot.json#/definitions/SecureBoot",
                     "description": "The link to the UEFI Secure Boot associated with this system.",
                     "longDescription": "This property shall contain a link to a resource of type `SecureBoot`.",
                     "readonly": true,
@@ -1021,18 +1021,18 @@
                     ]
                 },
                 "SimpleStorage": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SimpleStorageCollection.json#/definitions/SimpleStorageCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SimpleStorageCollection.json#/definitions/SimpleStorageCollection",
                     "description": "The link to the collection of storage devices associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `SimpleStorageCollection`.",
                     "readonly": true
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
                 "Storage": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/StorageCollection.json#/definitions/StorageCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/StorageCollection.json#/definitions/StorageCollection",
                     "description": "The link to the collection of storage devices associated with this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `StorageCollection`.",
                     "readonly": true,
@@ -1066,7 +1066,7 @@
                     "versionDeprecated": "v1_19_0"
                 },
                 "USBControllers": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/USBControllerCollection.json#/definitions/USBControllerCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/USBControllerCollection.json#/definitions/USBControllerCollection",
                     "description": "The link to a collection of USB controllers for this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `USBControllerCollection` that contains USB controllers for this system.",
                     "readonly": true,
@@ -1075,7 +1075,7 @@
                 "UUID": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/UUID"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/UUID"
                         },
                         {
                             "type": "null"
@@ -1086,7 +1086,7 @@
                     "readonly": true
                 },
                 "VirtualMedia": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/VirtualMediaCollection.json#/definitions/VirtualMediaCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/VirtualMediaCollection.json#/definitions/VirtualMediaCollection",
                     "description": "The link to the virtual media services for this system.",
                     "longDescription": "This property shall contain a link to a resource collection of type `VirtualMediaCollection` that this system uses.",
                     "readonly": true,
@@ -1335,13 +1335,13 @@
             },
             "properties": {
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_2_0"
                 },
                 "StorageServices": {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/HostedStorageServices.json#/definitions/HostedStorageServices",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/HostedStorageServices.json#/definitions/HostedStorageServices",
                     "description": "The link to a collection of storage services that this computer system supports.",
                     "longDescription": "This property shall contain a link to a resource collection of type `HostedStorageServices`.",
                     "readonly": true,
@@ -1630,7 +1630,7 @@
             },
             "properties": {
                 "KMIPCertificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of server certificates for the servers referenced by the `KMIPServers` property.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that represents the server certificates for the servers referenced by the `KMIPServers` property.",
                     "readonly": true,
@@ -1716,19 +1716,19 @@
                 "Chassis": {
                     "description": "An array of links to the chassis that contains this system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Chassis` that represent the physical containers associated with this resource.",
                     "readonly": true,
                     "type": "array"
                 },
                 "Chassis@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ConsumingComputerSystems": {
                     "description": "An array of links to computer systems that are realized, in whole or in part, from this computer system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
                     },
                     "longDescription": "The value shall be an array of links to computer systems that are realized, in whole or in part, from this computer system.",
                     "readonly": true,
@@ -1736,24 +1736,24 @@
                     "versionAdded": "v1_5_0"
                 },
                 "ConsumingComputerSystems@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "CooledBy": {
                     "description": "An array of links to resources or objects that cool this computer system.  Normally, the link is for either a chassis or a specific set of fans.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources or objects that cool this computer system.",
                     "readonly": true,
                     "type": "array"
                 },
                 "CooledBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Endpoints": {
                     "description": "An array of links to the endpoints that connect to this system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` with which this system is associated.",
                     "readonly": true,
@@ -1761,12 +1761,12 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Endpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "HostingComputerSystem": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
                         },
                         {
                             "type": "null"
@@ -1780,24 +1780,24 @@
                 "ManagedBy": {
                     "description": "An array of links to the managers responsible for this system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Manager.json#/definitions/Manager"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manager.json#/definitions/Manager"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Manager` that represent the resources with management responsibility for this resource.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ManagedBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "OffloadedNetworkDeviceFunctions": {
                     "description": "The network device functions to which this system performs offload computation, such as with a SmartNIC.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `NetworkDeviceFunction` that represent the network device functions to which this system performs offload computation, such as with a SmartNIC.  This property shall not be present if the `SystemType` property does not contain `DPU`.",
                     "readonly": true,
@@ -1805,24 +1805,24 @@
                     "versionAdded": "v1_17_0"
                 },
                 "OffloadedNetworkDeviceFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "PoweredBy": {
                     "description": "An array of links to resources or objects that power this computer system.  Normally, the link is for either a chassis or a specific set of power supplies.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources or objects that power this computer system.",
                     "readonly": true,
                     "type": "array"
                 },
                 "PoweredBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ResourceBlocks": {
                     "description": "An array of links to the resource blocks that are used in this computer system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.json#/definitions/ResourceBlock"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.json#/definitions/ResourceBlock"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `ResourceBlock` that show the resource blocks that are used in this computer system.",
                     "readonly": false,
@@ -1830,12 +1830,12 @@
                     "versionAdded": "v1_4_0"
                 },
                 "ResourceBlocks@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "SupplyingComputerSystems": {
                     "description": "An array of links to computer systems that contribute, in whole or in part, to the implementation of this computer system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
                     },
                     "longDescription": "The value shall be an array of links to computer systems that contribute, in whole or in part, to the implementation of this computer system.",
                     "readonly": true,
@@ -1843,12 +1843,12 @@
                     "versionAdded": "v1_5_0"
                 },
                 "SupplyingComputerSystems@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "TrustedComponents": {
                     "description": "An array of links to the trusted components for this system.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/TrustedComponent.json#/definitions/TrustedComponent"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/TrustedComponent.json#/definitions/TrustedComponent"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `TrustedComponent`.",
                     "readonly": true,
@@ -1856,12 +1856,12 @@
                     "versionAdded": "v1_19_0"
                 },
                 "TrustedComponents@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "VirtualMachines": {
                     "description": "An array of links to the virtual machines this system is hosting.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `ComputerSystem` that represent the virtual machines this system is hosting.",
                     "readonly": true,
@@ -1869,7 +1869,7 @@
                     "versionAdded": "v1_21_0"
                 },
                 "VirtualMachines@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -1923,14 +1923,14 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryMetrics.json#/definitions/MemoryMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryMetrics.json#/definitions/MemoryMetrics",
                     "description": "The link to the metrics associated with all memory in this system.",
                     "longDescription": "This property shall contain a link to the metrics associated with all memory in this system.",
                     "readonly": true,
                     "versionAdded": "v1_8_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "deprecated": "This property has been deprecated in favor of the `Conditions` property within `Status` in the root of this resource.",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource.",
@@ -2086,7 +2086,7 @@
                     "versionAdded": "v1_5_0"
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ProcessorMetrics.json#/definitions/ProcessorMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ProcessorMetrics.json#/definitions/ProcessorMetrics",
                     "description": "The link to the metrics associated with all processors in this system.",
                     "longDescription": "This property shall contain a link to the metrics associated with all processors in this system.",
                     "readonly": true,
@@ -2102,7 +2102,7 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "deprecated": "This property has been deprecated in favor of the `Conditions` property within `Status` in the root of this resource.",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource.",
@@ -2129,7 +2129,7 @@
                     "type": "string"
                 },
                 "ResourceBlock": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ResourceBlock.json#/definitions/ResourceBlock",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResourceBlock.json#/definitions/ResourceBlock",
                     "description": "The resource block to remove from the system.",
                     "longDescription": "This parameter shall contain a link to the specified resource block to remove from the system.",
                     "requiredParameter": true
@@ -2174,7 +2174,7 @@
             "longDescription": "This action shall reset the system represented by the resource.  For systems that implement ACPI Power Button functionality, the `PushPowerButton` value shall perform or emulate an ACPI Power Button Push, and the `ForceOff` value shall perform an ACPI Power Button Override, commonly known as a four-second hold of the power button.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and perform an implementation-specific default reset.  Services should include the `@Redfish.AllowableValues` annotation for this parameter to ensure compatibility with clients, even when `ActionInfo` has been implemented."
                 }
@@ -2444,13 +2444,13 @@
                     "versionAdded": "v1_3_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_1_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource.",
                     "versionAdded": "v1_1_0"
@@ -2546,13 +2546,13 @@
                     "versionAdded": "v1_5_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_5_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource.",
                     "versionAdded": "v1_5_0"

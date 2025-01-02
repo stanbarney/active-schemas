@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/AggregationSource.v1_4_3.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/AggregationSource.v1_4_3.json",
     "$ref": "#/definitions/AggregationSource",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -57,16 +57,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -83,7 +83,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -102,7 +102,7 @@
                     ]
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Links": {
@@ -111,11 +111,11 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -142,7 +142,7 @@
                     "versionAdded": "v1_3_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource.",
                     "versionAdded": "v1_3_0"
@@ -186,7 +186,7 @@
             "longDescription": "This action shall generate a new SSH identity key-pair to be used with this aggregation source.  The service shall store the generated public key in the `Key` resource referenced by the `PublicIdentityKey` property in `SSHSettings`.  If the aggregation source already has an associated SSH identity key-pair, the service shall delete the key-pair and replace it with the new key-pair.",
             "parameters": {
                 "Curve": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/ECDSACurveType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/ECDSACurveType",
                     "description": "The curve to use with the SSH key if the KeyType parameter contains `ECDSA`.",
                     "longDescription": "This parameter shall contain the curve to use with the SSH key.  This parameter shall be required if the `KeyType` parameter contains `ECDSA` and shall be rejected for other values."
                 },
@@ -196,7 +196,7 @@
                     "type": "integer"
                 },
                 "KeyType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/SSHKeyType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/SSHKeyType",
                     "description": "The type of SSH key.",
                     "longDescription": "This parameter shall contain the type of SSH key.",
                     "requiredParameter": true
@@ -250,27 +250,27 @@
             },
             "properties": {
                 "ConnectionMethod": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ConnectionMethod.json#/definitions/ConnectionMethod",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ConnectionMethod.json#/definitions/ConnectionMethod",
                     "description": "A link to the connection method used to contact this aggregation source.",
                     "longDescription": "This property shall a link to a resource of type `ConnectionMethod` that represents the method used to connect to the aggregation source.",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "ResourcesAccessed": {
                     "description": "An array links to the resources added to the service through this aggregation source.  It is recommended that this be the minimal number of properties needed to find the resources that would be lost when the aggregation source is deleted.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Resource"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Resource"
                     },
                     "longDescription": "This property shall contain an array of links to the resources added to the service through the aggregation source.  It is recommended that this be the minimal number of properties needed to find the resources that would be lost when the aggregation source is deleted.  For example, this could be the pointers to the members of the root-level collections or the manager of a BMC.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ResourcesAccessed@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -509,7 +509,7 @@
             },
             "properties": {
                 "PresentedPublicHostKey": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/Key",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/Key",
                     "description": "A link to the last public host key presented by the remote service corresponding to the aggregation source.  A client that trusts this public host key can add the public host key to the TrustedPublicHostKeys collection to allow SSH communication with the aggregation source.",
                     "longDescription": "This property shall contain a link to a resource of type `Key` that represents the last public host key presented by the remote service corresponding to the aggregation source.  This property shall not be present if a public host key has not yet been presented by the remote service.",
                     "readonly": true,
@@ -527,14 +527,14 @@
                     "versionAdded": "v1_3_0"
                 },
                 "PublicIdentityKey": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Key.json#/definitions/Key",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Key.json#/definitions/Key",
                     "description": "A link to the public key that is used with the aggregation source when the authentication method is configured to use a public key.  The GenerateSSHIdentityKeyPair and RemoveSSHIdentityKeyPair are used to update the key for this aggregation source.",
                     "longDescription": "This property shall contain a link to a resource of type `Key` that represents the public key that is used with the aggregation source when `UserAuthenticationMethod` contains `PublicKey`.  This property shall not be present if a key-pair is not available.  The `State` property within `Status` shall contain `Disabled` if a key-pair is not available and `UserAuthenticationMethod` contains `PublicKey`.",
                     "readonly": true,
                     "versionAdded": "v1_3_0"
                 },
                 "TrustedPublicHostKeys": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/KeyCollection.json#/definitions/KeyCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/KeyCollection.json#/definitions/KeyCollection",
                     "description": "A link to the trusted public host keys of the remote service corresponding to the aggregation source.  These trusted public host keys are used for authentication of the remote service with SSH.  An SSH public host key of the remote service can be added to this collection to allow for public key-based SSH authentication.",
                     "longDescription": "This property shall contain a link to a resource collection of type `KeyCollection` that represents the trusted public host keys of the remote service corresponding to the aggregation source.  If the associated connection method specifies SSH tunneling, the service shall compare the public host key presented by the remote service with members of this collection to determine if the remote service can be trusted.  If the remote service cannot be trusted, the `State` property within `Status` shall contain `Disabled` and the service shall not connect to the remote service.",
                     "readonly": true,

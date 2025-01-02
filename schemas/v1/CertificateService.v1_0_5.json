@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/CertificateService.v1_0_5.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateService.v1_0_5.json",
     "$ref": "#/definitions/CertificateService",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -57,16 +57,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -74,7 +74,7 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "CertificateLocations": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateLocations.json#/definitions/CertificateLocations",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateLocations.json#/definitions/CertificateLocations",
                     "description": "The information about the location of certificates.",
                     "longDescription": "This property shall contain a link to a resource of type `CertificateLocations`.",
                     "readonly": true
@@ -82,7 +82,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -91,15 +91,15 @@
                     "readonly": true
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 }
@@ -129,7 +129,7 @@
                     "type": "array"
                 },
                 "CertificateCollection": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to the certificate collection where the certificate is installed after the certificate authority (CA) signs the certificate.",
                     "longDescription": "This parameter shall contain a link to a resource collection of type `CertificateCollection` where the certificate is installed after the certificate authority (CA) signs the certificate.",
                     "requiredParameter": true
@@ -195,7 +195,7 @@
                 "KeyUsage": {
                     "description": "The usage of the key contained in the certificate.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/KeyUsage"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/KeyUsage"
                     },
                     "longDescription": "This parameter shall contain the usage of the key contained in the certificate.  If the client does not provide this value, the service can determine the appropriate key usage settings in the certificate signing request.",
                     "type": "array"
@@ -282,7 +282,7 @@
                     "type": "string"
                 },
                 "CertificateCollection": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to the certificate collection where the certificate is installed.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` where the certificate is installed after the certificate authority (CA) has signed the certificate.",
                     "readonly": true
@@ -327,13 +327,13 @@
                     "type": "string"
                 },
                 "CertificateType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/CertificateType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/CertificateType",
                     "description": "The format of the certificate.",
                     "longDescription": "This parameter shall contain the format type for the certificate.",
                     "requiredParameter": true
                 },
                 "CertificateUri": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "The link to the certificate that is being replaced.",
                     "longDescription": "This parameter shall contain a link to a resource of type `Certificate` that is being replaced.",
                     "requiredParameter": true

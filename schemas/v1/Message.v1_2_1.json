@@ -1,6 +1,6 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Message.v1_2_1.json",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Message.v1_2_1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Message": {
@@ -44,14 +44,14 @@
                     "type": "string"
                 },
                 "MessageSeverity": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Health",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Health",
                     "description": "The severity of the message.",
                     "longDescription": "This property shall contain the severity of the message.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
                     "readonly": true,
                     "versionAdded": "v1_1_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
@@ -73,7 +73,7 @@
                 "ResolutionSteps": {
                     "description": "The list of recommended steps to resolve the situation that caused the message.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ResolutionStep.json#/definitions/ResolutionStep"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResolutionStep.json#/definitions/ResolutionStep"
                     },
                     "longDescription": "This property shall contain an array of recommended steps to resolve the situation that caused the message.  This property shall not be present if the `MessageSeverity` or `Severity` properties contain `OK`.",
                     "type": "array",

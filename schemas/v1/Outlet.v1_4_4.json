@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Outlet.v1_4_4.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Outlet.v1_4_4.json",
     "$ref": "#/definitions/Outlet",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -59,7 +59,7 @@
                 "Line1": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
                         },
                         {
                             "type": "null"
@@ -72,7 +72,7 @@
                 "Line2": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
                         },
                         {
                             "type": "null"
@@ -85,7 +85,7 @@
                 "Line3": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
                         },
                         {
                             "type": "null"
@@ -98,7 +98,7 @@
                 "Neutral": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
                         },
                         {
                             "type": "null"
@@ -133,7 +133,7 @@
                 "BranchCircuit": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/Circuit"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/Circuit"
                         },
                         {
                             "type": "null"
@@ -146,7 +146,7 @@
                 "Chassis": {
                     "description": "Any array of links to chassis connected to this outlet.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Chassis` that represent the chassis connected to this outlet.",
                     "readonly": false,
@@ -154,12 +154,12 @@
                     "versionAdded": "v1_3_0"
                 },
                 "Chassis@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "DistributionCircuits": {
                     "description": "An array of links to mains or input circuits powered by this outlet.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/Circuit"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/Circuit"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Circuit` that represent the circuits powered by this outlet.  This property is used to show a connection to an input circuit downstream in a power distribution chain.",
                     "readonly": false,
@@ -167,17 +167,17 @@
                     "versionAdded": "v1_3_0"
                 },
                 "DistributionCircuits@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "PowerSupplies": {
                     "description": "An array of links to the power supplies connected to this outlet.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/PowerSupply.json#/definitions/PowerSupply"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PowerSupply.json#/definitions/PowerSupply"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `PowerSupply` that represent the power supplies connected to this outlet.",
                     "readonly": false,
@@ -185,7 +185,7 @@
                     "versionAdded": "v1_3_0"
                 },
                 "PowerSupplies@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -231,16 +231,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -257,7 +257,7 @@
                 "CurrentAmps": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorCurrentExcerpt"
                         },
                         {
                             "type": "null"
@@ -270,7 +270,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -294,7 +294,7 @@
                 "ElectricalContext": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/ElectricalContext"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/ElectricalContext"
                         },
                         {
                             "type": "null"
@@ -307,7 +307,7 @@
                 "EnergykWh": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorEnergykWhExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorEnergykWhExcerpt"
                         },
                         {
                             "type": "null"
@@ -320,7 +320,7 @@
                 "FrequencyHz": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorExcerpt"
                         },
                         {
                             "type": "null"
@@ -331,13 +331,13 @@
                     "longDescription": "This property shall contain the frequency, in hertz units, for this outlet.  The value of the `DataSourceUri` property, if present, shall reference a resource of type `Sensor` with the `ReadingType` property containing the value `Frequency`."
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "IndicatorLED": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/IndicatorLED"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/IndicatorLED"
                         },
                         {
                             "type": "null"
@@ -365,13 +365,13 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "NominalVoltage": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/NominalVoltageType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/NominalVoltageType"
                         },
                         {
                             "type": "null"
@@ -382,14 +382,14 @@
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "OutletType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Outlet.json#/definitions/ReceptacleType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Outlet.json#/definitions/ReceptacleType"
                         },
                         {
                             "type": "null"
@@ -402,7 +402,7 @@
                 "PhaseWiringType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/PhaseWiringType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/PhaseWiringType"
                         },
                         {
                             "type": "null"
@@ -464,7 +464,7 @@
                 "PowerLoadPercent": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorExcerpt"
                         },
                         {
                             "type": "null"
@@ -503,7 +503,7 @@
                     ]
                 },
                 "PowerRestorePolicy": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/PowerRestorePolicyTypes",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/PowerRestorePolicyTypes",
                     "description": "The desired power state of the outlet when power is restored after a power loss.",
                     "longDescription": "This property shall contain the desired `PowerState` of the outlet when power is applied.  The value `LastState` shall return the outlet to the `PowerState` it was in when power was lost.",
                     "readonly": false
@@ -511,7 +511,7 @@
                 "PowerState": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/PowerState"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/PowerState"
                         },
                         {
                             "type": "null"
@@ -531,7 +531,7 @@
                 "PowerWatts": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorPowerExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorPowerExcerpt"
                         },
                         {
                             "type": "null"
@@ -553,7 +553,7 @@
                     "units": "A"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -567,7 +567,7 @@
                 "Voltage": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"
@@ -605,7 +605,7 @@
             "longDescription": "This action shall control the power state of the outlet.",
             "parameters": {
                 "PowerState": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/PowerState",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/PowerState",
                     "description": "The desired power state of the outlet.",
                     "longDescription": "This parameter shall contain the desired power state of the outlet."
                 }
@@ -691,7 +691,7 @@
                 "Line1ToLine2": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"
@@ -704,7 +704,7 @@
                 "Line1ToNeutral": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"
@@ -717,7 +717,7 @@
                 "Line2ToLine3": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"
@@ -730,7 +730,7 @@
                 "Line2ToNeutral": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"
@@ -743,7 +743,7 @@
                 "Line3ToLine1": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"
@@ -756,7 +756,7 @@
                 "Line3ToNeutral": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Sensor.json#/definitions/SensorVoltageExcerpt"
                         },
                         {
                             "type": "null"

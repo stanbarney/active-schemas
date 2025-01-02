@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Circuit.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json",
     "$ref": "#/definitions/Circuit",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "BreakerStates": {
@@ -20,34 +20,34 @@
         "Circuit": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_0_6.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_0_6.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_1_5.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_1_5.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_2_4.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_2_4.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_3_4.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_3_4.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_4_4.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_4_4.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_5_3.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_5_3.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_6_3.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_6_3.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_7_3.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_7_3.json#/definitions/Circuit"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.v1_8_1.json#/definitions/Circuit"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.v1_8_1.json#/definitions/Circuit"
                 }
             ],
             "deletable": false,

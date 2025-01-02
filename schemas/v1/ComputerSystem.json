@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json",
     "$ref": "#/definitions/ComputerSystem",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "BootSource": {
@@ -53,79 +53,79 @@
         "ComputerSystem": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_0_24.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_0_24.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_1_22.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_1_22.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_2_21.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_2_21.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_3_20.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_3_20.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_4_19.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_4_19.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_5_18.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_5_18.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_6_16.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_6_16.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_7_15.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_7_15.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_8_14.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_8_14.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_9_14.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_9_14.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_10_13.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_10_13.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_11_12.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_11_12.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_12_11.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_12_11.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_13_10.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_13_10.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_14_9.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_14_9.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_15_8.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_15_8.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_16_9.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_16_9.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_17_8.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_17_8.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_18_7.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_18_7.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_19_7.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_19_7.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_20_6.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_20_6.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_21_4.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_21_4.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_22_3.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_22_3.json#/definitions/ComputerSystem"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.v1_23_0.json#/definitions/ComputerSystem"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.v1_23_0.json#/definitions/ComputerSystem"
                 }
             ],
             "deletable": true,
