@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/PowerDistribution.v1_0_9.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PowerDistribution.v1_0_9.json",
     "$ref": "#/definitions/PowerDistribution",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -56,17 +56,17 @@
                 "Chassis": {
                     "description": "An array of links to the chassis that contain this equipment.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Chassis` that represent the physical containers associated with this resource.",
                     "readonly": true,
                     "type": "array"
                 },
                 "Chassis@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Facility": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Facility.json#/definitions/Facility",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Facility.json#/definitions/Facility",
                     "description": "A link to the facility that contains this equipment.",
                     "longDescription": "This property shall contain a link to a resource of type `Facility` that represents the facility that contains this equipment.",
                     "readonly": true
@@ -74,17 +74,17 @@
                 "ManagedBy": {
                     "description": "An array of links to the managers responsible for managing this equipment.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Manager.json#/definitions/Manager"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manager.json#/definitions/Manager"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Manager` that represent the managers that manage this equipment.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ManagedBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 }
@@ -132,16 +132,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -158,7 +158,7 @@
                     ]
                 },
                 "Branches": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
                     "description": "A link to the branch circuits for this equipment.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CircuitCollection` that contains the branch circuits for this equipment.",
                     "readonly": true
@@ -166,7 +166,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -181,7 +181,7 @@
                     "readonly": true
                 },
                 "Feeders": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
                     "description": "A link to the feeder circuits for this equipment.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CircuitCollection` that contains the feeder circuits for this equipment.",
                     "readonly": true
@@ -193,7 +193,7 @@
                     "type": "string"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Links": {
@@ -202,12 +202,12 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the equipment.",
                     "longDescription": "This property shall contain the location information of the associated equipment."
                 },
                 "Mains": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
                     "description": "A link to the power input circuits for this equipment.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CircuitCollection` that contains the power input circuits for this equipment.",
                     "readonly": true
@@ -222,7 +222,7 @@
                     ]
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PowerDistributionMetrics.json#/definitions/PowerDistributionMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PowerDistributionMetrics.json#/definitions/PowerDistributionMetrics",
                     "description": "A link to the summary metrics for this equipment.",
                     "longDescription": "This property shall contain a link to a resource of type `PowerDistributionMetrics`.",
                     "readonly": true
@@ -237,22 +237,22 @@
                     ]
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "OutletGroups": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/OutletGroupCollection.json#/definitions/OutletGroupCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/OutletGroupCollection.json#/definitions/OutletGroupCollection",
                     "description": "A link to the outlet groups for this equipment.",
                     "longDescription": "This property shall contain a link to a resource collection of type `OutletCollection` that contains the outlet groups for this equipment.",
                     "readonly": true
                 },
                 "Outlets": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/OutletCollection.json#/definitions/OutletCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/OutletCollection.json#/definitions/OutletCollection",
                     "description": "A link to the outlets for this equipment.",
                     "longDescription": "This property shall contain a link to a resource collection of type `OutletCollection` that contains the outlets for this equipment.",
                     "readonly": true
@@ -277,7 +277,7 @@
                     ]
                 },
                 "Sensors": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SensorCollection.json#/definitions/SensorCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SensorCollection.json#/definitions/SensorCollection",
                     "description": "A link to the collection of sensors located in the equipment and sub-components.",
                     "longDescription": "This property shall be a link to a resource collection of type `SensorCollection` that contains the sensors located in the equipment and sub-components.",
                     "readonly": true
@@ -292,12 +292,12 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
                 "Subfeeds": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CircuitCollection.json#/definitions/CircuitCollection",
                     "description": "A link to the subfeed circuits for this equipment.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CircuitCollection` that contains the subfeed circuits for this equipment.",
                     "readonly": true
@@ -329,7 +329,7 @@
                 "UUID": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/UUID"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/UUID"
                         },
                         {
                             "type": "null"

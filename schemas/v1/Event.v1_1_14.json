@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Event.v1_1_14.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Event.v1_1_14.json",
     "$ref": "#/definitions/Event",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Event": {
@@ -24,10 +24,10 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Context": {
                     "description": "A context can be supplied at subscription time.  This property is the context value supplied by the subscriber.",
@@ -39,7 +39,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -57,18 +57,18 @@
                     "type": "array"
                 },
                 "Events@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 }
@@ -120,7 +120,7 @@
                     "type": "string"
                 },
                 "EventType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Event.json#/definitions/EventType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Event.json#/definitions/EventType",
                     "description": "The type of event.",
                     "longDescription": "This property shall indicate the type of event.",
                     "readonly": true
@@ -154,12 +154,12 @@
                     "type": "string"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "OriginOfCondition": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef",
                     "description": "A link to the resource or object that originated the condition that caused the event to be generated.",
                     "longDescription": "This property shall contain a link to the resource or object that originated the condition that caused the event to be generated.  If the event subscription has the `IncludeOriginOfCondition` property set to `true`, it shall include the entire resource or object referenced by the link.  For events that represent the creation or deletion of a resource, this property should reference the created or deleted resource and not the collection that contains the resource.",
                     "readonly": true

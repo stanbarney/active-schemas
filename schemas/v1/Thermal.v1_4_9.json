@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Thermal.v1_4_9.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Thermal.v1_4_9.json",
     "$ref": "#/definitions/Thermal",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Fan": {
@@ -22,7 +22,7 @@
             },
             "properties": {
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "Actions": {
                     "$ref": "#/definitions/FanActions",
@@ -31,7 +31,7 @@
                     "versionAdded": "v1_3_0"
                 },
                 "Assembly": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Assembly.json#/definitions/Assembly",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Assembly.json#/definitions/Assembly",
                     "description": "The link to the assembly associated with this fan.",
                     "longDescription": "This property shall contain a link to a resource of type `Assembly`.",
                     "readonly": true,
@@ -61,7 +61,7 @@
                 "IndicatorLED": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/IndicatorLED"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/IndicatorLED"
                         },
                         {
                             "type": "null"
@@ -73,7 +73,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the fan.",
                     "longDescription": "This property shall contain the location information of the associated fan.",
                     "versionAdded": "v1_4_0"
@@ -160,7 +160,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -175,7 +175,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "PhysicalContext": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
                     "description": "The area or device associated with this fan.",
                     "longDescription": "This property shall contain a description of the affected device or region within the chassis with which this fan is associated.",
                     "readonly": true
@@ -206,25 +206,25 @@
                 "Redundancy": {
                     "description": "The set of redundancy groups for this fan.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Redundancy.json#/definitions/Redundancy"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Redundancy.json#/definitions/Redundancy"
                     },
                     "longDescription": "This property shall contain an array of links to the redundancy groups to which this fan belongs.",
                     "type": "array"
                 },
                 "Redundancy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "RelatedItem": {
                     "description": "An array of links to resources or objects that this fan services.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources or objects that this fan services.",
                     "readonly": true,
                     "type": "array"
                 },
                 "RelatedItem@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "SerialNumber": {
                     "description": "The serial number for this fan.",
@@ -247,7 +247,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -363,7 +363,7 @@
             },
             "properties": {
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "Actions": {
                     "$ref": "#/definitions/TemperatureActions",
@@ -394,7 +394,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "DeltaPhysicalContext": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
                     "description": "The area or device to which the `DeltaReadingCelsius` temperature measurement applies, relative to `PhysicalContext`.",
                     "longDescription": "This property shall contain a description of the affected device or region within the chassis to which the `DeltaReadingCelsius` temperature measurement applies, relative to `PhysicalContext`.",
                     "readonly": true,
@@ -499,12 +499,12 @@
                     ]
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "PhysicalContext": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
                     "description": "The area or device to which this temperature measurement applies.",
                     "longDescription": "This property shall contain a description of the affected device or region within the chassis to which this temperature applies.",
                     "readonly": true
@@ -522,14 +522,14 @@
                 "RelatedItem": {
                     "description": "An array of links to resources or objects that represent areas or devices to which this temperature applies.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources or objects that represent areas or devices to which this temperature applies.",
                     "readonly": true,
                     "type": "array"
                 },
                 "RelatedItem@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "SensorNumber": {
                     "description": "The numerical identifier of the temperature sensor.",
@@ -541,7 +541,7 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -651,16 +651,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/ThermalActions",
@@ -671,7 +671,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -690,18 +690,18 @@
                     "type": "array"
                 },
                 "Fans@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -709,16 +709,16 @@
                     "autoExpand": true,
                     "description": "The redundancy information for the set of fans in this chassis.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Redundancy.json#/definitions/Redundancy"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Redundancy.json#/definitions/Redundancy"
                     },
                     "longDescription": "This property shall contain redundancy information for the fans in this chassis.",
                     "type": "array"
                 },
                 "Redundancy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -733,7 +733,7 @@
                     "type": "array"
                 },
                 "Temperatures@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "required": [

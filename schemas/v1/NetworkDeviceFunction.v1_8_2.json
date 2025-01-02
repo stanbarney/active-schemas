@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/NetworkDeviceFunction.v1_8_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkDeviceFunction.v1_8_2.json",
     "$ref": "#/definitions/NetworkDeviceFunction",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -146,7 +146,7 @@
                 "EthernetInterfaces": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/EthernetInterfaceCollection.json#/definitions/EthernetInterfaceCollection"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EthernetInterfaceCollection.json#/definitions/EthernetInterfaceCollection"
                         },
                         {
                             "type": "null"
@@ -197,13 +197,13 @@
                     ]
                 },
                 "VLAN": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/VLanNetworkInterface.json#/definitions/VLAN",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/VLanNetworkInterface.json#/definitions/VLAN",
                     "description": "The VLAN information for this interface.  If this network interface supports more than one VLAN, this property is not present.",
                     "longDescription": "This property shall contain the VLAN for this interface.  If this interface supports more than one VLAN, the `VLAN` property shall not be present and the `VLANs` property shall be present instead.",
                     "versionAdded": "v1_3_0"
                 },
                 "VLANs": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/VLanNetworkInterfaceCollection.json#/definitions/VLanNetworkInterfaceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/VLanNetworkInterfaceCollection.json#/definitions/VLanNetworkInterfaceCollection",
                     "deprecated": "This property has been deprecated in favor of representing multiple VLANs as `EthernetInterface` resources.",
                     "description": "The link to a collection of VLANs.  This property is used only if the interface supports more than one VLAN.",
                     "longDescription": "This property shall contain a link to a resource collection of type `VLanNetworkInterfaceCollection`.  If this property is used, the VLANEnabled and VLAN Id property shall not be used.",
@@ -564,7 +564,7 @@
                 "Endpoints": {
                     "description": "An array of links to endpoints associated with this network device function.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` that are associated with this network device function.",
                     "readonly": true,
@@ -572,10 +572,10 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Endpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "EthernetInterface": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EthernetInterface.json#/definitions/EthernetInterface",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EthernetInterface.json#/definitions/EthernetInterface",
                     "deprecated": "This property has been deprecated in favor of `EthernetInterfaces` as each `NetworkDeviceFunction` could have more than one `EthernetInterface`.",
                     "description": "The link to a virtual Ethernet interface that was created when one of the network device function VLANs is represented as a virtual NIC for the purpose of showing the IP address associated with that VLAN.",
                     "longDescription": "This property shall contain a link to a resource of type `EthernetInterface` that represents a virtual interface that was created when one of the network device function VLANs is represented as a virtual NIC for the purpose of showing the IP address associated with that VLAN.  The `EthernetInterfaceType` property of that resource shall contain the value `Virtual`.",
@@ -585,24 +585,24 @@
                 "EthernetInterfaces": {
                     "description": "The links to Ethernet interfaces that were created when one of the network device function VLANs is represented as a virtual NIC for the purpose of showing the IP address associated with that VLAN.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/EthernetInterface.json#/definitions/EthernetInterface"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EthernetInterface.json#/definitions/EthernetInterface"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `EthernetInterface` that represent the virtual interfaces that were created when one of the network device function VLANs is represented as a virtual NIC for the purpose of showing the IP address associated with that VLAN.",
                     "type": "array",
                     "versionAdded": "v1_7_0"
                 },
                 "EthernetInterfaces@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "OffloadProcessors": {
                     "description": "The processors that perform offload computation for this network function, such as with a SmartNIC.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Processor.json#/definitions/Processor"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Processor.json#/definitions/Processor"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Processor` that represent the processors that performs offload computation for this network function, such as with a SmartNIC.  This property shall not be present if `OffloadSystem` is present.",
                     "readonly": true,
@@ -610,29 +610,29 @@
                     "versionAdded": "v1_7_0"
                 },
                 "OffloadProcessors@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "OffloadSystem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem",
                     "description": "The system that performs offload computation for this network function, such as with a SmartNIC.",
                     "longDescription": "This property shall contain a link to a resource of type `ComputerSystem` that represents the system that performs offload computation for this network function, such as with a SmartNIC.  The `SystemType` property contained in the referenced `ComputerSystem` resource should contain the value `DPU`.  This property shall not be present if OffloadProcessors is present.",
                     "readonly": true,
                     "versionAdded": "v1_7_0"
                 },
                 "PCIeFunction": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction",
                     "description": "The link to the PCIe function associated with this network device function.",
                     "longDescription": "This property shall contain a link to a resource of type `PCIeFunction` that represents the PCIe function associated with this network device function.",
                     "readonly": true
                 },
                 "PhysicalNetworkPortAssignment": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Port.json#/definitions/Port",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Port.json#/definitions/Port",
                     "description": "The physical port to which this network device function is currently assigned.",
                     "longDescription": "This property shall contain a link to a resource of type `Port` to which this network device function is currently assigned.  This value shall be one of the `AssignablePhysicalPorts` array members.",
                     "versionAdded": "v1_5_0"
                 },
                 "PhysicalPortAssignment": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkPort.json#/definitions/NetworkPort",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkPort.json#/definitions/NetworkPort",
                     "deprecated": "This property has been deprecated in favor of the `PhysicalNetworkPortAssignment` property.",
                     "description": "The physical port to which this network device function is currently assigned.",
                     "longDescription": "This property shall contain a link to a resource of type `NetworkPort` to which this network device function is currently assigned.  This value shall be one of the AssignablePhysicalPorts array members.",
@@ -662,16 +662,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -680,7 +680,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "AllowDeny": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/AllowDenyCollection.json#/definitions/AllowDenyCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/AllowDenyCollection.json#/definitions/AllowDenyCollection",
                     "description": "The link to the collection of allow and deny permissions for packets leaving and arriving to this network device function.",
                     "longDescription": "This property shall contain a link to a resource collection of type `AllowDenyCollection` that contains the permissions for packets leaving and arriving to this network device function.",
                     "readonly": true,
@@ -689,7 +689,7 @@
                 "AssignablePhysicalNetworkPorts": {
                     "description": "An array of physical ports to which this network device function can be assigned.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Port.json#/definitions/Port"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Port.json#/definitions/Port"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Port` that are the physical ports to which this network device function can be assigned.",
                     "readonly": true,
@@ -697,13 +697,13 @@
                     "versionAdded": "v1_5_0"
                 },
                 "AssignablePhysicalNetworkPorts@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "AssignablePhysicalPorts": {
                     "deprecated": "This property has been deprecated in favor of the `AssignablePhysicalNetworkPorts` property.",
                     "description": "An array of physical ports to which this network device function can be assigned.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkPort.json#/definitions/NetworkPort"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkPort.json#/definitions/NetworkPort"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `NetworkPort` that are the physical ports to which this network device function can be assigned.",
                     "readonly": true,
@@ -711,7 +711,7 @@
                     "versionDeprecated": "v1_5_0"
                 },
                 "AssignablePhysicalPorts@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "BootMode": {
                     "anyOf": [
@@ -729,7 +729,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -757,7 +757,7 @@
                     "longDescription": "This property shall contain Fibre Channel capabilities, status, and configuration values for this network device function."
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "InfiniBand": {
@@ -799,7 +799,7 @@
                 "Metrics": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkDeviceFunctionMetrics.json#/definitions/NetworkDeviceFunctionMetrics"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkDeviceFunctionMetrics.json#/definitions/NetworkDeviceFunctionMetrics"
                         },
                         {
                             "type": "null"
@@ -811,7 +811,7 @@
                     "versionAdded": "v1_6_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "NetDevFuncCapabilities": {
@@ -844,12 +844,12 @@
                     "readonly": false
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "PhysicalNetworkPortAssignment": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Port.json#/definitions/Port",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Port.json#/definitions/Port",
                     "deprecated": "This property has been deprecated in favor of `PhysicalNetworkPortAssignment` within `Links` to avoid loops on expand.",
                     "description": "The physical port to which this network device function is currently assigned.",
                     "longDescription": "This property shall contain a link to a resource of type `Port` that is the physical port to which this network device function is currently assigned.  This value shall be one of the `AssignablePhysicalNetworkPorts` array members.",
@@ -858,7 +858,7 @@
                     "versionDeprecated": "v1_8_0"
                 },
                 "PhysicalPortAssignment": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkPort.json#/definitions/NetworkPort",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkPort.json#/definitions/NetworkPort",
                     "deprecated": "This property has been deprecated and moved to the `Links` property to avoid loops on expand.",
                     "description": "The physical port to which this network device function is currently assigned.",
                     "longDescription": "This property shall contain a link to a resource of type `NetworkPort` that is the physical port to which this network device function is currently assigned.  This value shall be one of the `AssignablePhysicalPorts` array members.",
@@ -876,7 +876,7 @@
                     "versionAdded": "v1_7_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },

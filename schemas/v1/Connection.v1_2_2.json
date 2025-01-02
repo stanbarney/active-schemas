@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Connection.v1_2_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Connection.v1_2_2.json",
     "$ref": "#/definitions/Connection",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "AccessCapability": {
@@ -163,16 +163,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -201,7 +201,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -210,7 +210,7 @@
                     "readonly": true
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Links": {
@@ -228,16 +228,16 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -456,55 +456,55 @@
                 "InitiatorEndpointGroups": {
                     "description": "An array of links to the initiator endpoint groups that are associated with this connection.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.json#/definitions/EndpointGroup"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.json#/definitions/EndpointGroup"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `EndpointGroup` that are the initiator endpoint groups associated with this connection.  If the referenced endpoint groups contain the `GroupType` property, the `GroupType` property shall contain the value `Initiator` or `Client`.  This property shall not be present if `InitiatorEndpoints` is present.",
                     "readonly": false,
                     "type": "array"
                 },
                 "InitiatorEndpointGroups@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "InitiatorEndpoints": {
                     "description": "An array of links to the initiator endpoints that are associated with this connection.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` that are the initiator endpoints associated with this connection.  If the referenced endpoints contain the `EntityRole` property, the `EntityRole` property shall contain the value `Initiator` or `Both`.  This property shall not be present if `InitiatorEndpointGroups` is present.",
                     "readonly": false,
                     "type": "array"
                 },
                 "InitiatorEndpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "TargetEndpointGroups": {
                     "description": "An array of links to the target endpoint groups that are associated with this connection.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroup.json#/definitions/EndpointGroup"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroup.json#/definitions/EndpointGroup"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `EndpointGroup` that are the target endpoint groups associated with this connection.  If the referenced endpoint groups contain the `GroupType` property, the `GroupType` property shall contain the value `Target` or `Server`.  This property shall not be present if `TargetEndpoints` is present.",
                     "readonly": false,
                     "type": "array"
                 },
                 "TargetEndpointGroups@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "TargetEndpoints": {
                     "description": "An array of links to the target endpoints that are associated with this connection.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` that are the target endpoints associated with this connection.  If the referenced endpoints contain the `EntityRole` property, the `EntityRole` property shall contain the value `Target` or `Both`.  This property shall not be present if `TargetEndpointGroups` is present.",
                     "readonly": false,
                     "type": "array"
                 },
                 "TargetEndpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -562,7 +562,7 @@
                 "MemoryChunk": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryChunks.json#/definitions/MemoryChunks"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryChunks.json#/definitions/MemoryChunks"
                         },
                         {
                             "type": "null"

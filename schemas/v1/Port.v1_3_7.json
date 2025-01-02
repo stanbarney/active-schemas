@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Port.v1_3_7.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Port.v1_3_7.json",
     "$ref": "#/definitions/Port",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -235,21 +235,21 @@
             },
             "properties": {
                 "LPRT": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/RouteEntryCollection.json#/definitions/RouteEntryCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/RouteEntryCollection.json#/definitions/RouteEntryCollection",
                     "description": "The Linear Packet Relay Table for the port.",
                     "longDescription": "This property shall contain a link to a resource collection of type `RouteEntryCollection`, and shall represent the Gen-Z Core Specification-defined Linear Packet Relay Table for this port.",
                     "readonly": true,
                     "versionAdded": "v1_2_0"
                 },
                 "MPRT": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/RouteEntryCollection.json#/definitions/RouteEntryCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/RouteEntryCollection.json#/definitions/RouteEntryCollection",
                     "description": "The Multi-subnet Packet Relay Table for the port.",
                     "longDescription": "This property shall contain a link to a resource collection of type `RouteEntryCollection`, and shall represent the Gen-Z Core Specification-defined Multi-subnet Packet Relay Table for this port.",
                     "readonly": true,
                     "versionAdded": "v1_2_0"
                 },
                 "VCAT": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/VCATEntryCollection.json#/definitions/VCATEntryCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/VCATEntryCollection.json#/definitions/VCATEntryCollection",
                     "description": "The Virtual Channel Action Table for the port.",
                     "longDescription": "This property shall contain a link to a resource collection of type `VCATEntryCollection`.",
                     "readonly": true,
@@ -399,19 +399,19 @@
                 "AssociatedEndpoints": {
                     "description": "An array of links to the endpoints at the other end of the link.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` that represent the endpoints to which this port is connected.",
                     "readonly": true,
                     "type": "array"
                 },
                 "AssociatedEndpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ConnectedPorts": {
                     "description": "An array of links to the remote device ports at the other end of the link.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Port.json#/definitions/Port"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Port.json#/definitions/Port"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Port` that represent the remote device ports to which this port is connected.",
                     "readonly": true,
@@ -419,34 +419,34 @@
                     "versionAdded": "v1_2_0"
                 },
                 "ConnectedPorts@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ConnectedSwitchPorts": {
                     "description": "An array of links to the switch ports at the other end of the link.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Port.json#/definitions/Port"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Port.json#/definitions/Port"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Port` that represent the switch ports to which this port is connected.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ConnectedSwitchPorts@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ConnectedSwitches": {
                     "description": "An array of links to the switches at the other end of the link.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Switch.json#/definitions/Switch"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Switch.json#/definitions/Switch"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Switch` that represent the switches to which this port is connected.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ConnectedSwitches@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 }
@@ -494,16 +494,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -530,7 +530,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -571,7 +571,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "InterfaceEnabled": {
@@ -634,7 +634,7 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the port.",
                     "longDescription": "This property shall contain the location information of the associated port.",
                     "versionAdded": "v1_1_0"
@@ -673,7 +673,7 @@
                 "Metrics": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/PortMetrics.json#/definitions/PortMetrics"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PortMetrics.json#/definitions/PortMetrics"
                         },
                         {
                             "type": "null"
@@ -685,11 +685,11 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -719,7 +719,7 @@
                 "PortProtocol": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Protocol.json#/definitions/Protocol"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Protocol.json#/definitions/Protocol"
                         },
                         {
                             "type": "null"
@@ -753,7 +753,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -832,7 +832,7 @@
             "longDescription": "This action shall reset this port.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and perform an implementation-specific default reset."
                 }

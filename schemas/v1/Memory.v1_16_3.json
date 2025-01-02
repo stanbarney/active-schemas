@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Memory.v1_16_3.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Memory.v1_16_3.json",
     "$ref": "#/definitions/Memory",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -166,7 +166,7 @@
                 "Batteries": {
                     "description": "The batteries that provide power to this memory device during a power-loss event.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Battery.json#/definitions/Battery"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Battery.json#/definitions/Battery"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Battery` that represent the batteries that provide power to this memory device during a power-loss event, such as with battery-backed NVDIMMs.  This property shall not be present if the batteries power the containing chassis as a whole rather than the individual memory device.",
                     "readonly": true,
@@ -174,24 +174,24 @@
                     "versionAdded": "v1_15_0"
                 },
                 "Batteries@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Chassis": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis",
                     "description": "The link to the chassis that contains this memory device.",
                     "longDescription": "This property shall contain a link to a resource of type `Chassis` that represents the physical container associated with this memory device.",
                     "readonly": true,
                     "versionAdded": "v1_2_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "Processors": {
                     "description": "An array of links to the processors associated with this memory device.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Processor.json#/definitions/Processor"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Processor.json#/definitions/Processor"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Processor` that are associated with this memory device.",
                     "readonly": true,
@@ -199,7 +199,7 @@
                     "versionAdded": "v1_11_0"
                 },
                 "Processors@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -224,16 +224,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -273,7 +273,7 @@
                     "units": "MHz"
                 },
                 "Assembly": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Assembly.json#/definitions/Assembly",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Assembly.json#/definitions/Assembly",
                     "description": "The link to the assembly resource associated with this memory device.",
                     "longDescription": "This property shall contain a link to a resource of type `Assembly`.",
                     "readonly": true,
@@ -323,7 +323,7 @@
                     "units": "MiBy"
                 },
                 "Certificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of certificates for device identity and attestation.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that contains certificates for device identity and attestation.",
                     "readonly": true,
@@ -351,7 +351,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -389,7 +389,7 @@
                     "versionAdded": "v1_12_0"
                 },
                 "EnvironmentMetrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
                     "description": "The link to the environment metrics for this memory.",
                     "longDescription": "This property shall contain a link to a resource of type `EnvironmentMetrics` that specifies the environment metrics for this memory.",
                     "readonly": true,
@@ -438,7 +438,7 @@
                     "versionDeprecated": "v1_3_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "IsRankSpareEnabled": {
@@ -466,7 +466,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the memory device.",
                     "longDescription": "This property shall contain the location information of the associated memory device.",
                     "versionAdded": "v1_4_0"
@@ -482,7 +482,7 @@
                     "versionAdded": "v1_10_0"
                 },
                 "Log": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogService.json#/definitions/LogService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogService.json#/definitions/LogService",
                     "description": "The link to the log service associated with this memory.",
                     "longDescription": "This property shall contain a link to a resource of type `LogService`.",
                     "readonly": true,
@@ -523,7 +523,7 @@
                     "deprecated": "This property has been deprecated in favor of the `ComponentIntegrity` resource.",
                     "description": "An array of DSP0274-defined measurement blocks.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
                     },
                     "longDescription": "This property shall contain an array of DSP0274-defined measurement blocks.",
                     "type": "array",
@@ -593,7 +593,7 @@
                     "readonly": true
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryMetrics.json#/definitions/MemoryMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryMetrics.json#/definitions/MemoryMetrics",
                     "description": "The link to the metrics associated with this memory device.",
                     "longDescription": "The link to the metrics associated with this memory device.",
                     "readonly": true,
@@ -632,7 +632,7 @@
                     "versionAdded": "v1_3_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "NonVolatileSizeMiB": {
@@ -647,7 +647,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -673,7 +673,7 @@
                 "OperatingSpeedRangeMHz": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Control.json#/definitions/ControlRangeExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Control.json#/definitions/ControlRangeExcerpt"
                         },
                         {
                             "type": "null"
@@ -795,7 +795,7 @@
                     "versionAdded": "v1_11_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource.",
                     "versionAdded": "v1_1_0"
@@ -1318,7 +1318,7 @@
             "longDescription": "This action shall reset this memory device.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and perform an implementation-specific default reset."
                 }

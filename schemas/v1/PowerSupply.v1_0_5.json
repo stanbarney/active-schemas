@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/PowerSupply.v1_0_5.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PowerSupply.v1_0_5.json",
     "$ref": "#/definitions/PowerSupply",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -113,7 +113,7 @@
                 "NominalVoltageType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/NominalVoltageType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/NominalVoltageType"
                         },
                         {
                             "type": "null"
@@ -146,12 +146,12 @@
             },
             "properties": {
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "Outlet": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Outlet.json#/definitions/Outlet",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Outlet.json#/definitions/Outlet",
                     "description": "A link to the outlet connected to this power supply.",
                     "longDescription": "This property shall contain a link to a resource of type `Outlet` that represents the outlet connected to this power supply.",
                     "readonly": false
@@ -209,7 +209,7 @@
                     ]
                 },
                 "PhysicalContext": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PhysicalContext.json#/definitions/PhysicalContext",
                     "description": "The area or device to which this power rail applies.",
                     "longDescription": "This property shall contain a description of the device or region within the chassis to which this power rail applies.",
                     "readonly": true
@@ -237,16 +237,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -254,7 +254,7 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "Assembly": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Assembly.json#/definitions/Assembly",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Assembly.json#/definitions/Assembly",
                     "description": "The link to the assembly associated with this power supply.",
                     "longDescription": "This property shall contain a link to a resource of type `Assembly`.",
                     "readonly": true
@@ -262,7 +262,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -304,13 +304,13 @@
                     ]
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "InputNominalVoltageType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/NominalVoltageType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/NominalVoltageType"
                         },
                         {
                             "type": "null"
@@ -334,7 +334,7 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the power supply.",
                     "longDescription": "This property shall contain the location information of the power supply.  For a resource in the `Absent` state, this property describes the empty location, such as a slot, socket, or bay, to represent the available capacity."
                 },
@@ -357,7 +357,7 @@
                     ]
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PowerSupplyMetrics.json#/definitions/PowerSupplyMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PowerSupplyMetrics.json#/definitions/PowerSupplyMetrics",
                     "description": "The link to the power supply metrics resource associated with this power supply.",
                     "longDescription": "This property shall contain a link to a resource of type `PowerSupplyMetrics`.",
                     "readonly": true
@@ -372,11 +372,11 @@
                     ]
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -400,7 +400,7 @@
                 "PhaseWiringType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/PhaseWiringType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/PhaseWiringType"
                         },
                         {
                             "type": "null"
@@ -413,7 +413,7 @@
                 "PlugType": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Circuit.json#/definitions/PlugType"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Circuit.json#/definitions/PlugType"
                         },
                         {
                             "type": "null"
@@ -466,7 +466,7 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 }
@@ -498,7 +498,7 @@
             "longDescription": "This action shall reset a power supply.  A `GracefulRestart` `ResetType` shall reset the power supply but shall not affect the power output.  A `ForceRestart` `ResetType` can affect the power supply output.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and shall perform a `GracefulRestart`."
                 }

@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Chassis.v1_2_16.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.v1_2_16.json",
     "$ref": "#/definitions/Chassis",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -54,16 +54,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -88,7 +88,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -97,7 +97,7 @@
                     "readonly": true
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "IndicatorLED": {
@@ -119,13 +119,13 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the chassis.",
                     "longDescription": "This property shall contain the location information of the associated chassis.",
                     "versionAdded": "v1_2_0"
                 },
                 "LogServices": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogServiceCollection.json#/definitions/LogServiceCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogServiceCollection.json#/definitions/LogServiceCollection",
                     "description": "The link to the logs for this chassis.",
                     "longDescription": "This property shall contain a link to a resource collection of type `LogServiceCollection`.",
                     "readonly": true
@@ -149,11 +149,11 @@
                     ]
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -173,7 +173,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Power": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Power.json#/definitions/Power",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Power.json#/definitions/Power",
                     "description": "The link to the power properties, or power supplies, power policies, and sensors, for this chassis.",
                     "longDescription": "This property shall contain a link to a resource of type `Power` that represents the power characteristics of this chassis.",
                     "readonly": true
@@ -181,7 +181,7 @@
                 "PowerState": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/PowerState"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/PowerState"
                         },
                         {
                             "type": "null"
@@ -211,12 +211,12 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
                 "Thermal": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Thermal.json#/definitions/Thermal",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Thermal.json#/definitions/Thermal",
                     "description": "The link to the thermal properties, such as fans, cooling, and sensors, for this chassis.",
                     "longDescription": "This property shall contain a link to a resource of type `Thermal` that represents the thermal characteristics of this chassis.",
                     "readonly": true
@@ -351,17 +351,17 @@
                 "ComputerSystems": {
                     "description": "An array of links to the computer systems that this chassis directly and wholly contains.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComputerSystem.json#/definitions/ComputerSystem"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `ComputerSystem` with which this physical container is associated.  If a chassis also links to a computer system to which this resource also links, this chassis shall not link to that computer system.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ComputerSystems@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ContainedBy": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis",
                     "description": "The link to the chassis that contains this chassis.",
                     "longDescription": "This property shall contain a link to a resource of type `Chassis` that represents the chassis that contains this chassis.",
                     "readonly": false
@@ -369,31 +369,31 @@
                 "Contains": {
                     "description": "An array of links to any other chassis that this chassis has in it.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Chassis` that represent the chassis instances that this chassis contains.",
                     "readonly": false,
                     "type": "array"
                 },
                 "Contains@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "CooledBy": {
                     "description": "An array of links to resources or objects that cool this chassis.  Normally, the link is for either a chassis or a specific set of fans.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources or objects that cool this chassis.",
                     "readonly": true,
                     "type": "array"
                 },
                 "CooledBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Drives": {
                     "description": "An array of links to the drives located in this chassis.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Drive.json#/definitions/Drive"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Drive.json#/definitions/Drive"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Drive` that are in this chassis.",
                     "readonly": true,
@@ -401,24 +401,24 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Drives@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ManagedBy": {
                     "description": "An array of links to the managers responsible for managing this chassis.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Manager.json#/definitions/Manager"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manager.json#/definitions/Manager"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Manager` that manage this chassis.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ManagedBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ManagersInChassis": {
                     "description": "An array of links to the managers located in this chassis.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Manager.json#/definitions/Manager"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Manager.json#/definitions/Manager"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Manager` that are in this chassis.",
                     "readonly": true,
@@ -426,29 +426,29 @@
                     "versionAdded": "v1_2_0"
                 },
                 "ManagersInChassis@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "PoweredBy": {
                     "description": "An array of links to resources or objects that power this chassis.  Normally, the link is for either a chassis or a specific set of power supplies.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources or objects that power this chassis.",
                     "readonly": true,
                     "type": "array"
                 },
                 "PoweredBy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Storage": {
                     "description": "An array of links to the storage subsystems connected to or inside this chassis.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Storage.json#/definitions/Storage"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Storage.json#/definitions/Storage"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Storage` that are connected to or contained in this chassis.",
                     "readonly": true,
@@ -456,7 +456,7 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Storage@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -548,7 +548,7 @@
             "longDescription": "This action shall reset the chassis.  Additionally, it may reset systems or other contained resources depending on the `ResetType` used to invoke this action.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and complete an implementation-specific default reset.  Services should include the `@Redfish.AllowableValues` annotation for this parameter to ensure compatibility with clients, even when `ActionInfo` has been implemented."
                 }

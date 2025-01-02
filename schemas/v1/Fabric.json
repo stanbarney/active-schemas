@@ -1,25 +1,25 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Fabric.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Fabric.json",
     "$ref": "#/definitions/Fabric",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Fabric": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Fabric.v1_0_10.json#/definitions/Fabric"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Fabric.v1_0_10.json#/definitions/Fabric"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Fabric.v1_1_4.json#/definitions/Fabric"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Fabric.v1_1_4.json#/definitions/Fabric"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Fabric.v1_2_3.json#/definitions/Fabric"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Fabric.v1_2_3.json#/definitions/Fabric"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Fabric.v1_3_2.json#/definitions/Fabric"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Fabric.v1_3_2.json#/definitions/Fabric"
                 }
             ],
             "deletable": false,

@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/StorageController.v1_7_4.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/StorageController.v1_7_4.json",
     "$ref": "#/definitions/StorageController",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "ANAAccessState": {
@@ -129,7 +129,7 @@
                     "versionAdded": "v1_7_0"
                 },
                 "AttachedVolumes@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "required": [
@@ -214,7 +214,7 @@
                     "units": "MiBy"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -310,12 +310,12 @@
                     "type": "array"
                 },
                 "AttachedVolumes@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Batteries": {
                     "description": "The batteries that provide power to this storage controller during a power-loss event.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Battery.json#/definitions/Battery"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Battery.json#/definitions/Battery"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Battery` that represent the batteries that provide power to this storage controller during a power-loss event, such as with battery-backed RAID controllers.  This property shall not be present if the batteries power the containing chassis as a whole rather than the individual storage controller.",
                     "readonly": true,
@@ -323,24 +323,24 @@
                     "versionAdded": "v1_6_0"
                 },
                 "Batteries@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Endpoints": {
                     "description": "An array of links to the endpoints that connect to this controller.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` with which this controller is associated.",
                     "readonly": true,
                     "type": "array"
                 },
                 "Endpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "NVMeDiscoveredSubsystems": {
                     "description": "The NVMe subsystems discovered by this discovery controller.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Storage.json#/definitions/Storage"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Storage.json#/definitions/Storage"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Storage` that represent the NVMe subsystems discovered by this discovery controller.  This property shall only be present if `ControllerType` in `NVMeControllerProperties` contains `Discovery`.",
                     "readonly": true,
@@ -348,12 +348,12 @@
                     "versionAdded": "v1_7_0"
                 },
                 "NVMeDiscoveredSubsystems@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "NetworkDeviceFunctions": {
                     "description": "The network device functions that provide connectivity to this controller.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `NetworkDeviceFunction` that represent the devices that provide connectivity to this controller.",
                     "readonly": true,
@@ -361,24 +361,24 @@
                     "versionAdded": "v1_3_0"
                 },
                 "NetworkDeviceFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "PCIeFunctions": {
                     "description": "An array of links to the PCIe functions that the storage controller produces.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `PCIeFunction` that represent the PCIe functions associated with this resource.",
                     "readonly": true,
                     "type": "array"
                 },
                 "PCIeFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -932,16 +932,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -949,7 +949,7 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "Assembly": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Assembly.json#/definitions/Assembly",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Assembly.json#/definitions/Assembly",
                     "description": "The link to the assembly associated with this storage controller.",
                     "longDescription": "This property shall contain a link to a resource of type `Assembly`.",
                     "readonly": true
@@ -969,7 +969,7 @@
                     "longDescription": "This property shall contain properties that describe the cache memory for this resource."
                 },
                 "Certificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of certificates for device identity and attestation.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that contains certificates for device identity and attestation.",
                     "readonly": true,
@@ -983,7 +983,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -992,7 +992,7 @@
                     "readonly": true
                 },
                 "EnvironmentMetrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
                     "description": "The link to the environment metrics for this storage controller.",
                     "longDescription": "This property shall contain a link to a resource of type `EnvironmentMetrics` that represents the environment metrics for this storage controller.",
                     "readonly": true,
@@ -1008,13 +1008,13 @@
                     ]
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Identifiers": {
                     "description": "The durable names for the storage controller.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Identifier"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Identifier"
                     },
                     "longDescription": "This property shall contain a list of all known durable names for the associated storage controller.",
                     "type": "array"
@@ -1025,7 +1025,7 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the storage controller.",
                     "longDescription": "This property shall contain the location information of the associated storage controller."
                 },
@@ -1042,7 +1042,7 @@
                     "deprecated": "This property has been deprecated in favor of the `ComponentIntegrity` resource.",
                     "description": "An array of DSP0274-defined measurement blocks.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
                     },
                     "longDescription": "This property shall contain an array of DSP0274-defined measurement blocks.",
                     "type": "array",
@@ -1052,7 +1052,7 @@
                 "Metrics": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/StorageControllerMetrics.json#/definitions/StorageControllerMetrics"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/StorageControllerMetrics.json#/definitions/StorageControllerMetrics"
                         },
                         {
                             "type": "null"
@@ -1078,16 +1078,16 @@
                     "longDescription": "This property shall contain NVMe-related properties for this storage controller."
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "PCIeInterface": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeDevice.json#/definitions/PCIeInterface",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeDevice.json#/definitions/PCIeInterface",
                     "description": "The PCIe interface details for this controller.",
                     "longDescription": "This property shall contain details on the PCIe interface that connects this PCIe-based controller to its host."
                 },
@@ -1101,7 +1101,7 @@
                     ]
                 },
                 "Ports": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PortCollection.json#/definitions/PortCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PortCollection.json#/definitions/PortCollection",
                     "description": "The link to the collection of ports that exist on the storage controller.",
                     "longDescription": "This property shall contain a link to a resource collection of type `PortCollection`.",
                     "readonly": true
@@ -1136,14 +1136,14 @@
                     "units": "Gbit/s"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
                 "SupportedControllerProtocols": {
                     "description": "The supported set of protocols for communicating with this storage controller.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Protocol.json#/definitions/Protocol"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Protocol.json#/definitions/Protocol"
                     },
                     "longDescription": "This property shall contain the supported set of protocols for communicating with this storage controller.",
                     "readonly": true,
@@ -1152,7 +1152,7 @@
                 "SupportedDeviceProtocols": {
                     "description": "The protocols that the storage controller can use to communicate with attached devices.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Protocol.json#/definitions/Protocol"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Protocol.json#/definitions/Protocol"
                     },
                     "longDescription": "This property shall contain the set of protocols this storage controller can use to communicate with attached devices.",
                     "readonly": true,

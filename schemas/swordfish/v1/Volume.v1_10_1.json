@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/Volume.v1_10_1.json",
     "$ref": "#/definitions/Volume",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
     "definitions": {
         "ALUA": {
@@ -150,7 +150,7 @@
                 "Drives": {
                     "description": "An array of the drives to be used by the volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Drive.json#/definitions/Drive"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Drive.json#/definitions/Drive"
                     },
                     "longDescription": "This parameter shall contain an array of the drives to be used by the volume.",
                     "type": "array"
@@ -463,7 +463,7 @@
                     "versionAdded": "v1_6_0"
                 },
                 "CacheDataVolumes@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "CacheVolumeSource": {
                     "anyOf": [
@@ -489,7 +489,7 @@
                 "ClientEndpoints": {
                     "description": "An array of references to the client Endpoints associated with this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "The value of this property shall be references to the client Endpoints this volume is associated with.",
                     "readonly": true,
@@ -497,7 +497,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "ClientEndpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ConsistencyGroups": {
                     "description": "An array of references to the ConsistencyGroups associated with this volume.",
@@ -510,24 +510,24 @@
                     "versionAdded": "v1_4_0"
                 },
                 "ConsistencyGroups@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Controllers": {
                     "description": "An array of the Controllers associated with this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/StorageController.json#/definitions/StorageController"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/StorageController.json#/definitions/StorageController"
                     },
                     "longDescription": "This parameter shall contain an array of the controllers (of type StorageController) associated with this volume. When the volume is of type NVMe, these may be both the physical and logical controller representations.",
                     "type": "array",
                     "versionAdded": "v1_9_0"
                 },
                 "Controllers@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "DedicatedSpareDrives": {
                     "description": "An array of references to the drives which are dedicated spares for this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Drive.json#/definitions/Drive"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Drive.json#/definitions/Drive"
                     },
                     "longDescription": "The value of this property shall be a reference to the resources that this volume is associated with and shall reference resources of type Drive. This property shall only contain references to Drive entities which are currently assigned as a dedicated spare and are able to support this Volume.",
                     "readonly": false,
@@ -535,24 +535,24 @@
                     "versionAdded": "v1_2_0"
                 },
                 "DedicatedSpareDrives@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Drives": {
                     "description": "An array of references to the drives which contain this volume. This will reference Drives that either wholly or only partly contain this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Drive.json#/definitions/Drive"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Drive.json#/definitions/Drive"
                     },
                     "longDescription": "The value of this property shall be a reference to the resources that this volume is associated with and shall reference resources of type Drive. This property shall only contain references to Drive entities which are currently members of the Volume, not hot spare Drives which are not currently a member of the volume.",
                     "readonly": true,
                     "type": "array"
                 },
                 "Drives@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "JournalingMedia": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Resource"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Resource"
                         },
                         {
                             "type": "null"
@@ -564,12 +564,12 @@
                     "versionAdded": "v1_5_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "OwningStorageResource": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Storage.json#/definitions/Storage",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Storage.json#/definitions/Storage",
                     "description": "A pointer to the Storage resource that owns or contains this volume.",
                     "longDescription": "This shall be a pointer to the Storage resource that owns or contains this volume.",
                     "readonly": true,
@@ -598,7 +598,7 @@
                 "ServerEndpoints": {
                     "description": "An array of references to the server Endpoints associated with this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "The value of this property shall be references to the server Endpoints this volume is associated with.",
                     "readonly": true,
@@ -606,7 +606,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "ServerEndpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "SpareResourceSets": {
                     "description": "An array of references to SpareResourceSets.",
@@ -619,7 +619,7 @@
                     "versionAdded": "v1_3_0"
                 },
                 "SpareResourceSets@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "StorageGroups": {
                     "description": "An array of references to the StorageGroups associated with this volume.",
@@ -632,7 +632,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "StorageGroups@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -1200,16 +1200,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "ALUA": {
                     "anyOf": [
@@ -1291,7 +1291,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "CapacitySources@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Compressed": {
                     "description": "Indicator of whether or not the Volume has compression enabled.",
@@ -1306,7 +1306,7 @@
                 "Connections": {
                     "description": "An array of references to Connections that includes this volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Connection.json#/definitions/Connection"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Connection.json#/definitions/Connection"
                     },
                     "longDescription": "The value of this property shall contain references to all Connections that include this volume.",
                     "readonly": true,
@@ -1314,7 +1314,7 @@
                     "versionAdded": "v1_9_0"
                 },
                 "Connections@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Deduplicated": {
                     "description": "Indicator of whether or not the Volume has deduplication enabled.",
@@ -1329,7 +1329,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -1384,13 +1384,13 @@
                     "versionDeprecated": "v1_10_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Identifiers": {
                     "description": "The Durable names for the volume.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Identifier"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Identifier"
                     },
                     "longDescription": "This property shall contain a list of all known durable names for the associated volume.",
                     "type": "array"
@@ -1510,11 +1510,11 @@
                     "versionAdded": "v1_5_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -1620,7 +1620,7 @@
                 "ReplicaTargets": {
                     "description": "The resources that are target replicas of this source.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "The value shall reference the target replicas that are sourced by this replica.",
                     "readonly": true,
@@ -1628,7 +1628,7 @@
                     "versionAdded": "v1_3_0"
                 },
                 "ReplicaTargets@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ReplicationEnabled": {
                     "description": "Indicates whether or not replication is enabled on the volume.",
@@ -1641,7 +1641,7 @@
                     "versionAdded": "v1_9_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The property contains the status of the Volume.",
                     "longDescription": "The property shall contain the status of the Volume."
                 },

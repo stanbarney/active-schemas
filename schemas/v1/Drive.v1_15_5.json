@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Drive.v1_15_5.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Drive.v1_15_5.json",
     "$ref": "#/definitions/Drive",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -75,16 +75,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -92,7 +92,7 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "Assembly": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Assembly.json#/definitions/Assembly",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Assembly.json#/definitions/Assembly",
                     "description": "The link to the assembly associated with this drive.",
                     "longDescription": "This property shall contain a link to a resource of type `Assembly`.",
                     "readonly": true,
@@ -138,7 +138,7 @@
                     "units": "By"
                 },
                 "Certificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of certificates for device identity and attestation.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that contains certificates for device identity and attestation.",
                     "readonly": true,
@@ -147,7 +147,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -182,7 +182,7 @@
                     "readonly": true
                 },
                 "EnvironmentMetrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
                     "description": "The link to the environment metrics for this drive.",
                     "longDescription": "This property shall contain a link to a resource of type `EnvironmentMetrics` that specifies the environment metrics for this drive.",
                     "readonly": true,
@@ -225,13 +225,13 @@
                     "readonly": false
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Identifiers": {
                     "description": "The durable names for the drive.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Identifier"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Identifier"
                     },
                     "longDescription": "This property shall contain a list of all known durable names for the associated drive.",
                     "type": "array"
@@ -239,7 +239,7 @@
                 "IndicatorLED": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/IndicatorLED"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/IndicatorLED"
                         },
                         {
                             "type": "null"
@@ -260,7 +260,7 @@
                     "deprecated": "This property has been deprecated in favor of the singular `PhysicalLocation` property.",
                     "description": "The location of the drive.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location"
                     },
                     "longDescription": "This property shall contain the location information of the associated drive.",
                     "type": "array",
@@ -289,7 +289,7 @@
                     "deprecated": "This property has been deprecated in favor of the `ComponentIntegrity` resource.",
                     "description": "An array of DSP0274-defined measurement blocks.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
                     },
                     "longDescription": "This property shall contain an array of DSP0274-defined measurement blocks.",
                     "type": "array",
@@ -329,7 +329,7 @@
                     "versionAdded": "v1_9_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "NegotiatedSpeedGbs": {
@@ -343,7 +343,7 @@
                     "units": "Gbit/s"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -366,7 +366,7 @@
                     ]
                 },
                 "PhysicalLocation": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the drive.  This property is equivalent to the `Location` property common to other standard Redfish resources.",
                     "longDescription": "This property shall contain the location information of the associated drive.",
                     "versionAdded": "v1_4_0"
@@ -385,7 +385,7 @@
                 "Protocol": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Protocol.json#/definitions/Protocol"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Protocol.json#/definitions/Protocol"
                         },
                         {
                             "type": "null"
@@ -443,7 +443,7 @@
                     ]
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -564,7 +564,7 @@
             },
             "properties": {
                 "Chassis": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis",
                     "description": "The link to the chassis that contains this drive.",
                     "longDescription": "This property shall contain a link to a resource of type `Chassis` that represents the physical container associated with this drive.",
                     "readonly": true,
@@ -573,7 +573,7 @@
                 "Endpoints": {
                     "description": "An array of links to the endpoints that connect to this drive.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` with which this drive is associated.",
                     "readonly": true,
@@ -581,12 +581,12 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Endpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "NetworkDeviceFunctions": {
                     "description": "An array of links to the network device functions that provide network connectivity for this drive.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
                     },
                     "longDescription": "This property shall contain the array of links to resources of type `NetworkDeviceFunction`.  This property should only be present for drives with network connectivity, such as Ethernet attached drives.",
                     "readonly": true,
@@ -594,27 +594,27 @@
                     "versionAdded": "v1_14_0"
                 },
                 "NetworkDeviceFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "PCIeFunctions": {
                     "description": "An array of links to the PCIe functions that the drive produces.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
                     },
                     "longDescription": "This property shall link to a resource of type `PCIeFunction` that represents the PCIe functions associated with this resource.",
                     "type": "array",
                     "versionAdded": "v1_6_0"
                 },
                 "PCIeFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Storage": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Storage.json#/definitions/Storage",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Storage.json#/definitions/Storage",
                     "description": "A link to the storage subsystem to which this drive belongs.",
                     "longDescription": "This property shall contain a link to a resource of type `Storage` that represents the storage subsystem to which this drive belongs.",
                     "readonly": true,
@@ -631,7 +631,7 @@
                     "versionAdded": "v1_8_0"
                 },
                 "StoragePools@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Volumes": {
                     "description": "An array of links to the volumes that this drive either wholly or only partially contains.",
@@ -643,7 +643,7 @@
                     "type": "array"
                 },
                 "Volumes@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -702,7 +702,7 @@
             },
             "properties": {
                 "AssociatedTask": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Task.json#/definitions/Task",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Task.json#/definitions/Task",
                     "description": "The link to the task associated with the operation, if any.",
                     "longDescription": "This property shall contain a link to a resource of type `Task` that represents the task associated with the operation.",
                     "readonly": true,
@@ -740,7 +740,7 @@
             "longDescription": "This action shall reset this drive.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and perform an implementation-specific default reset."
                 }

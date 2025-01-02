@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/TelemetryService.v1_1_8.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/TelemetryService.v1_1_8.json",
     "$ref": "#/definitions/TelemetryService",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -71,7 +71,7 @@
             },
             "properties": {
                 "MetricDefinition": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricDefinition.json#/definitions/MetricDefinition",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricDefinition.json#/definitions/MetricDefinition",
                     "description": "The link to the metric definition for this metric.",
                     "longDescription": "This property shall contain a link to a resource of type `MetricDefinition` that describes what this metric value captures.",
                     "readonly": true,
@@ -219,16 +219,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -238,7 +238,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -247,11 +247,11 @@
                     "readonly": true
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "LogService": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/LogService.json#/definitions/LogService",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogService.json#/definitions/LogService",
                     "description": "The link to a log service that the telemetry service uses.  This service can be a dedicated log service or a pointer to a log service under another resource, such as a manager.",
                     "longDescription": "This property shall contain a link to a resource of type `LogService` that this telemetry service uses.",
                     "readonly": true
@@ -266,19 +266,19 @@
                     ]
                 },
                 "MetricDefinitions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricDefinitionCollection.json#/definitions/MetricDefinitionCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricDefinitionCollection.json#/definitions/MetricDefinitionCollection",
                     "description": "The link to the collection of metric definitions.",
                     "longDescription": "This property shall contain a link to a resource collection of type `MetricDefinitionCollection`.",
                     "readonly": true
                 },
                 "MetricReportDefinitions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReportDefinitionCollection.json#/definitions/MetricReportDefinitionCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReportDefinitionCollection.json#/definitions/MetricReportDefinitionCollection",
                     "description": "The link to the collection of metric report definitions.",
                     "longDescription": "This property shall contain a link to a resource collection of type `MetricReportDefinitionCollection`.",
                     "readonly": true
                 },
                 "MetricReports": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MetricReportCollection.json#/definitions/MetricReportCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MetricReportCollection.json#/definitions/MetricReportCollection",
                     "description": "The link to the collection of metric reports.",
                     "longDescription": "This property shall contain a link to a resource collection of type `MetricReportCollection`.",
                     "readonly": true
@@ -294,16 +294,16 @@
                     ]
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -324,7 +324,7 @@
                     "type": "array"
                 },
                 "Triggers": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/TriggersCollection.json#/definitions/TriggersCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/TriggersCollection.json#/definitions/TriggersCollection",
                     "description": "The link to the collection of triggers that apply to metrics.",
                     "longDescription": "This property shall contain a link to a resource collection of type `TriggersCollection`.",
                     "readonly": true

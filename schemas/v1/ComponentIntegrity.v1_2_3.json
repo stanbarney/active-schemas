@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/ComponentIntegrity.v1_2_3.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ComponentIntegrity.v1_2_3.json",
     "$ref": "#/definitions/ComponentIntegrity",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -57,7 +57,7 @@
             },
             "properties": {
                 "ComponentCertificate": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "A link to the certificate that represents the identity of the component.",
                     "longDescription": "This property shall contain a link to a resource of type `Certificate` that represents the identity of the component referenced by the `TargetComponentURI` property.",
                     "readonly": true
@@ -135,16 +135,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -172,7 +172,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -181,7 +181,7 @@
                     "readonly": true
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "LastUpdated": {
@@ -200,11 +200,11 @@
                     "longDescription": "This property shall contain links to resources that are related to but are not contained by, or subordinate to, this resource."
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -214,7 +214,7 @@
                     "longDescription": "This property shall contain integrity information about the SPDM Responder identified by the `TargetComponentURI` property as reported by an SPDM Requester.  This property shall be present if `ComponentIntegrityType` contains `SPDM` and if `ComponentIntegrityEnabled` contains `true`.  For other cases, this property shall be absent."
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
@@ -303,17 +303,17 @@
                 "ComponentsProtected": {
                     "description": "An array of links to resources that the target component protects.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources that the component identified by the `TargetComponentURI` property provides integrity protection.  This property shall not contain the value of the `TargetComponentURI` property.",
                     "readonly": true,
                     "type": "array"
                 },
                 "ComponentsProtected@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 }
@@ -428,7 +428,7 @@
             },
             "properties": {
                 "Certificate": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "A link to the certificate corresponding to the SPDM slot identifier that can be used to validate the signature.",
                     "longDescription": "This property shall contain a link to a resource of type `Certificate` that represents the certificate corresponding to the SPDM slot identifier that can be used to validate the signature.  This property shall not be present if the SlotId parameter contains the value `15`.",
                     "readonly": true
@@ -440,7 +440,7 @@
                     "type": "string"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
@@ -616,7 +616,7 @@
                     "longDescription": "This property shall contain measurement information for the SPDM Responder."
                 },
                 "Requester": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef",
                     "description": "The link to the component that is reporting the integrity information of the target component.",
                     "longDescription": "This property shall contain a link to the resource representing the SPDM Responder that is reporting the integrity of the SPDM Responder identified by the `TargetComponentURI` property.",
                     "readonly": true
@@ -707,7 +707,7 @@
                     "type": "array"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 }
@@ -745,7 +745,7 @@
             },
             "properties": {
                 "ProvidedCertificate": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "A link to the certificate that represents the identity of the SPDM Requester provided in mutual authentication.",
                     "longDescription": "This property shall contain a link to a resource of type `Certificate` that represents the identity of the SPDM Requester provided in mutual authentication.",
                     "readonly": true
@@ -773,7 +773,7 @@
             },
             "properties": {
                 "ComponentCertificate": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "A link to the certificate that represents the identity of the component.",
                     "longDescription": "This property shall contain a link to a resource of type `Certificate` that represents the identity of the component referenced by the `TargetComponentURI` property.",
                     "readonly": true
@@ -865,7 +865,7 @@
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
@@ -958,7 +958,7 @@
             "longDescription": "This action shall generate a cryptographic signed statement over the given nonce and PCRs of the TPM for TPM 2.0 devices.  This action shall not be present if the `ComponentIntegrityType` property does not contain the value `TPM`.",
             "parameters": {
                 "Certificate": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "The URI for the certificate that represents the TPM attestation key.",
                     "longDescription": "This parameter shall contain the reference to the certificate installed on the TPM that represents the TPM's attestation key for the 'signHandle' parameter of the 'TPM2_Quote' command defined in the Trusted Platform Module Library Specification.",
                     "requiredParameter": true
@@ -1030,7 +1030,7 @@
             },
             "properties": {
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_2_0"
@@ -1068,7 +1068,7 @@
             },
             "properties": {
                 "ComponentCertificate": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Certificate.json#/definitions/Certificate",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Certificate.json#/definitions/Certificate",
                     "description": "A link to the certificate that represents the identity of the component.",
                     "longDescription": "This property shall contain a link to a resource of type `Certificate` that represents the identity of the component referenced by the `TargetComponentURI` property.",
                     "readonly": true

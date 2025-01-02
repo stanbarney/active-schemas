@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/LogEntry.v1_16_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.v1_16_2.json",
     "$ref": "#/definitions/LogEntry",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -63,7 +63,7 @@
                     "versionAdded": "v1_15_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_15_0"
@@ -132,12 +132,12 @@
             },
             "properties": {
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "OriginOfCondition": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef",
                     "description": "The link to the resource that caused the log entry.",
                     "longDescription": "This property shall contain a link to the resource that caused the log entry.  For log entries that represent the creation or deletion of a resource, this property should reference the created or deleted resource and not the collection that contains the resource.",
                     "readonly": true
@@ -145,7 +145,7 @@
                 "RelatedItem": {
                     "description": "An array of links to resources associated with this log entry.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/idRef"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                     },
                     "longDescription": "This property shall contain an array of links to resources that are related to this log entry.  It shall not contain links to `LogEntry` resources.  `RelatedLogEntries` is used to reference related log entries.  This property shall not contain the value of the `OriginOfCondition` property.",
                     "readonly": true,
@@ -153,12 +153,12 @@
                     "versionAdded": "v1_12_0"
                 },
                 "RelatedItem@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "RelatedLogEntries": {
                     "description": "An array of links to other log entries that are related to this log entry.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/LogEntry.json#/definitions/LogEntry"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/LogEntry.json#/definitions/LogEntry"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `LogEntry` in this or other log services that are related to this log entry.  This property should be used to link a log entry indicating the resolution of a condition with a log entry for the initial condition.",
                     "readonly": true,
@@ -166,7 +166,7 @@
                     "versionAdded": "v1_12_0"
                 },
                 "RelatedLogEntries@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -218,16 +218,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -280,7 +280,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -357,7 +357,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "EventType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Event.json#/definitions/EventType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Event.json#/definitions/EventType",
                     "deprecated": "This property has been deprecated.  Starting with Redfish Specification v1.6 (Event v1.3), subscriptions are based on the `RegistryPrefix` and `ResourceType` properties and not on the `EventType` property.",
                     "description": "The type of event recorded in this log.",
                     "longDescription": "If present, this `LogEntry` records an event and the value shall indicate the type of event.",
@@ -385,7 +385,7 @@
                     "versionAdded": "v1_5_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "LastOverflowTimestamp": {
@@ -434,7 +434,7 @@
                     "versionAdded": "v1_6_0"
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "OEMDiagnosticDataType": {
@@ -448,7 +448,7 @@
                     "versionAdded": "v1_7_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -519,7 +519,7 @@
                 "ResolutionSteps": {
                     "description": "The list of recommended steps to resolve the cause of the log entry.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/ResolutionStep.json#/definitions/ResolutionStep"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ResolutionStep.json#/definitions/ResolutionStep"
                     },
                     "longDescription": "This property shall contain an array of recommended steps to resolve the cause of the log entry.  This property shall not be present if the `Severity` property contains `OK`.  A client can stop executing the resolution steps once the `Resolved` property resource contains `true` or the `Health` property in the associated resource referenced by the `OriginOfCondition` property contains `OK`.",
                     "type": "array",

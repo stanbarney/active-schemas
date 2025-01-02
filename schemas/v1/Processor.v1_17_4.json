@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/Processor.v1_17_4.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Processor.v1_17_4.json",
     "$ref": "#/definitions/Processor",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -90,7 +90,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_4_0"
@@ -172,7 +172,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
                     "versionAdded": "v1_4_0"
@@ -226,7 +226,7 @@
             },
             "properties": {
                 "AccelerationFunction": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/AccelerationFunction.json#/definitions/AccelerationFunction",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/AccelerationFunction.json#/definitions/AccelerationFunction",
                     "description": "The link to the acceleration function that the code programmed into a reconfiguration slot provides.",
                     "longDescription": "This property shall contain a link to a resource of type `AccelerationFunction` that represents the code programmed into this reconfiguration slot.",
                     "readonly": true,
@@ -255,7 +255,7 @@
                 "UUID": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/UUID"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/UUID"
                         },
                         {
                             "type": "null"
@@ -328,7 +328,7 @@
             },
             "properties": {
                 "Chassis": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Chassis.json#/definitions/Chassis",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Chassis.json#/definitions/Chassis",
                     "description": "The link to the chassis that contains this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `Chassis` that represents the physical container associated with this processor.",
                     "readonly": true,
@@ -337,7 +337,7 @@
                 "ConnectedProcessors": {
                     "description": "An array of links to the processors directly connected to this processor.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Processor.json#/definitions/Processor"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Processor.json#/definitions/Processor"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Processor` that are directly connected to this processor.",
                     "readonly": true,
@@ -345,12 +345,12 @@
                     "versionAdded": "v1_4_0"
                 },
                 "ConnectedProcessors@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Endpoints": {
                     "description": "An array of links to the endpoints that connect to this processor.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Endpoint.json#/definitions/Endpoint"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Endpoint.json#/definitions/Endpoint"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Endpoint` that represent endpoints associated with this processor.",
                     "readonly": true,
@@ -358,12 +358,12 @@
                     "versionAdded": "v1_4_0"
                 },
                 "Endpoints@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "FabricAdapters": {
                     "description": "An array of links to the fabric adapters that present this processor to a fabric.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/FabricAdapter.json#/definitions/FabricAdapter"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/FabricAdapter.json#/definitions/FabricAdapter"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `FabricAdapter` that represent the fabric adapters that present this processor to a fabric.",
                     "readonly": true,
@@ -371,12 +371,12 @@
                     "versionAdded": "v1_17_0"
                 },
                 "FabricAdapters@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "GraphicsController": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/GraphicsController.json#/definitions/GraphicsController"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/GraphicsController.json#/definitions/GraphicsController"
                         },
                         {
                             "type": "null"
@@ -390,7 +390,7 @@
                 "Memory": {
                     "description": "An array of links to the memory associated with this processor.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Memory.json#/definitions/Memory"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Memory.json#/definitions/Memory"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `Memory` that are associated with this processor.",
                     "readonly": true,
@@ -398,12 +398,12 @@
                     "versionAdded": "v1_11_0"
                 },
                 "Memory@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "NetworkDeviceFunctions": {
                     "description": "The network device functions to which this processor performs offload computation, such as with a SmartNIC.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/NetworkDeviceFunction.json#/definitions/NetworkDeviceFunction"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `NetworkDeviceFunction` that represent the network device functions to which this processor performs offload computation, such as with a SmartNIC.",
                     "readonly": true,
@@ -411,15 +411,15 @@
                     "versionAdded": "v1_13_0"
                 },
                 "NetworkDeviceFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 },
                 "PCIeDevice": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeDevice.json#/definitions/PCIeDevice",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeDevice.json#/definitions/PCIeDevice",
                     "description": "The link to the PCIe device associated with this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `PCIeDevice` that represents the PCIe device associated with this processor.",
                     "readonly": true,
@@ -428,7 +428,7 @@
                 "PCIeFunctions": {
                     "description": "An array of links to the PCIeFunctions associated with this processor.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeFunction.json#/definitions/PCIeFunction"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type `PCIeFunction` that represent the PCIe functions associated with this processor.",
                     "readonly": true,
@@ -436,7 +436,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "PCIeFunctions@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 }
             },
             "type": "object"
@@ -471,7 +471,7 @@
                     "versionAdded": "v1_13_0"
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/MemoryMetrics.json#/definitions/MemoryMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/MemoryMetrics.json#/definitions/MemoryMetrics",
                     "description": "The link to the memory metrics associated with all memory of this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `MemoryMetrics` that contains the metrics associated with all memory of this processor.",
                     "readonly": true,
@@ -544,19 +544,19 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "AccelerationFunctions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/AccelerationFunctionCollection.json#/definitions/AccelerationFunctionCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/AccelerationFunctionCollection.json#/definitions/AccelerationFunctionCollection",
                     "description": "The link to the collection of acceleration functions associated with this processor.",
                     "longDescription": "This property shall contain a link to a resource collection of type `AccelerationFunctionCollection`.",
                     "readonly": true,
@@ -569,20 +569,20 @@
                     "versionAdded": "v1_1_0"
                 },
                 "AdditionalFirmwareVersions": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventory.json#/definitions/AdditionalVersions",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventory.json#/definitions/AdditionalVersions",
                     "description": "The additional firmware versions of the processor.",
                     "longDescription": "This property shall contain the additional firmware versions of the processor.",
                     "versionAdded": "v1_15_0"
                 },
                 "AppliedOperatingConfig": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/OperatingConfig.json#/definitions/OperatingConfig",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/OperatingConfig.json#/definitions/OperatingConfig",
                     "description": "The link to the operating configuration that is applied to this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `OperatingConfig` that specifies the configuration is applied to this processor.",
                     "readonly": false,
                     "versionAdded": "v1_9_0"
                 },
                 "Assembly": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Assembly.json#/definitions/Assembly",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Assembly.json#/definitions/Assembly",
                     "description": "The link to an assembly associated with this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `Assembly`.",
                     "readonly": true,
@@ -615,7 +615,7 @@
                     "versionAdded": "v1_9_0"
                 },
                 "Certificates": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CertificateCollection.json#/definitions/CertificateCollection",
                     "description": "The link to a collection of certificates for device identity and attestation.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CertificateCollection` that contains certificates for device identity and attestation.",
                     "readonly": true,
@@ -624,7 +624,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -640,7 +640,7 @@
                     "versionAdded": "v1_12_0"
                 },
                 "EnvironmentMetrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EnvironmentMetrics.json#/definitions/EnvironmentMetrics",
                     "description": "The link to the environment metrics for this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `EnvironmentMetrics` that specifies the environment metrics for this processor.",
                     "readonly": true,
@@ -683,7 +683,7 @@
                     "versionAdded": "v1_9_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "InstructionSet": {
@@ -706,7 +706,7 @@
                     "versionAdded": "v1_1_0"
                 },
                 "Location": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Location",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Location",
                     "description": "The location of the processor.",
                     "longDescription": "This property shall contain the location information of the associated processor.",
                     "versionAdded": "v1_2_0"
@@ -755,7 +755,7 @@
                     "deprecated": "This property has been deprecated in favor of the `ComponentIntegrity` resource.",
                     "description": "An array of DSP0274-defined measurement blocks.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/SoftwareInventory.json#/definitions/MeasurementBlock"
                     },
                     "longDescription": "This property shall contain an array of DSP0274-defined measurement blocks.",
                     "type": "array",
@@ -769,7 +769,7 @@
                     "versionAdded": "v1_11_0"
                 },
                 "Metrics": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ProcessorMetrics.json#/definitions/ProcessorMetrics",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ProcessorMetrics.json#/definitions/ProcessorMetrics",
                     "description": "The link to the metrics associated with this processor.",
                     "longDescription": "This property shall contain a link to a resource of type `ProcessorMetrics` that contains the metrics associated with this processor.",
                     "readonly": true,
@@ -797,16 +797,16 @@
                     ]
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "OperatingConfigs": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/OperatingConfigCollection.json#/definitions/OperatingConfigCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/OperatingConfigCollection.json#/definitions/OperatingConfigCollection",
                     "description": "The link to the collection of operating configurations that can be applied to this processor.",
                     "longDescription": "This property shall contain a link to a resource collection of type `OperatingConfigCollection`.",
                     "readonly": true,
@@ -826,7 +826,7 @@
                 "OperatingSpeedRangeMHz": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Control.json#/definitions/ControlRangeExcerpt"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Control.json#/definitions/ControlRangeExcerpt"
                         },
                         {
                             "type": "null"
@@ -849,7 +849,7 @@
                     "versionAdded": "v1_7_0"
                 },
                 "Ports": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PortCollection.json#/definitions/PortCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PortCollection.json#/definitions/PortCollection",
                     "description": "The link to the collection of ports for this processor.",
                     "longDescription": "This property shall contain a link to a resource collection of type `PortCollection`.  It shall contain the interconnect and fabric ports of this processor.  It shall not contain ports for `GraphicsController` resources, `USBController` resources, or other local adapter-related types of resources.",
                     "readonly": true,
@@ -858,7 +858,7 @@
                 "PowerState": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/PowerState"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/PowerState"
                         },
                         {
                             "type": "null"
@@ -981,12 +981,12 @@
                     "versionAdded": "v1_10_0"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 },
                 "SubProcessors": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/ProcessorCollection.json#/definitions/ProcessorCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ProcessorCollection.json#/definitions/ProcessorCollection",
                     "description": "The link to the collection of sub-processors associated with this processor, such as cores or threads, that are part of a processor.",
                     "longDescription": "This property shall contain a link to a resource collection of type `ProcessorCollection`.",
                     "readonly": true,
@@ -1081,7 +1081,7 @@
                 "UUID": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/UUID"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/UUID"
                         },
                         {
                             "type": "null"
@@ -1260,7 +1260,7 @@
                     "versionAdded": "v1_4_0"
                 },
                 "PCIe": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/PCIeDevice.json#/definitions/PCIeInterface",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/PCIeDevice.json#/definitions/PCIeInterface",
                     "description": "The PCIe-related information for this interface.",
                     "longDescription": "This property shall contain an object the describes the PCIe-related information for this interface.",
                     "versionAdded": "v1_4_0"
@@ -1437,7 +1437,7 @@
             "longDescription": "This action shall reset the processor.",
             "parameters": {
                 "ResetType": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/ResetType",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/ResetType",
                     "description": "The type of reset.",
                     "longDescription": "This parameter shall contain the type of reset.  The service can accept a request without the parameter and perform an implementation-specific default reset."
                 }

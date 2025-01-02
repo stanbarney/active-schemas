@@ -1,7 +1,7 @@
 {
     "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageService.v1_3_1.json",
     "$ref": "#/definitions/StorageService",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
     "definitions": {
         "Actions": {
@@ -82,7 +82,7 @@
                     "readonly": false
                 },
                 "HostingSystem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Resource",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Resource",
                     "description": "The hosting system or storage controller hosting this storage service.",
                     "longDescription": "The value shall reference the ComputerSystem or StorageController that hosts this service."
                 },
@@ -101,7 +101,7 @@
                     "readonly": false
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements."
                 }
@@ -187,16 +187,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -210,7 +210,7 @@
                     "readonly": false
                 },
                 "ClientEndpointGroups": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroupCollection.json#/definitions/EndpointGroupCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroupCollection.json#/definitions/EndpointGroupCollection",
                     "deprecated": "Deprecated in favor of EndpointGroups. The GroupType property of EndpointGroup already distinguishes between use for Server or Client.",
                     "description": "Client endpoint groups.",
                     "longDescription": "The value of each entry in the array shall reference an EndpointGroup.",
@@ -254,7 +254,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -263,19 +263,19 @@
                     "readonly": true
                 },
                 "Drives": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/DriveCollection.json#/definitions/DriveCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/DriveCollection.json#/definitions/DriveCollection",
                     "description": "The set of drives managed by this storage service.",
                     "longDescription": "A collection that indicates all the drives managed by this storage service.",
                     "readonly": true
                 },
                 "EndpointGroups": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroupCollection.json#/definitions/EndpointGroupCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroupCollection.json#/definitions/EndpointGroupCollection",
                     "description": "Client and Server endpoint groups.",
                     "longDescription": "The value of each entry in the array shall reference an EndpointGroup.",
                     "readonly": false
                 },
                 "Endpoints": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointCollection.json#/definitions/EndpointCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointCollection.json#/definitions/EndpointCollection",
                     "description": "Endpoints.",
                     "longDescription": "The value of each entry in the array shall reference an Endpoint managed by this service.",
                     "readonly": true
@@ -307,11 +307,11 @@
                     "versionAdded": "v1_2_0"
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "Identifier": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Identifier",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Identifier",
                     "description": "The value identifies this resource.",
                     "longDescription": "The value identifies this resource.  The value shall be unique within the managed ecosystem."
                 },
@@ -321,11 +321,11 @@
                     "longDescription": "This property shall contain links to other resources that are related to this resource."
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
@@ -333,17 +333,17 @@
                     "autoExpand": true,
                     "description": "Redundancy information for the storage subsystem.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Redundancy.json#/definitions/Redundancy"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Redundancy.json#/definitions/Redundancy"
                     },
                     "longDescription": "This collection shall contain the redundancy information for the storage subsystem.",
                     "readonly": true,
                     "type": "array"
                 },
                 "Redundancy@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "ServerEndpointGroups": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/EndpointGroupCollection.json#/definitions/EndpointGroupCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/EndpointGroupCollection.json#/definitions/EndpointGroupCollection",
                     "deprecated": "Deprecated in favor of EndpointGroups. The GroupType property of EndpointGroup already distinguishes between use for Server or Client.",
                     "description": "Server endpoint groups.",
                     "longDescription": "The value of each entry in the array shall reference a EndpointGroup.",
@@ -360,10 +360,10 @@
                     "versionAdded": "v1_2_0"
                 },
                 "SpareResourceSets@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The property contains the status of the StorageService.",
                     "longDescription": "The property shall contain the status of the StorageService."
                 },
@@ -382,7 +382,7 @@
                 "StorageSubsystems": {
                     "description": "A reference to storage subsystems managed by this storage service.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/v1/Storage.json#/definitions/Storage"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Storage.json#/definitions/Storage"
                     },
                     "longDescription": "The value shall be a link to a collection of type StorageCollection having members that represent storage subsystems managed by this storage service.",
                     "readonly": true,
@@ -390,7 +390,7 @@
                     "versionAdded": "v1_0_1"
                 },
                 "StorageSubsystems@odata.count": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/count"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/count"
                 },
                 "Volumes": {
                     "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/VolumeCollection.json#/definitions/VolumeCollection",

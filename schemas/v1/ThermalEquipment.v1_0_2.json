@@ -1,7 +1,7 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/v1/ThermalEquipment.v1_0_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/ThermalEquipment.v1_0_2.json",
     "$ref": "#/definitions/ThermalEquipment",
-    "$schema": "http://redfish.dmtf.org/schemas/v1/redfish-schema-v1.json",
+    "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
     "definitions": {
         "Actions": {
@@ -72,16 +72,16 @@
             },
             "properties": {
                 "@odata.context": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.etag": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/etag"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/etag"
                 },
                 "@odata.id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/odata-v4.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Actions": {
                     "$ref": "#/definitions/Actions",
@@ -89,13 +89,13 @@
                     "longDescription": "This property shall contain the available actions for this resource."
                 },
                 "CDUs": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CoolingUnitCollection.json#/definitions/CoolingUnitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CoolingUnitCollection.json#/definitions/CoolingUnitCollection",
                     "description": "A link to a collection of coolant distribution units.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CoolingUnitCollection` that contains a set of coolant distribution units.",
                     "readonly": true
                 },
                 "CoolingLoops": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CoolingLoopCollection.json#/definitions/CoolingLoopCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CoolingLoopCollection.json#/definitions/CoolingLoopCollection",
                     "description": "A link to a collection of cooling loops.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CoolingLoopCollection` that contains the set of cooling loops managed by the service.",
                     "readonly": true
@@ -103,7 +103,7 @@
                 "Description": {
                     "anyOf": [
                         {
-                            "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Description"
+                            "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Description"
                         },
                         {
                             "type": "null"
@@ -112,32 +112,32 @@
                     "readonly": true
                 },
                 "HeatExchangers": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CoolingUnitCollection.json#/definitions/CoolingUnitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CoolingUnitCollection.json#/definitions/CoolingUnitCollection",
                     "description": "A link to a collection of heat exchanger units.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CoolingUnitCollection` that contains a set of heat exchanger units.",
                     "readonly": true
                 },
                 "Id": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Id",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Id",
                     "readonly": true
                 },
                 "ImmersionUnits": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/CoolingUnitCollection.json#/definitions/CoolingUnitCollection",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/CoolingUnitCollection.json#/definitions/CoolingUnitCollection",
                     "description": "A link to a collection of immersion cooling units.",
                     "longDescription": "This property shall contain a link to a resource collection of type `CoolingUnitCollection` that contains a set of immersion cooling units.",
                     "readonly": true
                 },
                 "Name": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Name",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Name",
                     "readonly": true
                 },
                 "Oem": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Oem",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
                     "description": "The OEM extension property.",
                     "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements."
                 },
                 "Status": {
-                    "$ref": "http://redfish.dmtf.org/schemas/v1/Resource.json#/definitions/Status",
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Status",
                     "description": "The status and health of the resource and its subordinate or dependent resources.",
                     "longDescription": "This property shall contain any status or health properties of the resource."
                 }
