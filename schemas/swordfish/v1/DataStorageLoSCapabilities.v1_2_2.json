@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_2_2.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.v1_2_2.json",
     "$ref": "#/definitions/DataStorageLoSCapabilities",
     "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -113,7 +113,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.json#/definitions/StorageAccessCapability"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.json#/definitions/StorageAccessCapability"
                             },
                             {
                                 "type": "null"
@@ -128,7 +128,7 @@
                     "autoExpand": true,
                     "description": "Collection of known and supported DataStorageLinesOfService.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLineOfService.json#/definitions/DataStorageLineOfService"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLineOfService.json#/definitions/DataStorageLineOfService"
                     },
                     "longDescription": "The collection shall contain known and supported DataStorageLinesOfService.",
                     "readonly": false,
@@ -142,7 +142,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataStorageLoSCapabilities.json#/definitions/ProvisioningPolicy"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataStorageLoSCapabilities.json#/definitions/ProvisioningPolicy"
                             },
                             {
                                 "type": "null"
@@ -158,7 +158,7 @@
                     "items": {
                         "anyOf": [
                             {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/DataProtectionLoSCapabilities.json#/definitions/RecoveryAccessScope"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/DataProtectionLoSCapabilities.json#/definitions/RecoveryAccessScope"
                             },
                             {
                                 "type": "null"

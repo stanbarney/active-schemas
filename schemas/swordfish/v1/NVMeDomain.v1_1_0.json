@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/NVMeDomain.v1_1_0.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/NVMeDomain.v1_1_0.json",
     "$ref": "#/definitions/NVMeDomain",
     "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -53,7 +53,7 @@
                 "AssociatedDomains": {
                     "description": "An array of links to associated domains.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/NVMeDomain.json#/definitions/NVMeDomain"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/NVMeDomain.json#/definitions/NVMeDomain"
                     },
                     "longDescription": "This property shall contain an array of links to resources of type NVMeDomain that represent associated domains.",
                     "readonly": true,
@@ -109,7 +109,7 @@
                 "AvailableFirmwareImages": {
                     "description": "A collection of available firmware images.",
                     "items": {
-                        "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/NVMeFirmwareImage.json#/definitions/NVMeFirmwareImage"
+                        "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/NVMeFirmwareImage.json#/definitions/NVMeFirmwareImage"
                     },
                     "longDescription": "A collection of available firmware images.",
                     "type": "array"

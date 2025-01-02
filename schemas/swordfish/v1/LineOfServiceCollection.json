@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/LineOfServiceCollection.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/LineOfServiceCollection.json",
     "$ref": "#/definitions/LineOfServiceCollection",
     "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -54,7 +54,7 @@
                         "Members": {
                             "description": "The value of each member references a LineOfService resource.",
                             "items": {
-                                "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/LineOfService.json#/definitions/LineOfService"
+                                "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/LineOfService.json#/definitions/LineOfService"
                             },
                             "longDescription": "The value of each member entry shall reference a LineOfService resource.",
                             "readonly": true,

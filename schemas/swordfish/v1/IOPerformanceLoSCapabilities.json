@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.json",
     "$ref": "#/definitions/IOPerformanceLoSCapabilities",
     "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -10,16 +10,16 @@
                     "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_0_2.json#/definitions/IOPerformanceLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_0_2.json#/definitions/IOPerformanceLoSCapabilities"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_1_3.json#/definitions/IOPerformanceLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_1_3.json#/definitions/IOPerformanceLoSCapabilities"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_2_0.json#/definitions/IOPerformanceLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_2_0.json#/definitions/IOPerformanceLoSCapabilities"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_3_0.json#/definitions/IOPerformanceLoSCapabilities"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_3_0.json#/definitions/IOPerformanceLoSCapabilities"
                 }
             ],
             "deletable": false,
@@ -34,16 +34,16 @@
         "IOWorkload": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_0_2.json#/definitions/IOWorkload"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_0_2.json#/definitions/IOWorkload"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_1_3.json#/definitions/IOWorkload"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_1_3.json#/definitions/IOWorkload"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_2_0.json#/definitions/IOWorkload"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_2_0.json#/definitions/IOWorkload"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_3_0.json#/definitions/IOWorkload"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_3_0.json#/definitions/IOWorkload"
                 }
             ],
             "description": "An IO Workload description.",
@@ -52,16 +52,16 @@
         "IOWorkloadComponent": {
             "anyOf": [
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_0_2.json#/definitions/IOWorkloadComponent"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_0_2.json#/definitions/IOWorkloadComponent"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_1_3.json#/definitions/IOWorkloadComponent"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_1_3.json#/definitions/IOWorkloadComponent"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_2_0.json#/definitions/IOWorkloadComponent"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_2_0.json#/definitions/IOWorkloadComponent"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_3_0.json#/definitions/IOWorkloadComponent"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/IOPerformanceLoSCapabilities.v1_3_0.json#/definitions/IOWorkloadComponent"
                 }
             ],
             "description": "Describe a component of a IO workload.",

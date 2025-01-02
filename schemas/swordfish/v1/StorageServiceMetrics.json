@@ -1,5 +1,5 @@
 {
-    "$id": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageServiceMetrics.json",
+    "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageServiceMetrics.json",
     "$ref": "#/definitions/StorageServiceMetrics",
     "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
     "copyright": "Copyright 2015-2024 Storage Networking Industry Association (SNIA), USA. All rights reserved.",
@@ -10,7 +10,7 @@
                     "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/idRef"
                 },
                 {
-                    "$ref": "http://redfish.dmtf.org/schemas/swordfish/v1/StorageServiceMetrics.v1_0_1.json#/definitions/StorageServiceMetrics"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/swordfish/v1/StorageServiceMetrics.v1_0_1.json#/definitions/StorageServiceMetrics"
                 }
             ],
             "deletable": false,
