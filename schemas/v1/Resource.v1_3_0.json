@@ -20,13 +20,13 @@
             "additionalProperties": false,
             "properties": {
                 "@odata.context": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.id": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Oem": {
                     "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
@@ -61,13 +61,13 @@
             "additionalProperties": false,
             "properties": {
                 "@odata.context": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.id": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Oem": {
                     "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Resource.json#/definitions/Oem",
@@ -114,13 +114,13 @@
             "additionalProperties": false,
             "properties": {
                 "@odata.context": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/context"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/context"
                 },
                 "@odata.id": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/id"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/id"
                 },
                 "@odata.type": {
-                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata.4.0.0.json#/definitions/type"
+                    "$ref": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/odata-v4.json#/definitions/type"
                 },
                 "Description": {
                     "anyOf": [
