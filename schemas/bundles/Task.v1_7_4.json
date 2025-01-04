@@ -1,0 +1,1533 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/redfish-schema-v1.json",
+  "$id": "https://raw.githubusercontent.com/stanbarney/active-schemas/refs/heads/main/schemas/v1/Task.v1_7_4.json",
+  "title": "#Task.v1_7_4.Task",
+  "copyright": "Copyright 2014-2024 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright",
+  "definitions": {
+    "Actions": {
+      "description": "The available actions for this resource.",
+      "longDescription": "This type shall contain the available actions for this resource.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Oem": {
+          "description": "The available OEM-specific actions for this resource.",
+          "longDescription": "This property shall contain the available OEM-specific actions for this resource.",
+          "versionAdded": "v1_1_0",
+          "$ref": "#/definitions/OemActions"
+        }
+      },
+      "patternProperties": {
+        "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "description": "This property shall specify a valid odata or Redfish property.",
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "object",
+            "array",
+            "null"
+          ]
+        }
+      }
+    },
+    "Links": {
+      "description": "The links to other resources that are related to this resource.",
+      "longDescription": "This Redfish Specification-described type shall contain links to resources that are related to but are not contained by, or subordinate to, this resource.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "CreatedResources": {
+          "description": "An array of URIs referencing the resources created as the result of the operation that produced this task.",
+          "longDescription": "This property shall contain an array of links to resources indicating the resources created as the result of the operation that produced this task.  Services shall set this property prior to the task entering its final state.",
+          "readonly": true,
+          "versionAdded": "v1_7_0",
+          "type": "array",
+          "items": {
+            "description": "A reference to a resource.",
+            "longDescription": "The value of this property shall be used for references to a resource.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "@odata.id": {
+                "description": "The unique identifier for a resource.",
+                "readonly": true,
+                "longDescription": "The value of this property shall be the unique identifier for the resource and it shall be of the form defined in the Redfish specification.",
+                "type": "string",
+                "format": "uri-reference"
+              }
+            }
+          }
+        },
+        "CreatedResources@odata.count": {
+          "description": "The number of items in a collection.",
+          "readonly": true,
+          "longDescription": "The value of this property shall be an integer representing the number of items in a collection.",
+          "type": "integer"
+        },
+        "Oem": {
+          "description": "The OEM extension property.",
+          "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
+          "$ref": "#/definitions/Links/properties/Oem/$ref"
+        }
+      },
+      "patternProperties": {
+        "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "description": "This property shall specify a valid odata or Redfish property.",
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "object",
+            "array",
+            "null"
+          ]
+        }
+      }
+    },
+    "OemActions": {
+      "description": "The available OEM-specific actions for this resource.",
+      "longDescription": "This type shall contain the available OEM-specific actions for this resource.",
+      "type": "object",
+      "additionalProperties": true,
+      "patternProperties": {
+        "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "description": "This property shall specify a valid odata or Redfish property.",
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "object",
+            "array",
+            "null"
+          ]
+        }
+      }
+    },
+    "Payload": {
+      "description": "The HTTP and JSON payload details for this Task.",
+      "longDescription": "This type shall contain information detailing the HTTP and JSON payload information for executing this task.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "HttpHeaders": {
+          "description": "An array of HTTP headers that this task includes.",
+          "longDescription": "This property shall contain an array of HTTP headers that this task includes.",
+          "readonly": true,
+          "versionAdded": "v1_3_0",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "HttpOperation": {
+          "description": "The HTTP operation to perform to execute this task.",
+          "longDescription": "This property shall contain the HTTP operation to execute for this task.",
+          "readonly": true,
+          "versionAdded": "v1_3_0",
+          "type": "string"
+        },
+        "JsonBody": {
+          "description": "The JSON payload to use in the execution of this task.",
+          "longDescription": "This property shall contain the JSON-formatted payload used for this task.",
+          "readonly": true,
+          "versionAdded": "v1_3_0",
+          "type": "string"
+        },
+        "TargetUri": {
+          "description": "The URI of the target for this task.",
+          "longDescription": "This property shall contain a link to the location to use as the target for an HTTP operation.",
+          "readonly": true,
+          "versionAdded": "v1_3_0",
+          "type": "string",
+          "format": "uri-reference"
+        }
+      },
+      "patternProperties": {
+        "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "description": "This property shall specify a valid odata or Redfish property.",
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "object",
+            "array",
+            "null"
+          ]
+        }
+      }
+    },
+    "Task": {
+      "description": "The `Task` schema contains information about a task that the Redfish task service schedules or executes.  Tasks represent operations that take more time than a client typically wants to wait.",
+      "longDescription": "This resource contains a task for a Redfish implementation.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "@odata.context": {
+          "description": "The OData description of a payload.",
+          "readonly": true,
+          "longDescription": "The value of this property shall be the context URL that describes the resource according to OData-Protocol and shall be of the form defined in the Redfish specification.",
+          "type": "string",
+          "format": "uri-reference"
+        },
+        "@odata.etag": {
+          "description": "The current ETag of the resource.",
+          "readonly": true,
+          "longDescription": "The value of this property shall be a string that is defined by the ETag HTTP header definition in RFC7232.",
+          "type": "string"
+        },
+        "@odata.id": {
+          "$ref": "#/definitions/Links/properties/CreatedResources/items/properties/@odata.id"
+        },
+        "@odata.type": {
+          "description": "The type of a resource.",
+          "readonly": true,
+          "longDescription": "The value of this property shall be a URI fragment that specifies the type of the resource and it shall be of the form defined in the Redfish specification.",
+          "type": "string"
+        },
+        "Actions": {
+          "description": "The available actions for this resource.",
+          "longDescription": "This property shall contain the available actions for this resource.",
+          "versionAdded": "v1_1_0",
+          "$ref": "#/definitions/Actions"
+        },
+        "Description": {
+          "readonly": true,
+          "anyOf": [
+            {
+              "description": "The description of this resource.  Used for commonality in the schema definitions.",
+              "longDescription": "This property shall contain the description of this resource.  The value shall conform with the 'Description' clause of the Redfish Specification.",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "EndTime": {
+          "description": "The date and time when the task was completed.  This property will only appear when the task is complete.",
+          "longDescription": "This property shall indicate the date and time when the task was completed.  This property shall not appear if the task is running or otherwise has not been completed.  This property shall appear only if the `TaskState` is `Completed`, `Killed`, `Cancelled`, or `Exception`.",
+          "readonly": true,
+          "type": "string",
+          "format": "date-time"
+        },
+        "EstimatedDuration": {
+          "description": "The estimated total time required to complete the task.",
+          "longDescription": "This property shall indicate the estimated total time needed to complete the task.  The value is not expected to change while the task is in progress, but the service may update the value if it obtains new information that significantly changes the expected duration.  Services should be conservative in the reported estimate and clients should treat this value as an estimate.",
+          "readonly": true,
+          "versionAdded": "v1_6_0",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^P(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+(.\\d+)?S)?)?$"
+        },
+        "HidePayload": {
+          "description": "An indication of whether the contents of the payload are hidden from view after the task has been created.  If `true`, responses do not return the payload.  If `false`, responses return the payload.  If this property is not present when the task is created, the default is `false`.",
+          "longDescription": "This property shall indicate whether the contents of the payload should be hidden from view after the task has been created.  If `true`, responses shall not return the `Payload` property.  If `false`, responses shall return the `Payload` property.  If this property is not present when the task is created, the default is `false`.  This property shall be supported if the `Payload` property is supported.",
+          "readonly": true,
+          "versionAdded": "v1_3_0",
+          "type": "boolean"
+        },
+        "Id": {
+          "readonly": true,
+          "$ref": "#/definitions/Task/properties/Id/$ref"
+        },
+        "Links": {
+          "description": "Contains references to other resources that are related to this resource.",
+          "longDescription": "The `Links` property, as described by the Redfish Specification, shall contain references to resources that are related to but are not contained by, or subordinate to, this resource.",
+          "versionAdded": "v1_7_0",
+          "$ref": "#/definitions/Links"
+        },
+        "Messages": {
+          "description": "An array of messages associated with the task.",
+          "longDescription": "This property shall contain an array of messages associated with the task.",
+          "type": "array",
+          "items": {
+            "description": "The message that the Redfish service returns.",
+            "longDescription": "This type shall contain a message that the Redfish service returns, as described in the Redfish Specification.",
+            "anyOf": [
+              {
+                "description": "The message that the Redfish service returns.",
+                "longDescription": "This type shall contain a message that the Redfish service returns, as described in the Redfish Specification.",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "Message": {
+                    "description": "The human-readable message.",
+                    "longDescription": "This property shall contain a human-readable message.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageArgs": {
+                    "description": "An array of message arguments that are substituted for the arguments in the message when looked up in the message registry.",
+                    "longDescription": "This property shall contain an array of message arguments that are substituted for the arguments in the message when looked up in the message registry.  It has the same semantics as the `MessageArgs` property in the Redfish `MessageRegistry` schema.  If the corresponding `ParamType` value contains `number`, the service shall convert the number to a string representation of the number.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "MessageId": {
+                    "description": "The identifier for the message.",
+                    "longDescription": "This property shall contain a `MessageId`, as defined in the 'MessageId format' clause of the Redfish Specification.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "Oem": {
+                    "description": "The OEM extension property.",
+                    "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
+                    "$ref": "#/definitions/Links/properties/Oem/$ref"
+                  },
+                  "RelatedProperties": {
+                    "description": "A set of properties described by the message.",
+                    "longDescription": "This property shall contain an array of RFC6901-defined JSON pointers indicating the properties described by the message, if appropriate for the message.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Resolution": {
+                    "description": "Used to provide suggestions on how to resolve the situation that caused the message.",
+                    "longDescription": "This property shall contain the resolution of the message.  Services can replace the resolution defined in the message registry with a more specific resolution in message payloads.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "Severity": {
+                    "description": "The severity of the message.",
+                    "longDescription": "This property shall contain the severity of the message, as defined in the 'Status' clause of the Redfish Specification.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "MessageId"
+                ],
+                "patternProperties": {
+                  "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                      "string",
+                      "number",
+                      "integer",
+                      "boolean",
+                      "object",
+                      "array",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "description": "The message that the Redfish service returns.",
+                "longDescription": "This type shall contain a message that the Redfish service returns, as described in the Redfish Specification.",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "Message": {
+                    "description": "The human-readable message.",
+                    "longDescription": "This property shall contain a human-readable message.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageArgs": {
+                    "description": "An array of message arguments that are substituted for the arguments in the message when looked up in the message registry.",
+                    "longDescription": "This property shall contain an array of message arguments that are substituted for the arguments in the message when looked up in the message registry.  It has the same semantics as the `MessageArgs` property in the Redfish `MessageRegistry` schema.  If the corresponding `ParamType` value contains `number`, the service shall convert the number to a string representation of the number.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "MessageId": {
+                    "description": "The identifier for the message.",
+                    "longDescription": "This property shall contain a `MessageId`, as defined in the 'MessageId format' clause of the Redfish Specification.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageSeverity": {
+                    "description": "The severity of the message.",
+                    "longDescription": "This property shall contain the severity of the message.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "versionAdded": "v1_1_0",
+                    "$ref": "#/definitions/Task/properties/Messages/items/anyOf/1/properties/MessageSeverity/$ref"
+                  },
+                  "Oem": {
+                    "description": "The OEM extension property.",
+                    "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
+                    "$ref": "#/definitions/Links/properties/Oem/$ref"
+                  },
+                  "RelatedProperties": {
+                    "description": "A set of properties described by the message.",
+                    "longDescription": "This property shall contain an array of RFC6901-defined JSON pointers indicating the properties described by the message, if appropriate for the message.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Resolution": {
+                    "description": "Used to provide suggestions on how to resolve the situation that caused the message.",
+                    "longDescription": "This property shall contain the resolution of the message.  Services can replace the resolution defined in the message registry with a more specific resolution in message payloads.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "Severity": {
+                    "description": "The severity of the message.",
+                    "deprecated": "This property has been deprecated in favor of `MessageSeverity`, which ties the values to the enumerations defined for the `Health` property within `Status`.",
+                    "longDescription": "This property shall contain the severity of the message, as defined in the 'Status' clause of the Redfish Specification.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "versionDeprecated": "v1_1_0",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "MessageId"
+                ],
+                "patternProperties": {
+                  "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                      "string",
+                      "number",
+                      "integer",
+                      "boolean",
+                      "object",
+                      "array",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "description": "The message that the Redfish service returns.",
+                "longDescription": "This type shall contain a message that the Redfish service returns, as described in the Redfish Specification.",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "Message": {
+                    "description": "The human-readable message.",
+                    "longDescription": "This property shall contain a human-readable message.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageArgs": {
+                    "description": "An array of message arguments that are substituted for the arguments in the message when looked up in the message registry.",
+                    "longDescription": "This property shall contain an array of message arguments that are substituted for the arguments in the message when looked up in the message registry.  It has the same semantics as the `MessageArgs` property in the Redfish `MessageRegistry` schema.  If the corresponding `ParamType` value contains `number`, the service shall convert the number to a string representation of the number.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "MessageId": {
+                    "description": "The identifier for the message.",
+                    "longDescription": "This property shall contain a `MessageId`, as defined in the 'MessageId format' clause of the Redfish Specification.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageSeverity": {
+                    "description": "The severity of the message.",
+                    "longDescription": "This property shall contain the severity of the message.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "versionAdded": "v1_1_0",
+                    "$ref": "#/definitions/Task/properties/Messages/items/anyOf/1/properties/MessageSeverity/$ref"
+                  },
+                  "Oem": {
+                    "description": "The OEM extension property.",
+                    "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
+                    "$ref": "#/definitions/Links/properties/Oem/$ref"
+                  },
+                  "RelatedProperties": {
+                    "description": "A set of properties described by the message.",
+                    "longDescription": "This property shall contain an array of RFC6901-defined JSON pointers indicating the properties described by the message, if appropriate for the message.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Resolution": {
+                    "description": "Used to provide suggestions on how to resolve the situation that caused the message.",
+                    "longDescription": "This property shall contain the resolution of the message.  Services can replace the resolution defined in the message registry with a more specific resolution in message payloads.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "ResolutionSteps": {
+                    "description": "The list of recommended steps to resolve the situation that caused the message.",
+                    "longDescription": "This property shall contain an array of recommended steps to resolve the situation that caused the message.  This property shall not be present if the `MessageSeverity` or `Severity` properties contain `OK`.",
+                    "versionAdded": "v1_2_0",
+                    "type": "array",
+                    "items": {
+                      "description": "This type describes a recommended step of the service-defined resolution.",
+                      "longDescription": "This type shall describe a recommended step of the service-defined resolution.  The set of recommended steps are used to resolve the cause of a log entry, an event, a condition, or an error message.",
+                      "anyOf": [
+                        {
+                          "description": "This type describes a recommended step of the service-defined resolution.",
+                          "longDescription": "This type shall describe a recommended step of the service-defined resolution.  The set of recommended steps are used to resolve the cause of a log entry, an event, a condition, or an error message.",
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "ActionParameters": {
+                              "description": "The parameters of the action URI for a resolution step.",
+                              "longDescription": "This property shall contain the parameters of the action URI for a resolution step.",
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "description": "The information about a parameter included in a Redfish action for this resource.",
+                                    "longDescription": "This property shall contain information about a parameter included in a Redfish action for this resource.",
+                                    "anyOf": [
+                                      {
+                                        "description": "The information about a parameter included in a Redfish action for this resource.",
+                                        "longDescription": "This property shall contain information about a parameter included in a Redfish action for this resource.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "AllowableValues": {
+                                            "description": "The allowable values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.",
+                                            "readonly": true,
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "DataType": {
+                                            "description": "The JSON property type for this parameter.",
+                                            "longDescription": "This property shall contain the JSON property type for this parameter.",
+                                            "readonly": true,
+                                            "anyOf": [
+                                              {
+                                                "enumDescriptions": {
+                                                  "Boolean": "A boolean.",
+                                                  "Number": "A number.",
+                                                  "NumberArray": "An array of numbers.",
+                                                  "Object": "An embedded JSON object.",
+                                                  "ObjectArray": "An array of JSON objects.",
+                                                  "String": "A string.",
+                                                  "StringArray": "An array of strings."
+                                                },
+                                                "type": "string",
+                                                "enum": [
+                                                  "Boolean",
+                                                  "Number",
+                                                  "NumberArray",
+                                                  "String",
+                                                  "StringArray",
+                                                  "Object",
+                                                  "ObjectArray"
+                                                ]
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ]
+                                          },
+                                          "Name": {
+                                            "description": "The name of the parameter for this action.",
+                                            "longDescription": "This property shall contain the name of the parameter included in a Redfish action.",
+                                            "readonly": true,
+                                            "type": "string"
+                                          },
+                                          "ObjectDataType": {
+                                            "description": "The data type of an object-based parameter.",
+                                            "longDescription": "This property shall describe the entity type definition in `@odata.type` format for the parameter.  This property shall be required for parameters with a data type of `Object` or `ObjectArray`, and shall not be present for parameters with other data types.",
+                                            "readonly": true,
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "Required": {
+                                            "description": "An indication of whether the parameter is required to complete this action.",
+                                            "longDescription": "This property shall indicate whether the parameter is required to complete this action.",
+                                            "readonly": true,
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "Name"
+                                        ],
+                                        "patternProperties": {
+                                          "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "description": "This property shall specify a valid odata or Redfish property.",
+                                            "type": [
+                                              "string",
+                                              "number",
+                                              "integer",
+                                              "boolean",
+                                              "object",
+                                              "array",
+                                              "null"
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "description": "The information about a parameter included in a Redfish action for this resource.",
+                                        "longDescription": "This property shall contain information about a parameter included in a Redfish action for this resource.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "AllowableValues": {
+                                            "description": "The allowable values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.",
+                                            "readonly": true,
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "DataType": {
+                                            "description": "The JSON property type for this parameter.",
+                                            "longDescription": "This property shall contain the JSON property type for this parameter.",
+                                            "readonly": true,
+                                            "anyOf": [
+                                              {
+                                                "enumDescriptions": {
+                                                  "Boolean": "A boolean.",
+                                                  "Number": "A number.",
+                                                  "NumberArray": "An array of numbers.",
+                                                  "Object": "An embedded JSON object.",
+                                                  "ObjectArray": "An array of JSON objects.",
+                                                  "String": "A string.",
+                                                  "StringArray": "An array of strings."
+                                                },
+                                                "type": "string",
+                                                "enum": [
+                                                  "Boolean",
+                                                  "Number",
+                                                  "NumberArray",
+                                                  "String",
+                                                  "StringArray",
+                                                  "Object",
+                                                  "ObjectArray"
+                                                ]
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ]
+                                          },
+                                          "MaximumValue": {
+                                            "description": "The maximum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the maximum value that this service supports.  For arrays, this property shall represent the maximum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "MinimumValue": {
+                                            "description": "The minimum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the minimum value that this service supports.  For arrays, this property shall represent the minimum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "Name": {
+                                            "description": "The name of the parameter for this action.",
+                                            "longDescription": "This property shall contain the name of the parameter included in a Redfish action.",
+                                            "readonly": true,
+                                            "type": "string"
+                                          },
+                                          "ObjectDataType": {
+                                            "description": "The data type of an object-based parameter.",
+                                            "longDescription": "This property shall describe the entity type definition in `@odata.type` format for the parameter.  This property shall be required for parameters with a data type of `Object` or `ObjectArray`, and shall not be present for parameters with other data types.",
+                                            "readonly": true,
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "Required": {
+                                            "description": "An indication of whether the parameter is required to complete this action.",
+                                            "longDescription": "This property shall indicate whether the parameter is required to complete this action.",
+                                            "readonly": true,
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "Name"
+                                        ],
+                                        "patternProperties": {
+                                          "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "description": "This property shall specify a valid odata or Redfish property.",
+                                            "type": [
+                                              "string",
+                                              "number",
+                                              "integer",
+                                              "boolean",
+                                              "object",
+                                              "array",
+                                              "null"
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "description": "The information about a parameter included in a Redfish action for this resource.",
+                                        "longDescription": "This property shall contain information about a parameter included in a Redfish action for this resource.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "AllowableValues": {
+                                            "description": "The allowable values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.",
+                                            "readonly": true,
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "ArraySizeMaximum": {
+                                            "description": "The maximum number of array elements allowed for this parameter.",
+                                            "longDescription": "This property shall contain the maximum number of array elements that this service supports for this parameter.  This property shall not be present for non-array parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_2_0",
+                                            "type": [
+                                              "integer",
+                                              "null"
+                                            ]
+                                          },
+                                          "ArraySizeMinimum": {
+                                            "description": "The minimum number of array elements required for this parameter.",
+                                            "longDescription": "This property shall contain the minimum number of array elements required by this service for this parameter.  This property shall not be present for non-array parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_2_0",
+                                            "type": [
+                                              "integer",
+                                              "null"
+                                            ]
+                                          },
+                                          "DataType": {
+                                            "description": "The JSON property type for this parameter.",
+                                            "longDescription": "This property shall contain the JSON property type for this parameter.",
+                                            "readonly": true,
+                                            "anyOf": [
+                                              {
+                                                "enumDescriptions": {
+                                                  "Boolean": "A boolean.",
+                                                  "Number": "A number.",
+                                                  "NumberArray": "An array of numbers.",
+                                                  "Object": "An embedded JSON object.",
+                                                  "ObjectArray": "An array of JSON objects.",
+                                                  "String": "A string.",
+                                                  "StringArray": "An array of strings."
+                                                },
+                                                "type": "string",
+                                                "enum": [
+                                                  "Boolean",
+                                                  "Number",
+                                                  "NumberArray",
+                                                  "String",
+                                                  "StringArray",
+                                                  "Object",
+                                                  "ObjectArray"
+                                                ]
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ]
+                                          },
+                                          "MaximumValue": {
+                                            "description": "The maximum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the maximum value that this service supports.  For arrays, this property shall represent the maximum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "MinimumValue": {
+                                            "description": "The minimum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the minimum value that this service supports.  For arrays, this property shall represent the minimum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "Name": {
+                                            "description": "The name of the parameter for this action.",
+                                            "longDescription": "This property shall contain the name of the parameter included in a Redfish action.",
+                                            "readonly": true,
+                                            "type": "string"
+                                          },
+                                          "ObjectDataType": {
+                                            "description": "The data type of an object-based parameter.",
+                                            "longDescription": "This property shall describe the entity type definition in `@odata.type` format for the parameter.  This property shall be required for parameters with a data type of `Object` or `ObjectArray`, and shall not be present for parameters with other data types.",
+                                            "readonly": true,
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "Required": {
+                                            "description": "An indication of whether the parameter is required to complete this action.",
+                                            "longDescription": "This property shall indicate whether the parameter is required to complete this action.",
+                                            "readonly": true,
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "Name"
+                                        ],
+                                        "patternProperties": {
+                                          "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "description": "This property shall specify a valid odata or Redfish property.",
+                                            "type": [
+                                              "string",
+                                              "number",
+                                              "integer",
+                                              "boolean",
+                                              "object",
+                                              "array",
+                                              "null"
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "description": "The information about a parameter included in a Redfish action for this resource.",
+                                        "longDescription": "This property shall contain information about a parameter included in a Redfish action for this resource.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "AllowableNumbers": {
+                                            "description": "The allowable numeric values or duration values, inclusive ranges of values, and incremental step values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable numeric values, inclusive ranges of values, and incremental step values for this parameter as applied to this action target, as defined in the 'Allowable values for numbers and durations' clause of the Redfish Specification.  For arrays, this property shall represent the allowable values for each array member.  This property shall only be present for numeric parameters or string parameters that specify a duration.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_3_0",
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "AllowablePattern": {
+                                            "description": "The allowable pattern for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall contain a regular expression that describes the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.  This property shall only be present for string parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_3_0",
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "AllowableValues": {
+                                            "description": "The allowable values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.",
+                                            "readonly": true,
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "ArraySizeMaximum": {
+                                            "description": "The maximum number of array elements allowed for this parameter.",
+                                            "longDescription": "This property shall contain the maximum number of array elements that this service supports for this parameter.  This property shall not be present for non-array parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_2_0",
+                                            "type": [
+                                              "integer",
+                                              "null"
+                                            ]
+                                          },
+                                          "ArraySizeMinimum": {
+                                            "description": "The minimum number of array elements required for this parameter.",
+                                            "longDescription": "This property shall contain the minimum number of array elements required by this service for this parameter.  This property shall not be present for non-array parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_2_0",
+                                            "type": [
+                                              "integer",
+                                              "null"
+                                            ]
+                                          },
+                                          "DataType": {
+                                            "description": "The JSON property type for this parameter.",
+                                            "longDescription": "This property shall contain the JSON property type for this parameter.",
+                                            "readonly": true,
+                                            "anyOf": [
+                                              {
+                                                "enumDescriptions": {
+                                                  "Boolean": "A boolean.",
+                                                  "Number": "A number.",
+                                                  "NumberArray": "An array of numbers.",
+                                                  "Object": "An embedded JSON object.",
+                                                  "ObjectArray": "An array of JSON objects.",
+                                                  "String": "A string.",
+                                                  "StringArray": "An array of strings."
+                                                },
+                                                "type": "string",
+                                                "enum": [
+                                                  "Boolean",
+                                                  "Number",
+                                                  "NumberArray",
+                                                  "String",
+                                                  "StringArray",
+                                                  "Object",
+                                                  "ObjectArray"
+                                                ]
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ]
+                                          },
+                                          "MaximumValue": {
+                                            "description": "The maximum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the maximum value that this service supports.  For arrays, this property shall represent the maximum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "MinimumValue": {
+                                            "description": "The minimum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the minimum value that this service supports.  For arrays, this property shall represent the minimum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "Name": {
+                                            "description": "The name of the parameter for this action.",
+                                            "longDescription": "This property shall contain the name of the parameter included in a Redfish action.",
+                                            "readonly": true,
+                                            "type": "string"
+                                          },
+                                          "ObjectDataType": {
+                                            "description": "The data type of an object-based parameter.",
+                                            "longDescription": "This property shall describe the entity type definition in `@odata.type` format for the parameter.  This property shall be required for parameters with a data type of `Object` or `ObjectArray`, and shall not be present for parameters with other data types.",
+                                            "readonly": true,
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "Required": {
+                                            "description": "An indication of whether the parameter is required to complete this action.",
+                                            "longDescription": "This property shall indicate whether the parameter is required to complete this action.",
+                                            "readonly": true,
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "Name"
+                                        ],
+                                        "patternProperties": {
+                                          "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "description": "This property shall specify a valid odata or Redfish property.",
+                                            "type": [
+                                              "string",
+                                              "number",
+                                              "integer",
+                                              "boolean",
+                                              "object",
+                                              "array",
+                                              "null"
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "description": "The information about a parameter included in a Redfish action for this resource.",
+                                        "longDescription": "This property shall contain information about a parameter included in a Redfish action for this resource.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "AllowableNumbers": {
+                                            "description": "The allowable numeric values or duration values, inclusive ranges of values, and incremental step values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable numeric values, inclusive ranges of values, and incremental step values for this parameter as applied to this action target, as defined in the 'Allowable values for numbers and durations' clause of the Redfish Specification.  For arrays, this property shall represent the allowable values for each array member.  This property shall only be present for numeric parameters or string parameters that specify a duration.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_3_0",
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "AllowablePattern": {
+                                            "description": "The allowable pattern for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall contain a regular expression that describes the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.  This property shall only be present for string parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_3_0",
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "AllowableValueDescriptions": {
+                                            "description": "Descriptions of allowable values for this parameter.",
+                                            "longDescription": "This property shall contain the descriptions of allowable values for this parameter.  The descriptions shall appear in the same array order as the `AllowableValues` property.  For arrays, this property shall represent the descriptions of allowable values for each array member.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_4_0",
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "AllowableValues": {
+                                            "description": "The allowable values for this parameter as applied to this action target.",
+                                            "longDescription": "This property shall indicate the allowable values for this parameter as applied to this action target.  For arrays, this property shall represent the allowable values for each array member.",
+                                            "readonly": true,
+                                            "type": "array",
+                                            "items": {
+                                              "type": [
+                                                "string",
+                                                "null"
+                                              ]
+                                            }
+                                          },
+                                          "ArraySizeMaximum": {
+                                            "description": "The maximum number of array elements allowed for this parameter.",
+                                            "longDescription": "This property shall contain the maximum number of array elements that this service supports for this parameter.  This property shall not be present for non-array parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_2_0",
+                                            "type": [
+                                              "integer",
+                                              "null"
+                                            ]
+                                          },
+                                          "ArraySizeMinimum": {
+                                            "description": "The minimum number of array elements required for this parameter.",
+                                            "longDescription": "This property shall contain the minimum number of array elements required by this service for this parameter.  This property shall not be present for non-array parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_2_0",
+                                            "type": [
+                                              "integer",
+                                              "null"
+                                            ]
+                                          },
+                                          "DataType": {
+                                            "description": "The JSON property type for this parameter.",
+                                            "longDescription": "This property shall contain the JSON property type for this parameter.",
+                                            "readonly": true,
+                                            "anyOf": [
+                                              {
+                                                "enumDescriptions": {
+                                                  "Boolean": "A boolean.",
+                                                  "Number": "A number.",
+                                                  "NumberArray": "An array of numbers.",
+                                                  "Object": "An embedded JSON object.",
+                                                  "ObjectArray": "An array of JSON objects.",
+                                                  "String": "A string.",
+                                                  "StringArray": "An array of strings."
+                                                },
+                                                "type": "string",
+                                                "enum": [
+                                                  "Boolean",
+                                                  "Number",
+                                                  "NumberArray",
+                                                  "String",
+                                                  "StringArray",
+                                                  "Object",
+                                                  "ObjectArray"
+                                                ]
+                                              },
+                                              {
+                                                "type": "null"
+                                              }
+                                            ]
+                                          },
+                                          "MaximumValue": {
+                                            "description": "The maximum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the maximum value that this service supports.  For arrays, this property shall represent the maximum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "MinimumValue": {
+                                            "description": "The minimum supported value for this parameter.",
+                                            "longDescription": "This integer or number property shall contain the minimum value that this service supports.  For arrays, this property shall represent the minimum value for each array member.  This property shall not be present for non-integer or number parameters.",
+                                            "readonly": true,
+                                            "versionAdded": "v1_1_0",
+                                            "type": [
+                                              "number",
+                                              "null"
+                                            ]
+                                          },
+                                          "Name": {
+                                            "description": "The name of the parameter for this action.",
+                                            "longDescription": "This property shall contain the name of the parameter included in a Redfish action.",
+                                            "readonly": true,
+                                            "type": "string"
+                                          },
+                                          "ObjectDataType": {
+                                            "description": "The data type of an object-based parameter.",
+                                            "longDescription": "This property shall describe the entity type definition in `@odata.type` format for the parameter.  This property shall be required for parameters with a data type of `Object` or `ObjectArray`, and shall not be present for parameters with other data types.",
+                                            "readonly": true,
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "Required": {
+                                            "description": "An indication of whether the parameter is required to complete this action.",
+                                            "longDescription": "This property shall indicate whether the parameter is required to complete this action.",
+                                            "readonly": true,
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "Name"
+                                        ],
+                                        "patternProperties": {
+                                          "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "description": "This property shall specify a valid odata or Redfish property.",
+                                            "type": [
+                                              "string",
+                                              "number",
+                                              "integer",
+                                              "boolean",
+                                              "object",
+                                              "array",
+                                              "null"
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "ActionURI": {
+                              "description": "The action URI for a resolution step.",
+                              "longDescription": "This property shall contain the action URI for a resolution step.",
+                              "readonly": true,
+                              "type": "string",
+                              "format": "uri-reference"
+                            },
+                            "Oem": {
+                              "description": "The OEM extension property.",
+                              "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
+                              "$ref": "#/definitions/Links/properties/Oem/$ref"
+                            },
+                            "Priority": {
+                              "description": "The priority in the set of resolution steps.",
+                              "longDescription": "This property shall contain the priority in the set of resolution steps.  The value `0` shall indicate the highest priority.  Increasing values shall represent decreasing priority.  If two or more resolution steps have the same priority, the execution order of the resolution steps shall be in array order.  If a resolution step does not have a priority assignment, the default is 0.  The priority is used to determine the execution order of the resolution steps.",
+                              "readonly": true,
+                              "type": [
+                                "integer",
+                                "null"
+                              ],
+                              "minimum": 0.0
+                            },
+                            "ResolutionType": {
+                              "description": "The type of the resolution step.",
+                              "longDescription": "This property shall contain the type of the resolution step.",
+                              "readonly": true,
+                              "anyOf": [
+                                {
+                                  "enumDescriptions": {
+                                    "CollectDiagnosticData": "Collect diagnostic data.",
+                                    "ContactVendor": "Contact vendor for service.",
+                                    "FirmwareUpdate": "Perform a firmware update operation.",
+                                    "OEM": "Perform an OEM-defined resolution step.",
+                                    "PowerCycle": "Perform a power cycle operation.",
+                                    "ReplaceComponent": "Replace a component.",
+                                    "Reset": "Perform a reset operation.",
+                                    "ResetToDefaults": "Reset the settings to factory defaults."
+                                  },
+                                  "type": "string",
+                                  "enum": [
+                                    "ContactVendor",
+                                    "ReplaceComponent",
+                                    "FirmwareUpdate",
+                                    "Reset",
+                                    "PowerCycle",
+                                    "ResetToDefaults",
+                                    "CollectDiagnosticData",
+                                    "OEM"
+                                  ]
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "RetryCount": {
+                              "description": "The number of retries for a resolution step.",
+                              "longDescription": "This property shall contain the number of the retries for a resolution step.",
+                              "readonly": true,
+                              "type": [
+                                "integer",
+                                "null"
+                              ],
+                              "minimum": 0.0
+                            },
+                            "RetryIntervalSeconds": {
+                              "description": "The interval between retries for a resolution step.",
+                              "longDescription": "This property shall contain the interval, in seconds, between the retries for a resolution step.",
+                              "readonly": true,
+                              "units": "s",
+                              "type": [
+                                "integer",
+                                "null"
+                              ],
+                              "minimum": 0.0
+                            },
+                            "TargetComponentURI": {
+                              "description": "The target URI of the component for a resolution step.",
+                              "longDescription": "This property shall contain the target URI of the component for a resolution step.  This property shall be present if the `ActionURI` property is not supported.",
+                              "readonly": true,
+                              "type": [
+                                "string",
+                                "null"
+                              ],
+                              "format": "uri-reference"
+                            }
+                          },
+                          "required": [
+                            "ResolutionType"
+                          ],
+                          "patternProperties": {
+                            "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                              "description": "This property shall specify a valid odata or Redfish property.",
+                              "type": [
+                                "string",
+                                "number",
+                                "integer",
+                                "boolean",
+                                "object",
+                                "array",
+                                "null"
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "Severity": {
+                    "description": "The severity of the message.",
+                    "deprecated": "This property has been deprecated in favor of `MessageSeverity`, which ties the values to the enumerations defined for the `Health` property within `Status`.",
+                    "longDescription": "This property shall contain the severity of the message, as defined in the 'Status' clause of the Redfish Specification.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "versionDeprecated": "v1_1_0",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "MessageId"
+                ],
+                "patternProperties": {
+                  "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                      "string",
+                      "number",
+                      "integer",
+                      "boolean",
+                      "object",
+                      "array",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "description": "The message that the Redfish service returns.",
+                "longDescription": "This type shall contain a message that the Redfish service returns, as described in the Redfish Specification.",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "Message": {
+                    "description": "The human-readable message.",
+                    "longDescription": "This property shall contain a human-readable message.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageArgs": {
+                    "description": "An array of message arguments that are substituted for the arguments in the message when looked up in the message registry.",
+                    "longDescription": "This property shall contain an array of message arguments that are substituted for the arguments in the message when looked up in the message registry.  It has the same semantics as the `MessageArgs` property in the Redfish `MessageRegistry` schema.  If the corresponding `ParamType` value contains `number`, the service shall convert the number to a string representation of the number.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "MessageId": {
+                    "description": "The identifier for the message.",
+                    "longDescription": "This property shall contain a `MessageId`, as defined in the 'MessageId format' clause of the Redfish Specification.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "MessageSeverity": {
+                    "description": "The severity of the message.",
+                    "longDescription": "This property shall contain the severity of the message.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "versionAdded": "v1_1_0",
+                    "$ref": "#/definitions/Task/properties/Messages/items/anyOf/1/properties/MessageSeverity/$ref"
+                  },
+                  "Oem": {
+                    "description": "The OEM extension property.",
+                    "longDescription": "This property shall contain the OEM extensions.  All values for properties contained in this object shall conform to the Redfish Specification-described requirements.",
+                    "$ref": "#/definitions/Links/properties/Oem/$ref"
+                  },
+                  "RelatedProperties": {
+                    "description": "A set of properties described by the message.",
+                    "longDescription": "This property shall contain an array of RFC6901-defined JSON pointers indicating the properties described by the message, if appropriate for the message.",
+                    "readonly": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Resolution": {
+                    "description": "Used to provide suggestions on how to resolve the situation that caused the message.",
+                    "longDescription": "This property shall contain the resolution of the message.  Services can replace the resolution defined in the message registry with a more specific resolution in message payloads.",
+                    "readonly": true,
+                    "type": "string"
+                  },
+                  "ResolutionSteps": {
+                    "description": "The list of recommended steps to resolve the situation that caused the message.",
+                    "longDescription": "This property shall contain an array of recommended steps to resolve the situation that caused the message.  This property shall not be present if the `MessageSeverity` or `Severity` properties contain `OK`.",
+                    "versionAdded": "v1_2_0",
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/definitions/Task/properties/Messages/items/anyOf/2/properties/ResolutionSteps/items"
+                    }
+                  },
+                  "Severity": {
+                    "description": "The severity of the message.",
+                    "deprecated": "This property has been deprecated in favor of `MessageSeverity`, which ties the values to the enumerations defined for the `Health` property within `Status`.",
+                    "longDescription": "This property shall contain the severity of the message, as defined in the 'Status' clause of the Redfish Specification.  Services can replace the value defined in the message registry with a value more applicable to the implementation.",
+                    "readonly": true,
+                    "versionDeprecated": "v1_1_0",
+                    "type": "string"
+                  },
+                  "UserAuthenticationSource": {
+                    "description": "The source of authentication for the username property associated with the message.",
+                    "longDescription": "This property shall contain the URL to the authentication service that is associated with the username property.  This should be used for messages that result from a user action.",
+                    "readonly": true,
+                    "versionAdded": "v1_3_0",
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "Username": {
+                    "description": "The username of the account associated with the message.",
+                    "longDescription": "This property shall contain the username of the account associated with the message.  This should be used for messages that result from a user action.",
+                    "readonly": true,
+                    "versionAdded": "v1_3_0",
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "MessageId"
+                ],
+                "patternProperties": {
+                  "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+                    "description": "This property shall specify a valid odata or Redfish property.",
+                    "type": [
+                      "string",
+                      "number",
+                      "integer",
+                      "boolean",
+                      "object",
+                      "array",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Name": {
+          "readonly": true,
+          "$ref": "#/definitions/Task/properties/Name/$ref"
+        },
+        "Oem": {
+          "description": "The OEM extension property.",
+          "longDescription": "This property shall contain the OEM extensions.  All values for properties that this object contains shall conform to the Redfish Specification-described requirements.",
+          "$ref": "#/definitions/Links/properties/Oem/$ref"
+        },
+        "Payload": {
+          "description": "The HTTP and JSON request payload details for this task, unless they are hidden from view by the service.",
+          "longDescription": "This object shall contain information detailing the HTTP and JSON request payload information for executing this task.  This property shall not be included in the response if the `HidePayload` property is `true`.",
+          "versionAdded": "v1_3_0",
+          "$ref": "#/definitions/Payload"
+        },
+        "PercentComplete": {
+          "description": "The completion percentage of this task.",
+          "longDescription": "This property shall indicate the completion progress of the task, reported in percent of completion, `0` to `100`.  If the task has not been started, the value shall be zero.",
+          "readonly": true,
+          "units": "%",
+          "versionAdded": "v1_4_0",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0.0,
+          "maximum": 100.0
+        },
+        "StartTime": {
+          "description": "The date and time when the task was started.",
+          "longDescription": "This property shall indicate the date and time when the task was started.",
+          "readonly": true,
+          "type": "string",
+          "format": "date-time"
+        },
+        "SubTasks": {
+          "description": "The link to a collection of sub-tasks for this task.",
+          "longDescription": "This property shall contain a link to a resource collection of type `TaskCollection`.  This property shall not be present if this resource represents a sub-task for a task.",
+          "readonly": true,
+          "versionAdded": "v1_5_0",
+          "$ref": "#/definitions/Task/properties/SubTasks/$ref"
+        },
+        "TaskMonitor": {
+          "description": "The URI of the task monitor for this task.",
+          "longDescription": "This property shall contain a URI to task monitor as defined in the Redfish Specification.",
+          "readonly": true,
+          "versionAdded": "v1_2_0",
+          "type": "string",
+          "format": "uri-reference"
+        },
+        "TaskState": {
+          "description": "The state of the task.",
+          "longDescription": "This property shall indicate the state of the task.",
+          "readonly": true,
+          "$ref": "#/definitions/TaskState"
+        },
+        "TaskStatus": {
+          "description": "The completion status of the task.",
+          "longDescription": "This property shall contain the completion status of the task and shall not be set until the task completes.  This property should contain `Critical` if one or more messages in the `Messages` array contains the severity `Critical`.  This property should contain `Warning` if one or more messages in the `Messages` array contains the severity `Warning` and if no messages contain the severity `Critical`.  This property should contain `OK` if all messages in the `Messages` array contain the severity `OK` or if the array is empty.",
+          "readonly": true,
+          "$ref": "#/definitions/Task/properties/Messages/items/anyOf/1/properties/MessageSeverity/$ref"
+        }
+      },
+      "required": [
+        "@odata.id",
+        "@odata.type",
+        "Id",
+        "Name"
+      ],
+      "patternProperties": {
+        "^([a-zA-Z_][a-zA-Z0-9_]*)?@(odata|Redfish|Message)\\.[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "description": "This property shall specify a valid odata or Redfish property.",
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "object",
+            "array",
+            "null"
+          ]
+        }
+      }
+    },
+    "TaskState": {
+      "enumDeprecated": {
+        "Killed": "This value has been deprecated and is being replaced by the `Cancelled` value, which has more determinate semantics."
+      },
+      "enumDescriptions": {
+        "Cancelled": "Task has been cancelled by an operator or internal process.",
+        "Cancelling": "Task is in the process of being cancelled.",
+        "Completed": "Task was completed.",
+        "Exception": "Task has stopped due to an exception condition.",
+        "Interrupted": "Task has been interrupted.",
+        "Killed": "Task was terminated.",
+        "New": "A new task.",
+        "Pending": "Task is pending and has not started.",
+        "Running": "Task is running normally.",
+        "Service": "Task is running as a service.",
+        "Starting": "Task is starting.",
+        "Stopping": "Task is in the process of stopping.",
+        "Suspended": "Task has been suspended."
+      },
+      "enumLongDescriptions": {
+        "Cancelled": "This value shall represent that either a `DELETE` operation on a task monitor or `Task` resource or by an internal process cancelled the task.",
+        "Cancelling": "This value shall represent that the task is in the process of being cancelled.",
+        "Completed": "This value shall represent that the task completed successfully or with warnings.",
+        "Exception": "This value shall represent that the task completed with errors.",
+        "Interrupted": "This value shall represent that the task has been interrupted but is expected to restart and is therefore not complete.",
+        "Killed": "This value shall represent that the task is complete because an operator killed it.",
+        "New": "This value shall represent that the task is newly created but has not started.",
+        "Pending": "This value shall represent that the task is pending some condition and has not yet begun to execute.",
+        "Running": "This value shall represent that the task is executing.",
+        "Service": "This value shall represent that the task is now running as a service and expected to continue operation until stopped or killed.",
+        "Starting": "This value shall represent that the task is starting.",
+        "Stopping": "This value shall represent that the task is stopping but is not yet complete.",
+        "Suspended": "This value shall represent that the task has been suspended but is expected to restart and is therefore not complete."
+      },
+      "enumVersionAdded": {
+        "Cancelled": "v1_2_0",
+        "Cancelling": "v1_2_0"
+      },
+      "enumVersionDeprecated": {
+        "Killed": "v1_2_0"
+      },
+      "type": "string",
+      "enum": [
+        "New",
+        "Starting",
+        "Running",
+        "Suspended",
+        "Interrupted",
+        "Pending",
+        "Stopping",
+        "Completed",
+        "Killed",
+        "Exception",
+        "Service",
+        "Cancelling",
+        "Cancelled"
+      ]
+    }
+  },
+  "language": "en",
+  "owningEntity": "DMTF",
+  "release": "2022.3",
+  "$ref": "#/definitions/Task"
+}
